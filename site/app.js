@@ -55,7 +55,8 @@
   const HEB = /[֐-׿]/;
   const PREFIX = /^[והבלמשכ]{1,2}/;
 
-  const state = { view: 'hot', cat: null, q: '', skill: null, limit: PAGE, safe: false, official: false, group: true };
+  const store = { get(k) { try { return localStorage.getItem(k); } catch { return null; } }, set(k, v) { try { localStorage.setItem(k, v); } catch {} } };
+  const state = { view: 'hot', cat: null, q: '', skill: null, limit: PAGE, safe: false, official: false, group: true, he: store.get('radar.he') !== '0' };
   let data = { skills: [], categories: [] };
   let buzz = [];
   let catById = {};
@@ -141,6 +142,7 @@
       cat: norm(s.categories.map((id) => catById[id]).filter(Boolean)
         .map((c) => `${c.label} ${(c.he || []).join(' ')} ${(c.keywords || []).join(' ')}`).join(' ')),
       desc: norm(s.description),
+      he: norm(s.he || ''),
     }));
   }
 
@@ -177,6 +179,8 @@
           if (d.name.includes(t)) s += wordStart(d.name, t) ? 8 : 4;
           if (d.cat.includes(t)) s += 3;
           if (d.desc.includes(t)) s += wordStart(d.desc, t) ? 2 : 0.5;
+          // The user's own Hebrew words found in the Hebrew description: as strong as a name match.
+          if (d.he && HEB.test(t) && d.he.includes(t)) s += 6;
           if (d.repo.includes(t)) s += 1;
           best = Math.max(best, s);
         }
@@ -209,14 +213,17 @@
       skills = skills.filter((s) => ((seen[s.repo || s.host] = (seen[s.repo || s.host] || 0) + 1) <= 3));
     }
     const hl = terms.flat().filter((t) => !HEB.test(t) && t.length > 1);
-    return { skills, hl, translated, searching: terms.length > 0 };
+    const hlHe = terms.flat().filter((t) => HEB.test(t) && t.length > 1);
+    return { skills, hl, hlHe, translated, searching: terms.length > 0 };
   }
 
   // ---------- rendering ----------
-  function highlight(node, text, terms) {
+  function highlight(node, text, terms, hebrew = false) {
     node.textContent = '';
     if (!terms.length) { node.textContent = text; return; }
-    const re = new RegExp(`(?<![\\p{L}\\p{N}])(${terms.sort((a, b) => b.length - a.length).map(esc).join('|')})`, 'giu');
+    // Hebrew words carry prefixes (ו, ה, ש, ל...), so a match may start after up to two of them.
+    const pre = hebrew ? '[והבלמשכ]{0,2}' : '';
+    const re = new RegExp(`(?<![\\p{L}\\p{N}])(${pre}(?:${[...terms].sort((a, b) => b.length - a.length).map(esc).join('|')}))`, 'giu');
     let last = 0;
     for (const m of text.matchAll(re)) {
       node.append(text.slice(last, m.index), el('mark', null, m[0]));
@@ -262,7 +269,15 @@
     path.textContent = s.repo ? `${s.repo}${s.path ? '/' + s.path : ''}` : s.host;
     path.href = s.repo ? `https://github.com/${s.repo}` : s.url;
     const desc = r.querySelector('.desc');
-    highlight(desc, s.description, ctx.hl);
+    if (state.he && s.he) {
+      desc.dir = 'rtl';
+      desc.classList.add('he');
+      desc.title = s.description;
+      highlight(desc, s.he, ctx.hlHe, true);
+    } else {
+      desc.dir = 'ltr';
+      highlight(desc, s.description, ctx.hl);
+    }
     desc.onclick = () => r.classList.toggle('open');
 
     const pulse = r.querySelector('.pulse');
@@ -362,7 +377,7 @@
     box.textContent = '';
     if (isBuzz) { box.classList.remove('ranked'); return renderBuzz(); }
 
-    const { skills, hl, translated, searching } = results();
+    const { skills, hl, hlHe, translated, searching } = results();
     $('#hint').textContent = translated.length
       ? `חיפשתי גם: ${translated.slice(0, 8).join(', ')}`
       : 'אפשר לכתוב בעברית. המילים מתורגמות לאנגלית, השפה שבה הסקילים כתובים.';
@@ -380,7 +395,7 @@
       $('#clear-cat')?.addEventListener('click', (e) => { e.preventDefault(); setCat(null); });
       return;
     }
-    const ctx = { hl, searching, view: state.view, maxDelta: Math.max(1, ...skills.map((s) => s.delta7 || 0)) };
+    const ctx = { hl, hlHe, searching, view: state.view, maxDelta: Math.max(1, ...skills.map((s) => s.delta7 || 0)) };
     const frag = document.createDocumentFragment();
     skills.slice(0, state.limit).forEach((s, i) => frag.append(row(s, i, ctx)));
     box.append(frag);
@@ -435,6 +450,8 @@
     box.append(facts);
 
     const grid = el('div', 'd-grid');
+    const heBlock = el('section', 'he-block');
+    heBlock.hidden = true;
     const file = el('article', 'file');
     const tab = el('div', 'tab', 'SKILL.md');
     tab.dir = 'ltr';
@@ -480,7 +497,9 @@
     gh.href = s.url; gh.target = '_blank'; gh.rel = 'noopener';
     aside.append(gh);
 
-    grid.append(file, aside);
+    const main = el('div', 'd-main');
+    main.append(heBlock, file);
+    grid.append(main, aside);
     box.append(grid);
 
     // details: full description + file list
@@ -489,6 +508,12 @@
     detailP.then((d) => {
       if (token !== skillToken) return;
       const info = d?.skills?.[s.path];
+      if (info?.he) {
+        heBlock.append(el('h2', null, 'בעברית'));
+        const p = el('p', null, info.he); p.dir = 'rtl';
+        heBlock.append(p, el('p', 'note', 'תרגום אוטומטי של התיאור. הקובץ עצמו מוצג למטה כמו שהוא.'));
+        heBlock.hidden = false;
+      }
       files.lastChild.remove();
       files.querySelector('h2').textContent = `קבצים בתיקייה${info ? ` (${info.fileCount})` : ''}`;
       if (!info?.files?.length) {
@@ -538,9 +563,28 @@
   });
   document.querySelectorAll('.views button').forEach((b) => (b.onclick = () => { state.view = b.dataset.view; state.limit = PAGE; render(); }));
   $('#more').onclick = () => { state.limit += PAGE; render(); };
-  for (const [id, key] of [['#f-safe', 'safe'], ['#f-official', 'official'], ['#f-group', 'group']]) {
+  for (const [id, key] of [['#f-safe', 'safe'], ['#f-official', 'official'], ['#f-group', 'group'], ['#f-he', 'he']]) {
     $(id).checked = state[key];
-    $(id).onchange = (e) => { state[key] = e.target.checked; state.limit = PAGE; render(); };
+    $(id).onchange = (e) => {
+      state[key] = e.target.checked;
+      if (key === 'he') store.set('radar.he', e.target.checked ? '1' : '0');
+      state.limit = PAGE;
+      render();
+    };
+  }
+
+  /** Hebrew descriptions (machine-translated in the daily run) load after the list is on screen. */
+  function loadHebrew() {
+    fetch('data/he.json', { cache: 'no-cache' })
+      .then((r) => (r.ok ? r.json() : null))
+      .then((he) => {
+        if (!he || he.index !== data.generatedAt || !Array.isArray(he.items)) return; // stale or missing
+        data.skills.forEach((s, i) => { if (he.items[i]) s.he = he.items[i]; });
+        buildIndex();
+        $('#f-he').closest('label').hidden = false;
+        if (!state.skill) render();
+      })
+      .catch(() => {});
   }
   window.addEventListener('hashchange', () => {
     const wasSkill = !!state.skill;
@@ -566,9 +610,10 @@
         (when ? ` עודכן ב-${when}.` : '') + // On the first run everything is "new", which says nothing; show it only once there's a baseline.
         (st.newThisWeek && st.newThisWeek < st.skills ? ` ${st.newThisWeek.toLocaleString('he-IL')} נוספו השבוע.` : '');
       render();
+      loadHebrew();
     })
     .catch(() => {
       $('#count').textContent = '';
-      emptyState('לא הצלחתי לטעון את data/skills.json. אם האתר רץ מקומית, הפעילו אותו דרך שרת (npm run serve) ולא מקובץ.');
+      emptyState('לא הצלחתי לטעון את data/index.json. אם האתר רץ מקומית, הפעילו אותו דרך שרת (npm run serve) ולא מקובץ.');
     });
 })();

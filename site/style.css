@@ -268,3 +268,10 @@ aside { position: sticky; top: 20px; display: grid; gap: 26px; }
   aside { position: static; }
   .file-body { padding: 4px 14px 16px; }
 }
+
+/* Hebrew (machine-translated) descriptions */
+.desc.he { text-align: right; font-size: .97rem; }
+.d-main { min-width: 0; display: grid; gap: 22px; }
+.he-block h2 { font-size: .95rem; margin: 0 0 6px; }
+.he-block p { margin: 0; line-height: 1.75; max-width: 70ch; }
+.he-block .note { margin-top: 6px; }

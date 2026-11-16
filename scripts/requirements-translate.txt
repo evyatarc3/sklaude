@@ -1,0 +1,4 @@
+# CPU-only torch is installed separately from the PyTorch CPU index (see update.yml).
+transformers==4.46.3
+sentencepiece==0.2.0
+sacremoses==0.1.1
