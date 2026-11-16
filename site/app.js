@@ -1,4 +1,5 @@
-/* Skills Radar front end. Loads data/skills.json and searches in the browser. No backend. */
+/* Skills Radar front end. Loads data/index.json, searches in the browser, and renders a page per skill
+   (#s=owner/repo/path) from data/repos/<repo>.json plus the live SKILL.md. No backend. */
 (() => {
   const $ = (s) => document.querySelector(s);
   const PAGE = 60;
@@ -11,6 +12,16 @@
     autorun: 'מתקין או מריץ אוטומטית',
     binary: 'קבצים בינאריים',
   };
+  const FLAG_HELP = {
+    scripts: 'בתיקייה יש סקריפטים שהסקיל עשוי להריץ. כדאי לקרוא אותם לפני התקנה.',
+    network: 'ההוראות כוללות פנייה לרשת, למשל curl או requests. כדאי לבדוק לאן.',
+    secrets: 'ההוראות מזכירות מפתחות API, טוקנים או סיסמאות.',
+    destructive: 'נמצאו פקודות שעלולות למחוק קבצים או לשנות את המערכת.',
+    obfuscation: 'נמצא קוד מקודד או הרצה דינמית, כמו base64 או eval.',
+    autorun: 'נמצאה התקנה או הרצה אוטומטית, למשל curl שמועבר ישר ל-sh.',
+    binary: 'בתיקייה יש קבצים בינאריים שאי אפשר לקרוא.',
+  };
+  const RISK_FROM = { l: 'low', m: 'medium', h: 'high', u: 'unknown' };
 
   /* Hebrew -> English. Skills are written in English, so Hebrew words are expanded before searching.
      Keys are stems: a word matches when it starts with the key (after dropping prefixes like ו/ה/ל/ש). */
@@ -44,11 +55,13 @@
   const HEB = /[֐-׿]/;
   const PREFIX = /^[והבלמשכ]{1,2}/;
 
-  const state = { view: 'hot', cat: null, q: '', limit: PAGE, safe: false, official: false, group: true };
+  const state = { view: 'hot', cat: null, q: '', skill: null, limit: PAGE, safe: false, official: false, group: true };
   let data = { skills: [], categories: [] };
   let buzz = [];
   let catById = {};
   let docs = [];
+  let byId = new Map();
+  let listScroll = 0;
 
   const repoSlug = (() => {
     const m = location.hostname.match(/^([\w-]+)\.github\.io$/);
@@ -70,19 +83,56 @@
     state.view = p.get('v') || 'hot';
     state.cat = p.get('c') || null;
     state.q = p.get('q') || '';
+    state.skill = p.get('s') || null;
     $('#q').value = state.q;
   }
-  function writeHash() {
+  function listParams() {
     const p = new URLSearchParams();
     if (state.view !== 'hot') p.set('v', state.view);
     if (state.cat) p.set('c', state.cat);
     if (state.q) p.set('q', state.q);
+    return p;
+  }
+  const skillHref = (id) => { const p = listParams(); p.set('s', id); return `#${p}`; };
+  function writeHash() {
+    const p = listParams();
+    if (state.skill) p.set('s', state.skill);
     const h = p.toString();
     history.replaceState(null, '', h ? `#${h}` : location.pathname + location.search);
   }
 
+  // ---------- data ----------
+  /** index.json (v2) is compact: repos are stored once, skills point at them. Expand to plain objects. */
+  function expand(ix) {
+    const cats = ix.categories;
+    const flagsOf = (bits) => ix.flags.filter((_, i) => bits & (1 << i));
+    const repos = ix.repos.map((r) => ({
+      repo: r[0], stars: r[1], delta7: r[2], branch: r[3], updated: r[4], license: r[5], official: !!r[6], trendEstimated: !!r[7],
+    }));
+    const skills = ix.skills.map((r) => {
+      const R = repos[r[0]];
+      const path = r[1];
+      return {
+        id: path ? `${R.repo}/${path}` : R.repo,
+        name: r[2] || path.split('/').pop() || R.repo.split('/')[1],
+        description: r[3],
+        repo: R.repo, path, branch: R.branch,
+        url: `https://github.com/${R.repo}${path ? `/tree/${R.branch}/${path}` : ''}`,
+        stars: R.stars, delta7: R.delta7, trendEstimated: R.trendEstimated, updated: R.updated,
+        license: R.license, official: R.official,
+        categories: r[4].map((i) => cats[i]?.id).filter(Boolean),
+        flags: flagsOf(r[5]), risk: RISK_FROM[r[6]] || 'unknown', added: r[7], copies: r[8],
+      };
+    });
+    for (const e of ix.external || []) {
+      skills.push({ ...e, repo: null, stars: 0, categories: e.c.map((i) => cats[i]?.id).filter(Boolean), flags: flagsOf(e.f), risk: RISK_FROM[e.k] || 'unknown', added: e.a });
+    }
+    return { ...ix, skills };
+  }
+
   // ---------- search ----------
   function buildIndex() {
+    byId = new Map(data.skills.map((s) => [s.id, s]));
     catById = Object.fromEntries(data.categories.map((c) => [c.id, c]));
     docs = data.skills.map((s) => ({
       s,
@@ -206,7 +256,8 @@
 
     const name = r.querySelector('.name');
     highlight(name, s.name, ctx.hl);
-    name.href = s.url;
+    name.href = s.repo ? skillHref(s.id) : s.url;
+    if (!s.repo) { name.target = '_blank'; name.rel = 'noopener'; } else name.removeAttribute('target');
     const path = r.querySelector('.path');
     path.textContent = s.repo ? `${s.repo}${s.path ? '/' + s.path : ''}` : s.host;
     path.href = s.repo ? `https://github.com/${s.repo}` : s.url;
@@ -298,6 +349,10 @@
 
   function render() {
     writeHash();
+    const detail = state.skill && byId.get(state.skill);
+    document.body.classList.toggle('on-skill', !!detail);
+    if (detail) return renderSkill(detail);
+    document.title = 'רדאר סקילים';
     document.querySelectorAll('.views button').forEach((b) => b.setAttribute('aria-selected', String(b.dataset.view === state.view)));
     const isBuzz = state.view === 'buzz';
     $('#cats').hidden = isBuzz;
@@ -333,6 +388,146 @@
     $('#more').textContent = `עוד ${Math.min(PAGE, skills.length - state.limit)}`;
   }
 
+  // ---------- skill page ----------
+  let skillToken = 0;
+  const rawUrl = (s, file) => `https://raw.githubusercontent.com/${s.repo}/${encodeURIComponent(s.branch)}/${[s.path, file].filter(Boolean).map((p) => p.split('/').map(encodeURIComponent).join('/')).join('/')}`;
+  const blobUrl = (s, file) => `https://github.com/${s.repo}/blob/${s.branch}/${[s.path, file].filter(Boolean).join('/')}`;
+
+  function section(title) {
+    const sec = el('section', 'side');
+    sec.append(el('h2', null, title));
+    return sec;
+  }
+
+  function renderSkill(s) {
+    const token = ++skillToken;
+    document.title = `${s.name} | רדאר סקילים`;
+    const box = $('#skill');
+    box.textContent = '';
+
+    const back = el('a', 'back', 'חזרה לרשימה');
+    back.href = `#${listParams()}`;
+    box.append(back);
+
+    // header
+    const head = el('header', 'd-head');
+    const img = el('img', 'avatar');
+    img.alt = ''; img.width = 56; img.height = 56;
+    img.src = `https://avatars.githubusercontent.com/${s.repo.split('/')[0]}?s=112`;
+    const titles = el('div');
+    const h1 = el('h1', 'd-name', s.name);
+    h1.dir = 'ltr';
+    const path = el('a', 'path', `${s.repo}${s.path ? '/' + s.path : ''}`);
+    path.href = s.url; path.target = '_blank'; path.rel = 'noopener'; path.dir = 'ltr';
+    titles.append(h1, path);
+    head.append(img, titles);
+    box.append(head);
+
+    const facts = el('dl', 'facts');
+    const fact = (k, v) => { if (v == null || v === '') return; const d = el('div'); d.append(el('dt', null, k), el('dd', null, v)); facts.append(d); };
+    fact('כוכבים לריפו', num(s.stars));
+    if (s.delta7 > 0) fact('השבוע', `+${num(s.delta7)}${s.trendEstimated ? ' (הערכה)' : ''}`);
+    if (s.updated) { const n = daysSince(s.updated); fact('עדכון אחרון', n === 0 ? 'היום' : n === 1 ? 'אתמול' : `לפני ${n} ימים`); }
+    fact('רישיון', s.license || 'לא צוין');
+    const topics = s.categories.filter((c) => c !== 'other').map((c) => catById[c]?.label).filter(Boolean);
+    if (topics.length) fact('נושאים', topics.join(', '));
+    if (s.official) fact('מקור', 'Anthropic');
+    box.append(facts);
+
+    const grid = el('div', 'd-grid');
+    const file = el('article', 'file');
+    const tab = el('div', 'tab', 'SKILL.md');
+    tab.dir = 'ltr';
+    const body = el('div', 'file-body');
+    body.append(el('p', 'loading', 'טוען את הקובץ מגיטהאב…'));
+    file.append(tab, body);
+
+    const aside = el('aside');
+    // install
+    const inst = section('התקנה ב-Claude Code');
+    const cmd = installCmd(s);
+    const pre = el('pre', 'cmd'); pre.dir = 'ltr'; pre.textContent = cmd;
+    const copy = el('button', 'copy wide', 'העתקת הפקודה');
+    copy.type = 'button';
+    copy.onclick = async () => {
+      try { await navigator.clipboard.writeText(cmd); } catch { prompt('העתקה ידנית:', cmd); return; }
+      copy.textContent = 'הועתק'; copy.classList.add('done');
+      setTimeout(() => { copy.textContent = 'העתקת הפקודה'; copy.classList.remove('done'); }, 1800);
+    };
+    inst.append(pre, copy, el('p', 'note', 'להעלאה ל-claude.ai: מורידים את התיקייה כקובץ zip ומעלים אותו בהגדרות, באזור Skills.'));
+    // safety
+    const safe = section('בדיקת בטיחות');
+    if (s.flags.length) {
+      const ul = el('ul', `flags ${s.risk}`);
+      for (const f of s.flags) { const li = el('li'); li.append(el('strong', null, FLAG_LABELS[f] || f), el('span', null, FLAG_HELP[f] || '')); ul.append(li); }
+      safe.append(ul);
+    } else safe.append(el('p', 'note', 'בבדיקה הסטטית לא נמצאו סימנים חשודים. זה לא אישור שהסקיל בטוח, רק שלא נמצא משהו שמצריך תשומת לב.'));
+    // files (filled from the repo detail file)
+    const files = section('קבצים בתיקייה');
+    files.append(el('p', 'note', 'טוען…'));
+    // siblings in the same repo
+    const same = data.skills.filter((x) => x.repo === s.repo && x.id !== s.id);
+    const more = section(`עוד מ-${s.repo.split('/')[1]}`);
+    if (same.length) {
+      const ul = el('ul', 'same');
+      for (const x of same.slice(0, 10)) { const a = el('a', null, x.name); a.href = skillHref(x.id); a.dir = 'ltr'; const li = el('li'); li.append(a); ul.append(li); }
+      more.append(ul);
+      if (same.length > 10) more.append(el('p', 'note', `ועוד ${same.length - 10} סקילים בריפו הזה.`));
+    }
+    aside.append(inst, safe, files);
+    if (same.length) aside.append(more);
+    const gh = el('a', 'gh', 'פתיחת התיקייה בגיטהאב');
+    gh.href = s.url; gh.target = '_blank'; gh.rel = 'noopener';
+    aside.append(gh);
+
+    grid.append(file, aside);
+    box.append(grid);
+
+    // details: full description + file list
+    const shard = `data/repos/${s.repo.toLowerCase().replace('/', '__')}.json`;
+    const detailP = fetch(shard).then((r) => (r.ok ? r.json() : null)).catch(() => null);
+    detailP.then((d) => {
+      if (token !== skillToken) return;
+      const info = d?.skills?.[s.path];
+      files.lastChild.remove();
+      files.querySelector('h2').textContent = `קבצים בתיקייה${info ? ` (${info.fileCount})` : ''}`;
+      if (!info?.files?.length) {
+        // A count without a list means the data predates file lists; the next daily run fills them in.
+        const onlySkillMd = info && info.fileCount <= 1;
+        files.append(el('p', 'note', onlySkillMd ? 'רק SKILL.md.' : 'רשימת הקבצים תופיע אחרי העדכון היומי הבא.'));
+        return;
+      }
+      const ul = el('ul', 'files');
+      for (const f of info.files) {
+        const a = el('a', null, f); a.href = blobUrl(s, f); a.target = '_blank'; a.rel = 'noopener'; a.dir = 'ltr';
+        const li = el('li'); li.append(a); ul.append(li);
+      }
+      files.append(ul);
+      if (info.fileCount > info.files.length) files.append(el('p', 'note', `ועוד ${info.fileCount - info.files.length} בגיטהאב.`));
+    });
+
+    // the SKILL.md itself, live from GitHub
+    detailP
+      .then((d) => fetch(rawUrl(s, d?.skills?.[s.path]?.file || 'SKILL.md')))
+      .then((r) => (r.ok ? r.text() : Promise.reject(new Error(r.status))))
+      .then((text) => {
+        if (token !== skillToken) return;
+        body.textContent = '';
+        body.append(SkillMd.render(text, blobUrl(s, '')));
+      })
+      .catch(() => detailP.then((d) => {
+        if (token !== skillToken) return;
+        body.textContent = '';
+        const p = el('p', 'desc-full', d?.skills?.[s.path]?.description || s.description);
+        p.dir = 'auto';
+        const a = el('a', null, 'לקובץ בגיטהאב');
+        a.href = blobUrl(s, 'SKILL.md'); a.target = '_blank'; a.rel = 'noopener';
+        const note = el('p', 'note', 'לא הצלחתי לטעון את הקובץ עכשיו. זה התיאור שלו מהאינדקס. ');
+        note.append(a);
+        body.append(note, p);
+      }));
+  }
+
   function setCat(id) { state.cat = id; state.limit = PAGE; render(); }
 
   // ---------- wiring ----------
@@ -347,11 +542,18 @@
     $(id).checked = state[key];
     $(id).onchange = (e) => { state[key] = e.target.checked; state.limit = PAGE; render(); };
   }
-  window.addEventListener('hashchange', () => { readHash(); render(); });
+  window.addEventListener('hashchange', () => {
+    const wasSkill = !!state.skill;
+    if (!wasSkill) listScroll = scrollY;
+    readHash();
+    render();
+    if (state.skill) scrollTo(0, 0);
+    else if (wasSkill) requestAnimationFrame(() => scrollTo(0, listScroll));
+  });
 
   readHash();
   Promise.all([
-    fetch('data/skills.json', { cache: 'no-cache' }).then((r) => (r.ok ? r.json() : data)),
+    fetch('data/index.json', { cache: 'no-cache' }).then((r) => (r.ok ? r.json() : null)).then((ix) => (ix ? expand(ix) : data)),
     fetch('data/buzz.json', { cache: 'no-cache' }).then((r) => (r.ok ? r.json() : { items: [] })).catch(() => ({ items: [] })),
   ])
     .then(([d, b]) => {

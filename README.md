@@ -16,7 +16,9 @@ GitHub Actions (כל יום ב-03:17 UTC)
         ↓  לכל ריפו: איתור כל קבצי SKILL.md וקריאת ה-frontmatter
         ↓  תיוג לפי נושאים (config/categories.json) + סימני סיכון סטטיים
         ↓  שמירת היסטוריית כוכבים ← חישוב "+כוכבים השבוע"
-  site/data/skills.json  ←  האתר הסטטי טוען את הקובץ ומחפש בדפדפן
+  site/data/index.json        ←  אינדקס קומפקטי: האתר טוען אותו ומחפש בדפדפן
+  site/data/repos/<repo>.json ←  פרטים מלאים לכל ריפו, נטען רק בעמוד של סקיל
+  site/data/hot.json          ←  רשימות קריאות (חמים, פופולריים, חדשים) לכלים חיצוניים
 ```
 
 | קובץ | תפקיד |
@@ -67,13 +69,36 @@ GitHub Actions (כל יום ב-03:17 UTC)
   npm run serve                            # http://localhost:8000
   ```
 
-## חיבור לסקיל github-skill-scout
+## עמוד לכל סקיל
 
-הסקיל הקיים יכול להשתמש באינדקס במקום לחפש בגיטהאב מחדש בכל פעם:
+לחיצה על שם של סקיל פותחת עמוד משלו, עם כתובת שאפשר לשתף (`#s=owner/repo/path`). בעמוד מוצגים:
+- ה-SKILL.md עצמו, שנטען בזמן אמת מגיטהאב. ה-frontmatter מוצג כמו בקובץ, וכל HTML שבקובץ מוצג כטקסט ולא מורץ.
+- פקודת התקנה ל-Claude Code.
+- הסבר על כל סימן סיכון.
+- רשימת הקבצים בתיקייה.
+- סקילים נוספים מאותו ריפו.
+
+## פורמט הנתונים (index.json, גרסה 2)
+
+כדי שהקובץ יהיה קטן, כל ריפו נשמר פעם אחת וכל סקיל מצביע עליו:
 
 ```
-https://<user>.github.io/sklaude/data/skills.json
+repos:  [full_name, stars, delta7, branch, updated, license, official(0/1), trendEstimated(0/1)]
+skills: [repoIdx, path, name ("" = כמו שם התיקייה), description (עד 200 תווים), [categoryIdx…], flagBits, risk(l/m/h/u), added, copies?]
+flags:  סדר הביטים של flagBits
 ```
 
-כל רשומה כוללת `name`, `description`, `repo`, `path`, `url`, `stars`, `delta7` (כוכבים בשבוע), `categories`, `risk` ו-`flags`.
-הסקיל יכול לקרוא את הקובץ, לסנן לפי מה שהמשתמש ביקש, ואז להמשיך לבדיקת הבטיחות ולהתקנה כרגיל.
+התיאור המלא ורשימת הקבצים נמצאים ב-`data/repos/<owner>__<repo>.json`.
+
+## הסקיל github-skill-scout
+
+בתיקייה `integrations/github-skill-scout/` יש גרסה של הסקיל שמחפשת קודם באינדקס של האתר, במקום לחפש בגיטהאב בכל פעם:
+
+```bash
+python3 scripts/radar.py search "pdf form fill"   # חיפוש (מילים באנגלית)
+python3 scripts/radar.py hot                      # הכי חמים השבוע
+python3 scripts/radar.py show owner/repo/path     # פרטים מלאים ורשימת קבצים
+```
+
+הסקריפט משתמש רק בספרייה הסטנדרטית של Python. שלבי הבדיקה וההתקנה של הסקיל לא השתנו.
+להתקנה: לדחוס את התיקייה ל-zip ולהעלות אותה בהגדרות של claude.ai, באזור Skills, במקום הגרסה הקודמת.

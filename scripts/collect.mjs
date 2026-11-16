@@ -8,6 +8,7 @@ import { fileURLToPath } from 'node:url';
 import { searchRepos, searchCode, getRepo, getTree, rawFile, fetchText, pMap, stats, rate } from './lib/github.mjs';
 import { parseFrontmatter } from './lib/frontmatter.mjs';
 import { buildClassifier, safetySignals, normalizeKey } from './lib/analyze.mjs';
+import { publish } from './lib/publish.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const QUICK = process.env.QUICK === '1';
@@ -198,7 +199,10 @@ const slimMeta = (m) => ({
   default_branch: m.default_branch, pushed_at: m.pushed_at, created_at: m.created_at,
   license: m.license ? { spdx_id: m.license.spdx_id } : null, fork: m.fork, archived: m.archived,
 });
-const nextState = { repos: {}, meta: Object.fromEntries([...candidates.values()].filter((c) => c.meta).map((c) => [c.name.toLowerCase(), slimMeta(c.meta)])) };
+// Bump when the per-skill cache shape changes; older caches are rescanned once.
+const STATE_VERSION = 2;
+const cacheValid = state.version === STATE_VERSION;
+const nextState = { version: STATE_VERSION, repos: {}, meta: Object.fromEntries([...candidates.values()].filter((c) => c.meta).map((c) => [c.name.toLowerCase(), slimMeta(c.meta)])) };
 let reused = 0;
 let deferred = 0;
 let codeFallbacks = QUICK ? 8 : 20;
@@ -206,7 +210,7 @@ const repoSkills = await pMap(repos, async (c) => {
   const m = c.meta;
   const full = m.full_name;
   const prev = state.repos[full];
-  if (prev && prev.pushedAt === m.pushed_at && Array.isArray(prev.skills)) {
+  if (cacheValid && prev && prev.pushedAt === m.pushed_at && Array.isArray(prev.skills)) {
     reused++;
     nextState.repos[full] = prev;
     return prev.skills;
@@ -249,6 +253,8 @@ const repoSkills = await pMap(repos, async (c) => {
       description: description.slice(0, 600),
       path: dir,
       files: siblings.length,
+      fileList: siblings.slice(0, 60),
+      file: posix.basename(path) !== 'SKILL.md' ? posix.basename(path) : undefined,
       flags,
       risk,
       license: data.license ? String(data.license).slice(0, 40) : undefined,
@@ -310,9 +316,11 @@ repos.forEach((c, i) => {
       flags: s.flags,
       risk: s.risk,
       files: s.files,
+      fileList: s.fileList,
+      file: s.file,
       license: s.license || m.license?.spdx_id || undefined,
+      repoLicense: m.license?.spdx_id && m.license.spdx_id !== 'NOASSERTION' ? m.license.spdx_id : undefined,
       official: /^anthropics\//i.test(m.full_name) || undefined,
-      sources: [...c.sources],
       added: state.firstSeen?.[`${m.full_name}/${s.path}`] || today,
       updated: (m.pushed_at || '').slice(0, 10),
     };
@@ -349,7 +357,8 @@ const output = {
 };
 
 if (!QUICK || process.env.WRITE === '1') {
-  await writeJson('site/data/skills.json', output, { linePerItem: 'skills' });
+  const pub = await publish(ROOT, output);
+  console.log(`  published index: ${pub.skills} skills, ${pub.repos} repos, ${pub.shards} detail files`);
   await writeJson('site/data/buzz.json', { generatedAt: output.generatedAt, items: buzz.slice(0, 60) });
   await writeJson('data/state.json', nextState);
   await writeJson('data/stars-history.json', nextHistory);

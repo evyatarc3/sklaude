@@ -48,14 +48,20 @@ jobs:
         run: |
           git config user.name "skills-radar-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add site/data data
-          if git diff --cached --quiet; then
-            echo "No data changes"
-          else
-            git commit -m "data: daily skills update $(date -u +%F)"
-            git pull --rebase --autostash || true
-            git push
-          fi
+          # Build the commit on top of the branch as it is *now* (other runs, code pushes or
+          # accepted submissions may have landed meanwhile) and stage only files this run produced,
+          # so fresh data wins without reverting anything else. Retry if the branch moves again.
+          BRANCH="${GITHUB_REF_NAME}"
+          for attempt in 1 2 3; do
+            git fetch -q origin "$BRANCH"
+            git reset -q FETCH_HEAD
+            git add -A site/data data/state.json data/stars-history.json
+            if git diff --cached --quiet; then echo "No data changes"; exit 0; fi
+            git commit -qm "data: daily skills update $(date -u +%F)"
+            if git push origin "HEAD:$BRANCH"; then exit 0; fi
+            echo "Push rejected (branch moved), retrying"; sleep $((attempt * 5))
+          done
+          exit 1
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
