@@ -1,0 +1,1 @@
+{"repo":"multica-ai/andrej-karpathy-skills","branch":"main","skills":{"skills/karpathy-guidelines":{"description":"Behavioral guidelines to reduce common LLM coding mistakes. Use when writing, reviewing, or refactoring code to avoid overcomplication, make surgical changes, surface assumptions, and define verifiable success criteria.","files":[],"fileCount":1,"license":"MIT"}}}

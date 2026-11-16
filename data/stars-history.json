@@ -1,54 +1,54 @@
 {
   "morluto/rea": {
-    "2026-11-16": 462281
+    "2026-11-16": 462298
   },
   "mattpocock/skills": {
-    "2026-11-16": 325314
+    "2026-11-16": 325319
   },
   "obra/superpowers": {
-    "2026-11-16": 318136
+    "2026-11-16": 318140
   },
   "affaan-m/ECC": {
-    "2026-11-16": 303922
+    "2026-11-16": 303926
   },
   "multica-ai/andrej-karpathy-skills": {
-    "2026-11-16": 233505
+    "2026-11-16": 233506
   },
   "anthropics/skills": {
-    "2026-11-16": 195467
+    "2026-11-16": 195473
   },
   "anthropics/claude-code": {
     "2026-11-16": 155808
   },
   "nextlevelbuilder/ui-ux-pro-max-skill": {
-    "2026-11-16": 150023
+    "2026-11-16": 150025
   },
   "garrytan/gstack": {
-    "2026-11-16": 141718
+    "2026-11-16": 141719
   },
   "JuliusBrussee/caveman": {
-    "2026-11-16": 120507
+    "2026-11-16": 120508
   },
   "thedotmack/claude-mem": {
-    "2026-11-16": 117423
+    "2026-11-16": 117429
   },
   "Leonxlnx/taste-skill": {
-    "2026-11-16": 116327
+    "2026-11-16": 116332
   },
   "Panniantong/Agent-Reach": {
-    "2026-11-16": 112118
+    "2026-11-16": 112120
   },
   "tt-a1i/archify": {
-    "2026-11-16": 96875
+    "2026-11-16": 96879
   },
   "Egonex-AI/Understand-Anything": {
-    "2026-11-16": 92753
+    "2026-11-16": 92754
   },
   "heygen-com/hyperframes": {
-    "2026-11-16": 84823
+    "2026-11-16": 84828
   },
   "career-ops-hq/career-ops": {
-    "2026-11-16": 82813
+    "2026-11-16": 82814
   },
   "shareAI-lab/learn-claude-code": {
     "2026-11-16": 80453
@@ -57,49 +57,49 @@
     "2026-11-16": 79593
   },
   "tw93/Mole": {
-    "2026-11-16": 75208
+    "2026-11-16": 75210
   },
   "cloudflare/security-audit-skill": {
-    "2026-11-16": 73329
+    "2026-11-16": 73334
   },
   "blader/humanizer": {
-    "2026-11-16": 69534
+    "2026-11-16": 69542
   },
   "mvanhorn/last30days-skill": {
-    "2026-11-16": 67796
+    "2026-11-16": 67797
   },
   "cathrynlavery/diagram-design": {
     "2026-11-16": 67431
   },
   "coreyhaines31/marketingskills": {
-    "2026-11-16": 60621
+    "2026-11-16": 60625
   },
   "K-Dense-AI/scientific-agent-skills": {
-    "2026-11-16": 57338
+    "2026-11-16": 57340
   },
   "anthropics/claude-cookbooks": {
     "2026-11-16": 54733
   },
   "anthropics/claude-plugins-official": {
-    "2026-11-16": 47408
+    "2026-11-16": 47409
   },
   "luongnv89/claude-howto": {
     "2026-11-16": 47267
   },
   "VoltAgent/awesome-agent-skills": {
-    "2026-11-16": 37220
+    "2026-11-16": 37221
   },
   "mukul975/Anthropic-Cybersecurity-Skills": {
     "2026-11-16": 36208
   },
   "vercel-labs/agent-skills": {
-    "2026-11-16": 34138
+    "2026-11-16": 34140
   },
   "zarazhangrui/frontend-slides": {
-    "2026-11-16": 32370
+    "2026-11-16": 32371
   },
   "AgriciDaniel/claude-seo": {
-    "2026-11-16": 29770
+    "2026-11-16": 29772
   },
   "jarrodwatts/claude-hud": {
     "2026-11-16": 29211
@@ -108,7 +108,7 @@
     "2026-11-16": 28022
   },
   "NVIDIA/SkillSpector": {
-    "2026-11-16": 26264
+    "2026-11-16": 26266
   },
   "EveryInc/compound-engineering-plugin": {
     "2026-11-16": 26113
@@ -117,7 +117,7 @@
     "2026-11-16": 24656
   },
   "google/skills": {
-    "2026-11-16": 24340
+    "2026-11-16": 24341
   },
   "SuperClaude-Org/SuperClaude_Framework": {
     "2026-11-16": 23937
@@ -132,10 +132,10 @@
     "2026-11-16": 19848
   },
   "ccusage/ccusage": {
-    "2026-11-16": 19447
+    "2026-11-16": 19446
   },
   "wanshuiyin/Auto-claude-code-research-in-sleep": {
-    "2026-11-16": 19259
+    "2026-11-16": 19260
   },
   "muratcankoylan/Agent-Skills-for-Context-Engineering": {
     "2026-11-16": 18355
@@ -168,7 +168,7 @@
     "2026-11-16": 12380
   },
   "backnotprop/plannotator": {
-    "2026-11-16": 11980
+    "2026-11-16": 11985
   },
   "getagentseal/codeburn": {
     "2026-11-16": 11821
@@ -240,10 +240,10 @@
     "2026-11-16": 6651
   },
   "ScrapeCreators/social-media-research-skills": {
-    "2026-11-16": 6536
+    "2026-11-16": 6538
   },
   "VoltAgent/awesome-codex-subagents": {
-    "2026-11-16": 6479
+    "2026-11-16": 6480
   },
   "wiltodelta/remove-ai-watermarks": {
     "2026-11-16": 6403
@@ -252,7 +252,7 @@
     "2026-11-16": 6359
   },
   "QingYunA/answer-me-with-html": {
-    "2026-11-16": 6347
+    "2026-11-16": 6348
   },
   "sergebulaev/linkedin-skills": {
     "2026-11-16": 5940
@@ -270,7 +270,7 @@
     "2026-11-16": 4710
   },
   "michael-denyer/pstack-claude": {
-    "2026-11-16": 4356
+    "2026-11-16": 4357
   },
   "CloudAI-X/threejs-skills": {
     "2026-11-16": 4215
@@ -443,11 +443,11 @@
   "antvis/AVA": {
     "2026-11-16": 1637
   },
+  "iart-ai/motion-skills": {
+    "2026-11-16": 1611
+  },
   "dyoshikawa/rulesync": {
     "2026-11-16": 1610
-  },
-  "iart-ai/motion-skills": {
-    "2026-11-16": 1608
   },
   "ajnart/self-host": {
     "2026-11-16": 1593
@@ -477,7 +477,7 @@
     "2026-11-16": 1444
   },
   "nexscope-ai/eCommerce-Skills": {
-    "2026-11-16": 1425
+    "2026-11-16": 1426
   },
   "BehiSecc/VibeSec-Skill": {
     "2026-11-16": 1422
@@ -1406,11 +1406,11 @@
   "eduardo-sl/go-agent-skills": {
     "2026-11-16": 89
   },
-  "humanpen/humanpen-skill": {
+  "laulauraluo/ai-code-review-triage": {
     "2026-11-16": 88
   },
-  "laulauraluo/ai-code-review-triage": {
-    "2026-11-16": 87
+  "humanpen/humanpen-skill": {
+    "2026-11-16": 88
   },
   "vmware-skills/VMware-AIops": {
     "2026-11-16": 87

@@ -1,0 +1,1 @@
+{"repo":"jarrodwatts/claude-hud","branch":"main","skills":{"skills/hud":{"description":"Set up, check, change, preview, or report a problem with the claude-hud status line. Use when the user mentions the HUD or status line, wants something shown or hidden below the input, says it is blank, broken or wrong, or sees \"Type /hud to fix it\".","files":[],"fileCount":1}}}

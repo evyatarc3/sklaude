@@ -1,0 +1,1 @@
+{"repo":"agentrhq/webcmd","branch":"main","skills":{"skills/webcmd-browser":{"description":"Use when a live browser task requires Playwright interaction, authenticated handoff, visible UI verification, or ad-hoc page inspection.","files":[],"fileCount":5}}}

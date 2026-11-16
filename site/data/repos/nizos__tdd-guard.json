@@ -1,0 +1,1 @@
+{"repo":"nizos/tdd-guard","branch":"main","skills":{"plugin/skills/setup":{"description":"Set up or update TDD Guard for the current project. Detects the test framework, installs or updates the matching reporter, and configures or migrates its configuration to match the current specification.","files":[],"fileCount":1}}}

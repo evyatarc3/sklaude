@@ -1,0 +1,1 @@
+{"repo":"jthack/ffuf_claude_skill","branch":"main","skills":{"ffuf-skill":{"description":"Expert guidance for ffuf web fuzzing during penetration testing, including authenticated fuzzing with raw requests, auto-calibration, and result analysis","files":[],"fileCount":4}}}

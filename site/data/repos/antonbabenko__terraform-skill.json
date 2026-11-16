@@ -1,0 +1,1 @@
+{"repo":"antonbabenko/terraform-skill","branch":"master","skills":{"skills/terraform-skill":{"description":"Use when writing, reviewing, or debugging Terraform/OpenTofu modules, tests, CI, scans, or state ops - diagnoses failure mode (identity churn, secrets, blast radius, CI drift, state corruption) with version-aware guards.","files":[],"fileCount":9,"license":"Apache-2.0"}}}

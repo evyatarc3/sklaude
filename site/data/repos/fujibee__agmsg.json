@@ -1,0 +1,1 @@
+{"repo":"fujibee/agmsg","branch":"main","skills":{"":{"description":"Cross-agent messaging via SQLite. Send messages between Claude Code, Codex, Gemini CLI, and other agents. No network, no dependencies beyond bash and sqlite3, and no daemon required (the optional agmsgd is a local resident service).","files":[],"fileCount":22}}}

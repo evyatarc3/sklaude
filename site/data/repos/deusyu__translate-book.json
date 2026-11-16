@@ -1,0 +1,1 @@
+{"repo":"deusyu/translate-book","branch":"main","skills":{"":{"description":"Translate books (PDF/DOCX/EPUB) into any language using parallel sub-agents. Converts input -> Markdown chunks -> translated chunks -> HTML/DOCX/EPUB/PDF.","files":[],"fileCount":9}}}

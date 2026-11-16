@@ -1,0 +1,1 @@
+{"repo":"agentward-ai/agentward","branch":"main","skills":{"agentward-sanitize-skill":{"description":"Detect and redact PII from text files. Supports 15 categories including credit cards, SSNs, emails, API keys, addresses, and more — with zero dependencies.","files":[],"fileCount":4,"license":"NOASSERTION"}}}

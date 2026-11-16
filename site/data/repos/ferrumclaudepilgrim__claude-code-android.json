@@ -1,0 +1,1 @@
+{"repo":"ferrumclaudepilgrim/claude-code-android","branch":"main","skills":{".claude/skills/termux-safe":{"description":"Android/Termux constraints reference. Prevents Claude Code from suggesting commands that fail silently on Android (sudo, systemd, non-Termux paths, etc.).","files":[],"fileCount":1}}}
