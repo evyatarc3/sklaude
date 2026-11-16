@@ -324,6 +324,7 @@
     copy.onclick = async () => {
       const label = copy.textContent;
       try { await navigator.clipboard.writeText(cmd); } catch { prompt('העתקה ידנית:', cmd); return; }
+      track('copy_install', { skill_id: s.id, location: 'list' });
       copy.textContent = 'הועתק';
       copy.classList.add('done');
       setTimeout(() => { copy.textContent = label; copy.classList.remove('done'); }, 1800);
@@ -362,9 +363,38 @@
     $('#more').hidden = true;
   }
 
+  // ---------- analytics (no-op unless config.js has a GA4 id) ----------
+  const track = (name, params) => window.radarTrack && window.radarTrack(name, params);
+  let lastPage = null;
+  let searchTimer;
+  let lastSearch = '';
+  /** One page view per real navigation (tab, topic, skill page), not per keystroke in the search box. */
+  function trackPage(detail) {
+    const path = detail ? `/skill/${detail.id}` : `/${state.view}${state.cat ? '/' + state.cat : ''}`;
+    if (path === lastPage) return;
+    lastPage = path;
+    track('page_view', {
+      page_title: detail ? `${detail.name} | רדאר סקילים` : 'רדאר סקילים',
+      page_location: `${location.origin}${location.pathname}#${path}`,
+      page_path: path,
+    });
+    if (detail) track('view_skill', { skill_id: detail.id, repo: detail.repo, translation: detail.he ? 'he' : 'none' });
+  }
+  /** A search is counted once the person stops typing for 1.5s. */
+  function trackSearch(count) {
+    clearTimeout(searchTimer);
+    const q = state.q.trim();
+    if (!q || q === lastSearch) return;
+    searchTimer = setTimeout(() => {
+      lastSearch = q;
+      track('search', { search_term: q.slice(0, 100), results: count, hebrew: HEB.test(q) ? 1 : 0, view: state.view });
+    }, 1500);
+  }
+
   function render() {
     writeHash();
     const detail = state.skill && byId.get(state.skill);
+    if (data.skills.length) trackPage(detail);
     document.body.classList.toggle('on-skill', !!detail);
     if (detail) return renderSkill(detail);
     document.title = 'רדאר סקילים';
@@ -378,6 +408,7 @@
     if (isBuzz) { box.classList.remove('ranked'); return renderBuzz(); }
 
     const { skills, hl, hlHe, translated, searching } = results();
+    trackSearch(skills.length);
     $('#hint').textContent = translated.length
       ? `חיפשתי גם: ${translated.slice(0, 8).join(', ')}`
       : 'אפשר לכתוב בעברית. המילים מתורגמות לאנגלית, השפה שבה הסקילים כתובים.';
@@ -468,6 +499,7 @@
     copy.type = 'button';
     copy.onclick = async () => {
       try { await navigator.clipboard.writeText(cmd); } catch { prompt('העתקה ידנית:', cmd); return; }
+      track('copy_install', { skill_id: s.id, location: 'skill_page' });
       copy.textContent = 'הועתק'; copy.classList.add('done');
       setTimeout(() => { copy.textContent = 'העתקת הפקודה'; copy.classList.remove('done'); }, 1800);
     };
@@ -563,12 +595,14 @@
     qTimer = setTimeout(() => { state.q = e.target.value.trim(); state.limit = PAGE; render(); }, 120);
   });
   document.querySelectorAll('.views button').forEach((b) => (b.onclick = () => { state.view = b.dataset.view; state.limit = PAGE; render(); }));
-  $('#more').onclick = () => { state.limit += PAGE; render(); };
+  $('#more').onclick = () => { state.limit += PAGE; track('load_more', { view: state.view, shown: state.limit + PAGE }); render(); };
+  $('#submit-link').addEventListener('click', () => track('click_submit_skill', {}));
   for (const [id, key] of [['#f-safe', 'safe'], ['#f-official', 'official'], ['#f-group', 'group'], ['#f-he', 'he']]) {
     $(id).checked = state[key];
     $(id).onchange = (e) => {
       state[key] = e.target.checked;
       if (key === 'he') store.set('radar.he', e.target.checked ? '1' : '0');
+      track('toggle_filter', { filter: key, on: e.target.checked ? 1 : 0 });
       state.limit = PAGE;
       render();
     };

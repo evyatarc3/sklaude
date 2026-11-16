@@ -107,6 +107,21 @@ python3 scripts/curate.py apply translations.json
 python3 scripts/translate.py --merge-only        # בונה מחדש את he.json ואת קובצי הפרטים
 ```
 
+## מדידת שימוש (Google Analytics)
+
+מזהה המדידה נמצא ב-`site/config.js` (השדה `gaId`, בפורמט `G-XXXXXXXXXX`). כשהשדה ריק, שום דבר לא נטען ולא נשלח.
+מעבר ל-page views נשלחים האירועים האלה:
+
+| אירוע | מתי | פרמטרים |
+|---|---|---|
+| `page_view` | מעבר בין לשוניות, נושאים ועמודי סקיל. לא נשלח על כל הקלדה בחיפוש | `page_path` (למשל `/top/docs`, `/skill/owner/repo/path`) |
+| `search` | 1.5 שניות אחרי שמפסיקים להקליד | `search_term`, `results`, `hebrew`, `view` |
+| `view_skill` | פתיחת עמוד סקיל | `skill_id`, `repo`, `translation` |
+| `copy_install` | העתקת פקודת התקנה | `skill_id`, `location` (רשימה או עמוד סקיל) |
+| `toggle_filter`, `load_more`, `click_submit_skill` | שימוש בסינונים, "עוד תוצאות" והוספת סקיל | |
+
+כדאי לכבות ב-GA את האפשרות **Page changes based on browser history events** (Admin → Data streams → Enhanced measurement), כי האתר שולח page views בעצמו.
+
 ## פורמט הנתונים (index.json, גרסה 2)
 
 כדי שהקובץ יהיה קטן, כל ריפו נשמר פעם אחת וכל סקיל מצביע עליו:
