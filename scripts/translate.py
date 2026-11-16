@@ -77,6 +77,11 @@ GLOSSARY = [
     (rf"ווים מראש[- ]התחייבות", "pre-commit hooks"),
     (rf"(?<![{HE_L}])ווים(?![{HE_L}])", "hooks"),
     (rf"תת[- ]סוכנים|סוכני משנה", "subagents"),
+    # Recurring mistranslations of tech abbreviations/terms seen in the first full run.
+    (rf"אוניברסיטת קליפורניה", "UI"),
+    (rf"(?<![{HE_L}])([בלמשו]?)יחסי ציבור(?![{HE_L}])", lambda m: f"{m[1]}{'-' if m[1] else ''}PR"),
+    (rf"(?<![{HE_L}])צורות PDF", "טפסי PDF"),
+    (rf"(?<![{HE_L}])מילוי צורות", "מילוי טפסים"),
 ]
 
 
