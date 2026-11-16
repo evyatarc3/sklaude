@@ -71,6 +71,29 @@ export async function searchRepos(q, pages = 1) {
   return out;
 }
 
+/**
+ * Repo metadata for many repos via the search API (several `repo:` qualifiers per query).
+ * Search has its own quota, so this keeps the core REST budget free for tree scans.
+ * Returns Map(lowercase full_name -> repo object). Forks and missing repos simply don't come back.
+ */
+export async function reposViaSearch(names, maxQueryLen = 240) {
+  const found = new Map();
+  let batch = [];
+  const flush = async () => {
+    if (!batch.length) return;
+    const items = await searchRepos(batch.map((n) => `repo:${n}`).join(' '), 1);
+    for (const r of items) found.set(r.full_name.toLowerCase(), r);
+    batch = [];
+  };
+  for (const n of names) {
+    const len = batch.reduce((a, b) => a + b.length + 6, 0) + n.length + 6;
+    if (len > maxQueryLen) await flush();
+    batch.push(n);
+  }
+  await flush();
+  return found;
+}
+
 export async function searchCode(q, pages = 1) {
   const out = [];
   for (let page = 1; page <= pages; page++) {

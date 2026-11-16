@@ -39,12 +39,16 @@ jobs:
               catch { await github.rest.issues.createLabel({ ...context.repo, name, color }); }
             }
 
+      # Code pushes only redeploy the site; collecting spends the hourly API budget, so it runs
+      # on the daily schedule and on manual dispatch.
       - name: Collect skills
+        if: github.event_name != 'push'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node scripts/collect.mjs
 
       - name: Commit updated data
+        if: github.event_name != 'push'
         run: |
           git config user.name "skills-radar-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

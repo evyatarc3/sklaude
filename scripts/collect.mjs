@@ -5,7 +5,7 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { dirname, join, posix } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { searchRepos, searchCode, getRepo, getTree, rawFile, fetchText, pMap, stats, rate } from './lib/github.mjs';
+import { searchRepos, searchCode, reposViaSearch, getRepo, getTree, rawFile, fetchText, pMap, stats, rate } from './lib/github.mjs';
 import { parseFrontmatter } from './lib/frontmatter.mjs';
 import { buildClassifier, safetySignals, normalizeKey } from './lib/analyze.mjs';
 import { publish } from './lib/publish.mjs';
@@ -176,12 +176,18 @@ const RESERVE = 120;
 const metaCache = state.meta || {};
 const needMeta = [...candidates.values()].filter((c) => !c.meta);
 needMeta.sort((a, b) => (metaCache[b.name.toLowerCase()]?.stargazers_count || 0) - (metaCache[a.name.toLowerCase()]?.stargazers_count || 0));
+// 1) Batch lookups through search (separate quota). 2) Single REST lookups only for what search
+// didn't return, and only while plenty of budget is left for tree scans. 3) Cached metadata.
+const viaSearch = await reposViaSearch(needMeta.slice(0, QUICK ? 30 : undefined).map((c) => c.name));
+for (const c of needMeta) c.meta = viaSearch.get(c.name.toLowerCase()) || null;
+const META_FLOOR = 500; // never spend the core budget below this on metadata
 let metaFromCache = 0;
-await pMap(needMeta, async (c) => {
-  if (!QUICK && rate.remaining > RESERVE) c.meta = await getRepo(c.name);
+let metaRest = 0;
+await pMap(needMeta.filter((c) => !c.meta), async (c) => {
+  if (!QUICK && rate.remaining > META_FLOOR) { c.meta = await getRepo(c.name); metaRest++; }
   if (!c.meta && metaCache[c.name.toLowerCase()]) { c.meta = metaCache[c.name.toLowerCase()]; metaFromCache++; }
 }, 8);
-if (metaFromCache) console.log(`  ${metaFromCache} repos used cached metadata`);
+console.log(`  metadata: ${viaSearch.size} via search, ${metaRest} via REST, ${metaFromCache} from cache`);
 
 const trusted = (c) => c.sources.has('pinned') || c.sources.has('submission') || c.sources.has('awesome-list');
 let repos = [...candidates.values()].filter(
