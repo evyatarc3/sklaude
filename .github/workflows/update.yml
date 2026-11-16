@@ -70,7 +70,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.cache/huggingface
-          key: hf-opus-mt-en-he-mul-en-v1
+          key: hf-opus-mt-en-he-mul-en-ct2-v2
 
       - name: Translate descriptions to Hebrew
         if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.translate)

@@ -67,12 +67,70 @@ def needs_pivot(s):
     return foreign >= 2 and foreign > sum(w in EN_WORDS for w in words)
 
 
+# Applied when writing outputs (not stored in the cache), so the glossary can change without retranslating.
+HE_L = "\u05d0-\u05ea"
+GLOSSARY = [
+    # "skill" is translated as "מיומנות" (an ability); on this site it's a "סקיל". Prefixes ב/ל/מ/ש are kept.
+    (rf"(?<![{HE_L}])([בלמש]?)ה?מיומנות (?:ה)?זו(?![{HE_L}])", lambda m: f"{m[1]}{'' if m[1] else 'ה'}סקיל הזה"),
+    (rf"(?<![{HE_L}])([בלמשו]?)ה?מיומנויות(?![{HE_L}])", lambda m: f"{m[1]}סקילים"),
+    (rf"(?<![{HE_L}])([בלמשו]?)(ה?)מיומנות(?![{HE_L}])", lambda m: f"{m[1]}{m[2]}סקיל"),
+    (rf"ווים מראש[- ]התחייבות", "pre-commit hooks"),
+    (rf"(?<![{HE_L}])ווים(?![{HE_L}])", "hooks"),
+    (rf"תת[- ]סוכנים|סוכני משנה", "subagents"),
+]
+
+
+def polish(he):
+    for pat, rep_ in GLOSSARY:
+        he = re.sub(pat, rep_, he)
+    return re.sub(r"\s{2,}", " ", he).strip()
+
+
+def usable(he):
+    """A translation with (almost) no Hebrew letters is a model failure; show the original instead."""
+    letters = re.findall(r"[^\W\d_]", he or "")
+    return bool(letters) and len(HEB.findall(he)) / len(letters) > 0.3
+
+
 def shorten(text, n=150):
     if len(text) <= n:
         return text
     cut = text[:n]
     sp = cut.rfind(" ")
     return cut[: sp if sp > n * 0.7 else n].rstrip(" ,.;:-") + "…"
+
+
+CT2_DIR = os.path.join(os.path.expanduser("~"), ".cache", "huggingface", "ct2")
+
+
+class CT2Translator:
+    """CTranslate2 int8 on CPU: several times faster than PyTorch generate for Marian models."""
+
+    def __init__(self, name, beams):
+        import ctranslate2
+        from transformers import AutoTokenizer
+
+        out = os.path.join(CT2_DIR, name.replace("/", "--") + "-int8")
+        if not os.path.exists(os.path.join(out, "model.bin")):
+            ctranslate2.converters.TransformersConverter(name).convert(out, quantization="int8", force=True)
+        self.tok = AutoTokenizer.from_pretrained(name)
+        self.tr = ctranslate2.Translator(out, device="cpu", intra_threads=os.cpu_count() or 4)
+        self.beams = beams
+
+    def __call__(self, batch):
+        src = [self.tok.convert_ids_to_tokens(self.tok.encode(s, truncation=True, max_length=256)) for s in batch]
+        res = self.tr.translate_batch(src, beam_size=self.beams, max_decoding_length=320, max_batch_size=64)
+        return [self.tok.decode(self.tok.convert_tokens_to_ids(r.hypotheses[0]), skip_special_tokens=True).strip() for r in res]
+
+
+def make_translator(name, beams):
+    try:
+        t = CT2Translator(name, beams)
+        print(f"engine: CTranslate2 int8 ({name})")
+        return t
+    except Exception as e:  # noqa: BLE001 - any failure falls back to the slower but known-good path
+        print(f"engine: PyTorch ({name}); CTranslate2 unavailable: {e}")
+        return Translator(name, beams)
 
 
 class Translator:
@@ -96,7 +154,7 @@ class Translator:
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--max-minutes", type=float, default=45)
-    ap.add_argument("--batch", type=int, default=24)
+    ap.add_argument("--batch", type=int, default=32)
     ap.add_argument("--beams", type=int, default=2)
     a = ap.parse_args()
     t0 = time.time()
@@ -142,23 +200,29 @@ def main():
     deadline = t0 + a.max_minutes * 60
     done = 0
     if todo:
-        en_he = Translator("Helsinki-NLP/opus-mt-en-he", a.beams)
+        en_he = make_translator("Helsinki-NLP/opus-mt-en-he", a.beams)
         pivot = [s for s in todo if needs_pivot(s)]
         direct = [s for s in todo if not needs_pivot(s)]
-        mul_en = Translator("Helsinki-NLP/opus-mt-mul-en", a.beams) if pivot else None
-        # Keep priority order inside each group; pivot group is small, do it first.
+        mul_en = make_translator("Helsinki-NLP/opus-mt-mul-en", a.beams) if pivot else None
+        t_start = time.time()
+        # Priority order is kept at chunk level; inside a chunk, sentences are sorted by length so
+        # each batch pads to similar lengths (padding was most of the work before).
+        chunk = a.batch * 16
         for group, two_step in ((pivot, True), (direct, False)):
-            for i in range(0, len(group), a.batch):
+            for c in range(0, len(group), chunk):
                 if time.time() > deadline:
                     break
-                batch = group[i : i + a.batch]
-                src = mul_en(batch) if two_step else batch
-                for s, he in zip(batch, en_he(src)):
-                    cache[key(s)] = he
-                done += len(batch)
-                if done % (a.batch * 20) == 0:
-                    rate = done / max(1, time.time() - t0)
-                    print(f"  {done}/{len(todo)} sentences ({rate:.1f}/s)", flush=True)
+                part = sorted(group[c : c + chunk], key=len)
+                for i in range(0, len(part), a.batch):
+                    if time.time() > deadline:
+                        break
+                    batch = part[i : i + a.batch]
+                    src = mul_en(batch) if two_step else batch
+                    for s, he in zip(batch, en_he(src)):
+                        cache[key(s)] = he if usable(he) else ""  # "" = keep the original sentence
+                    done += len(batch)
+                rate = done / max(1, time.time() - t_start)
+                print(f"  {done}/{len(todo)} sentences ({rate:.1f}/s)", flush=True)
     print(f"translated {done} sentences in {(time.time() - t0) / 60:.1f} min; {len(todo) - done} left for next run")
 
     # Cache: one entry per line keeps git diffs small.
@@ -166,9 +230,18 @@ def main():
         f.write("{\n" + ",\n".join(f"{json.dumps(k)}:{json.dumps(v, ensure_ascii=False)}" for k, v in sorted(cache.items())) + "\n}\n")
 
     def hebrew(text):
+        """Full Hebrew text, or None while any sentence is still untranslated.
+        Sentences the model failed on ("" or no Hebrew) stay in the original language."""
         parts = sentences(text)
-        out = [cache.get(key(s)) for s in parts]
-        return " ".join(out) if parts and all(out) else None
+        out = []
+        for s in parts:
+            v = cache.get(key(s))
+            if v is None:
+                return None
+            out.append(v if usable(v) else s)
+        if not parts or not any(usable(v) for v in out):
+            return None
+        return polish(" ".join(out))
 
     short, full_by_skill, complete = [], {}, 0
     for _, text, repo, path in entries:
