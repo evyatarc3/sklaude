@@ -74,6 +74,9 @@ jobs:
 
       - name: Translate descriptions to Hebrew
         if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.translate)
+        # A translation failure must not block saving the collected data or deploying the site.
+        continue-on-error: true
+        timeout-minutes: 60
         run: |
           pip install -q torch==2.5.1 --index-url https://download.pytorch.org/whl/cpu
           pip install -q -r scripts/requirements-translate.txt
