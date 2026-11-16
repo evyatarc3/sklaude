@@ -1,1 +1,1 @@
-{"repo":"Johell1NS/browser-search","branch":"master","skills":{"":{"description":"Multi-engine web search (SearXNG) + browsing/scraping (Camofox, CloakBrowser). Use whenever you need to do web research.","files":[],"fileCount":8}}}
+{"repo":"Johell1NS/browser-search","branch":"master","skills":{"":{"description":"Multi-engine web search (SearXNG) + browsing/scraping (Camofox, CloakBrowser). Use whenever you need to do web research.","files":[".gitignore",".npmrc","FAQ.md","LICENSE","README.md","SKILL.md","package-lock.json","package.json"],"fileCount":8}}}

@@ -1,1 +1,1 @@
-{"repo":"ykdojo/paper-search","branch":"main","skills":{"skills/paper-search":{"description":"Search for academic papers by keyword, or look up a specific paper by DOI or OpenAlex ID. Powered by OpenAlex (250M+ works, free, no API key).","files":[],"fileCount":1}}}
+{"repo":"ykdojo/paper-search","branch":"main","skills":{"skills/paper-search":{"description":"Search for academic papers by keyword, or look up a specific paper by DOI or OpenAlex ID. Powered by OpenAlex (250M+ works, free, no API key).","files":["SKILL.md"],"fileCount":1}}}

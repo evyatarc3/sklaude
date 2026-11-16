@@ -1,1 +1,1 @@
-{"repo":"simple10/agents-observe","branch":"main","skills":{"skills/observe":{"description":"Agents Observe dashboard and server management","files":[],"fileCount":2}}}
+{"repo":"simple10/agents-observe","branch":"main","skills":{"skills/observe":{"description":"Agents Observe dashboard and server management","files":["SKILL.md","scripts/cli.sh"],"fileCount":2}}}

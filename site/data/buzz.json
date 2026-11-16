@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T04:41:35.622Z",
+  "generatedAt": "2026-11-16T05:39:23.115Z",
   "items": [
     {
       "title": "Socratic Tutor",
@@ -359,6 +359,15 @@
       "points": 3,
       "comments": 0,
       "date": "2026-10-23",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Show HN: Althar – an open-source IDE where agents review each other's work",
+      "url": "https://github.com/AltharIDE/althar",
+      "discussion": "https://news.ycombinator.com/item?id=50507285",
+      "points": 3,
+      "comments": 1,
+      "date": "2026-11-15",
       "source": "Hacker News"
     },
     {

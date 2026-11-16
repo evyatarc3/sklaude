@@ -1,1 +1,1 @@
-{"repo":"aannoo/hcom","branch":"main","skills":{"skills/hcom-agent-messaging":{"description":"Multi-agent communication for AI coding tools. Agents message, watch, and spawn each other across terminals. Use when setting up hcom or troubleshooting.","files":[],"fileCount":1}}}
+{"repo":"aannoo/hcom","branch":"main","skills":{"skills/hcom-agent-messaging":{"description":"Multi-agent communication for AI coding tools. Agents message, watch, and spawn each other across terminals. Use when setting up hcom or troubleshooting.","files":["SKILL.md"],"fileCount":1}}}
