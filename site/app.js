@@ -361,7 +361,8 @@
       const st = d.stats || {};
       const when = d.generatedAt ? new Date(d.generatedAt).toLocaleDateString('he-IL', { day: 'numeric', month: 'long' }) : null;
       $('#sub').textContent = `${(st.skills || 0).toLocaleString('he-IL')} סקילים מ-${(st.repos || 0).toLocaleString('he-IL')} ריפואים.` +
-        (when ? ` עודכן ב-${when}.` : '') + (st.newThisWeek ? ` ${st.newThisWeek} נוספו השבוע.` : '');
+        (when ? ` עודכן ב-${when}.` : '') + // On the first run everything is "new", which says nothing; show it only once there's a baseline.
+        (st.newThisWeek && st.newThisWeek < st.skills ? ` ${st.newThisWeek.toLocaleString('he-IL')} נוספו השבוע.` : '');
       render();
     })
     .catch(() => {
