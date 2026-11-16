@@ -1,0 +1,76 @@
+name: Accept skill submission
+
+# Runs only when someone with triage rights adds the "approved" label to a submission issue.
+on:
+  issues:
+    types: [labeled]
+
+permissions:
+  contents: write
+  issues: write
+  actions: write
+
+jobs:
+  accept:
+    if: github.event.label.name == 'approved' && contains(github.event.issue.labels.*.name, 'skill-submission')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Issue text is untrusted: it is parsed in JS and never interpolated into a shell command.
+      - name: Add submission to data/submissions.json
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const body = context.payload.issue.body || '';
+            const field = (label) => {
+              const re = new RegExp(`###\\s*${label}[^\\n]*\\n+([\\s\\S]*?)(?=\\n###\\s|$)`);
+              const v = (body.match(re)?.[1] || '').trim();
+              return v === '_No response_' ? '' : v;
+            };
+            const url = field('קישור');
+            if (!/^https?:\/\/[^\s]+$/.test(url)) {
+              core.setFailed(`Invalid URL: ${url}`);
+              return;
+            }
+            const file = 'data/submissions.json';
+            const list = JSON.parse(fs.readFileSync(file, 'utf8'));
+            if (list.some((s) => s.url === url)) {
+              core.info('Already listed');
+            } else {
+              list.push({
+                url,
+                name: field('שם הסקיל').slice(0, 80) || undefined,
+                description: field('תיאור').slice(0, 600) || undefined,
+                tags: field('מילות מפתח').split(',').map((t) => t.trim()).filter(Boolean).slice(0, 10),
+                issue: context.payload.issue.number,
+                date: new Date().toISOString().slice(0, 10),
+              });
+              fs.writeFileSync(file, JSON.stringify(list, null, 2) + '\n');
+            }
+
+      - name: Commit
+        run: |
+          git config user.name "skills-radar-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/submissions.json
+          git diff --cached --quiet || (git commit -m "data: add submission from issue #${{ github.event.issue.number }}" && git push)
+
+      # Commits pushed with GITHUB_TOKEN don't trigger workflows, so start the update explicitly.
+      - name: Trigger site update and close issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner, repo: context.repo.repo,
+              workflow_id: 'update.yml', ref: context.payload.repository.default_branch,
+            });
+            await github.rest.issues.createComment({
+              owner: context.repo.owner, repo: context.repo.repo, issue_number: context.payload.issue.number,
+              body: 'תודה! הסקיל נוסף ויופיע באתר אחרי העדכון הבא (כמה דקות). / Added, it will appear after the next update.',
+            });
+            await github.rest.issues.update({
+              owner: context.repo.owner, repo: context.repo.repo, issue_number: context.payload.issue.number,
+              state: 'closed', state_reason: 'completed',
+            });

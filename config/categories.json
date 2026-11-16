@@ -1,0 +1,454 @@
+{
+  "_comment": "Rule-based topic tagging. A skill gets a category when its name/description/path/repo topics contain one of the keywords (whole-word, case-insensitive). 'he' keywords make Hebrew search work. Order = display order.",
+  "categories": [
+    {
+      "id": "dev",
+      "label": "פיתוח ותכנות",
+      "keywords": [
+        "coding",
+        "refactor",
+        "debug",
+        "debugging",
+        "typescript",
+        "javascript",
+        "python",
+        "rust",
+        "golang",
+        "java",
+        "react",
+        "nextjs",
+        "git",
+        "github",
+        "pull request",
+        "code review",
+        "lint",
+        "compiler",
+        "backend",
+        "programming",
+        "source code",
+        "codebase"
+      ],
+      "he": [
+        "קוד",
+        "תכנות",
+        "פיתוח",
+        "באג"
+      ]
+    },
+    {
+      "id": "frontend",
+      "label": "עיצוב ופרונטאנד",
+      "keywords": [
+        "ui",
+        "ux",
+        "design",
+        "frontend",
+        "css",
+        "tailwind",
+        "figma",
+        "landing page",
+        "website",
+        "web design",
+        "brand",
+        "branding",
+        "typography"
+      ],
+      "he": [
+        "עיצוב",
+        "אתר",
+        "ממשק",
+        "מיתוג"
+      ]
+    },
+    {
+      "id": "docs",
+      "label": "מסמכים ומשרד",
+      "keywords": [
+        "pdf",
+        "docx",
+        "word",
+        "excel",
+        "xlsx",
+        "spreadsheet",
+        "pptx",
+        "powerpoint",
+        "slides",
+        "presentation",
+        "document",
+        "documents",
+        "google docs",
+        "google sheets",
+        "markdown",
+        "invoice"
+      ],
+      "he": [
+        "מסמך",
+        "מסמכים",
+        "מצגת",
+        "אקסל",
+        "וורד",
+        "גיליון"
+      ]
+    },
+    {
+      "id": "data",
+      "label": "דאטה ואנליטיקה",
+      "keywords": [
+        "dataset",
+        "sql",
+        "database",
+        "analytics",
+        "dashboard",
+        "visualization",
+        "chart",
+        "charts",
+        "pandas",
+        "statistics",
+        "statistical",
+        "bigquery",
+        "snowflake",
+        "csv",
+        "etl",
+        "spss"
+      ],
+      "he": [
+        "נתונים",
+        "דאטה",
+        "סטטיסטיקה",
+        "גרף",
+        "ניתוח"
+      ]
+    },
+    {
+      "id": "ai",
+      "label": "AI וסוכנים",
+      "keywords": [
+        "llm",
+        "prompt",
+        "prompting",
+        "mcp",
+        "rag",
+        "embedding",
+        "embeddings",
+        "subagent",
+        "multi-agent",
+        "fine-tune",
+        "evals",
+        "eval",
+        "ai agent",
+        "ai agents",
+        "agentic",
+        "llms"
+      ],
+      "he": [
+        "סוכן",
+        "סוכנים",
+        "בינה",
+        "פרומפט"
+      ]
+    },
+    {
+      "id": "writing",
+      "label": "כתיבה ותוכן",
+      "keywords": [
+        "writing",
+        "writer",
+        "copywriting",
+        "blog",
+        "article",
+        "editing",
+        "proofread",
+        "grammar",
+        "style guide",
+        "newsletter",
+        "storytelling",
+        "translation",
+        "translate"
+      ],
+      "he": [
+        "כתיבה",
+        "תוכן",
+        "עריכה",
+        "תרגום",
+        "מאמר"
+      ]
+    },
+    {
+      "id": "research",
+      "label": "מחקר ואקדמיה",
+      "keywords": [
+        "research",
+        "academic",
+        "paper",
+        "papers",
+        "citation",
+        "citations",
+        "literature",
+        "arxiv",
+        "pubmed",
+        "scholar",
+        "thesis",
+        "apa",
+        "bibliography",
+        "science",
+        "scientific"
+      ],
+      "he": [
+        "מחקר",
+        "אקדמי",
+        "ציטוט",
+        "ביבליוגרפיה",
+        "מאמרים"
+      ]
+    },
+    {
+      "id": "marketing",
+      "label": "שיווק ומכירות",
+      "keywords": [
+        "marketing",
+        "seo",
+        "ads",
+        "advertising",
+        "social media",
+        "campaign",
+        "sales",
+        "crm",
+        "lead",
+        "leads",
+        "email marketing",
+        "growth",
+        "tiktok",
+        "instagram",
+        "linkedin"
+      ],
+      "he": [
+        "שיווק",
+        "מכירות",
+        "פרסום",
+        "קמפיין"
+      ]
+    },
+    {
+      "id": "media",
+      "label": "תמונה, וידאו ואודיו",
+      "keywords": [
+        "image",
+        "images",
+        "video",
+        "audio",
+        "music",
+        "podcast",
+        "photo",
+        "animation",
+        "3d",
+        "svg",
+        "art",
+        "generative art",
+        "p5.js",
+        "ffmpeg",
+        "speech",
+        "voice"
+      ],
+      "he": [
+        "תמונה",
+        "וידאו",
+        "סרטון",
+        "אודיו",
+        "מוזיקה"
+      ]
+    },
+    {
+      "id": "devops",
+      "label": "DevOps וענן",
+      "keywords": [
+        "devops",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "aws",
+        "gcp",
+        "azure",
+        "ci",
+        "cd",
+        "deploy",
+        "deployment",
+        "infrastructure",
+        "monitoring",
+        "cloudflare",
+        "vercel",
+        "supabase"
+      ],
+      "he": [
+        "ענן",
+        "שרת",
+        "פריסה"
+      ]
+    },
+    {
+      "id": "testing",
+      "label": "בדיקות ואיכות",
+      "keywords": [
+        "test",
+        "testing",
+        "tests",
+        "tdd",
+        "playwright",
+        "cypress",
+        "jest",
+        "pytest",
+        "qa",
+        "e2e",
+        "unit test",
+        "coverage"
+      ],
+      "he": [
+        "בדיקות",
+        "טסטים"
+      ]
+    },
+    {
+      "id": "security",
+      "label": "אבטחה",
+      "keywords": [
+        "security",
+        "pentest",
+        "vulnerability",
+        "vulnerabilities",
+        "cve",
+        "owasp",
+        "threat",
+        "malware",
+        "ctf",
+        "secrets"
+      ],
+      "he": [
+        "אבטחה",
+        "סייבר"
+      ]
+    },
+    {
+      "id": "productivity",
+      "label": "פרודוקטיביות",
+      "keywords": [
+        "productivity",
+        "calendar",
+        "email",
+        "gmail",
+        "notion",
+        "obsidian",
+        "todo",
+        "notes",
+        "meeting",
+        "meetings",
+        "slack",
+        "planner"
+      ],
+      "he": [
+        "פרודוקטיביות",
+        "יומן",
+        "משימות",
+        "פגישה",
+        "אוטומציה"
+      ]
+    },
+    {
+      "id": "business",
+      "label": "עסקים, כספים ומשפט",
+      "keywords": [
+        "finance",
+        "financial",
+        "accounting",
+        "budget",
+        "legal",
+        "contract",
+        "contracts",
+        "compliance",
+        "nda",
+        "tax",
+        "investment",
+        "stock",
+        "stocks",
+        "startup",
+        "business",
+        "pitch"
+      ],
+      "he": [
+        "כספים",
+        "חשבונאות",
+        "משפטי",
+        "חוזה",
+        "עסק"
+      ]
+    },
+    {
+      "id": "health",
+      "label": "בריאות ופסיכולוגיה",
+      "keywords": [
+        "health",
+        "medical",
+        "clinical",
+        "therapy",
+        "psychology",
+        "psychiatry",
+        "mental health",
+        "patient",
+        "diagnosis",
+        "icd",
+        "dsm",
+        "fitness",
+        "nutrition",
+        "wellness"
+      ],
+      "he": [
+        "בריאות",
+        "פסיכולוגיה",
+        "טיפול",
+        "קליני",
+        "רפואה"
+      ]
+    },
+    {
+      "id": "education",
+      "label": "חינוך ולמידה",
+      "keywords": [
+        "education",
+        "learning",
+        "teaching",
+        "tutor",
+        "course",
+        "quiz",
+        "flashcards",
+        "students",
+        "lesson",
+        "curriculum"
+      ],
+      "he": [
+        "לימוד",
+        "חינוך",
+        "הוראה",
+        "שיעור"
+      ]
+    },
+    {
+      "id": "meta",
+      "label": "כלים לבניית סקילים",
+      "keywords": [
+        "skill creator",
+        "skill-creator",
+        "create skills",
+        "skill authoring",
+        "slash command",
+        "marketplace",
+        "claude code plugin",
+        "skill development",
+        "write a skill"
+      ],
+      "he": [
+        "סקיל",
+        "סקילים",
+        "פלאגין"
+      ]
+    }
+  ]
+}

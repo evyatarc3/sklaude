@@ -1,0 +1,48 @@
+{
+  "_comment": "Where the collector looks. All sources are free. Edit freely; the collector skips any source that fails.",
+  "limits": {
+    "maxRepos": 700,
+    "maxSkillsPerRepo": 300,
+    "minStarsFromSearch": 3,
+    "searchPagesPerQuery": 3,
+    "historyDays": 45
+  },
+  "repoSearchQueries": [
+    "topic:claude-skills",
+    "topic:agent-skills",
+    "topic:claude-code-skills",
+    "topic:claude-skill",
+    "topic:anthropic-skills",
+    "topic:claude-code-plugin",
+    "topic:claude-code-plugins",
+    "topic:claude-plugins",
+    "\"claude skills\" in:name,description",
+    "\"agent skills\" in:name,description",
+    "\"SKILL.md\" in:readme stars:>20"
+  ],
+  "newRepoQueries": [
+    "topic:claude-skills created:>{SINCE_14D}",
+    "topic:agent-skills created:>{SINCE_14D}",
+    "\"claude skill\" in:name,description created:>{SINCE_14D}"
+  ],
+  "codeSearchQueries": [
+    "filename:SKILL.md path:.claude/skills",
+    "filename:SKILL.md path:skills"
+  ],
+  "awesomeLists": [
+    "travisvn/awesome-claude-skills",
+    "ComposioHQ/awesome-claude-skills",
+    "hesreallyhim/awesome-claude-code",
+    "VoltAgent/awesome-claude-skills",
+    "BehiSecc/awesome-claude-skills"
+  ],
+  "pinnedRepos": [
+    "anthropics/skills",
+    "anthropics/claude-plugins-official",
+    "anthropics/claude-code"
+  ],
+  "buzz": {
+    "hackerNewsQueries": ["claude skills", "agent skills", "SKILL.md", "claude code plugin"],
+    "days": 30
+  }
+}

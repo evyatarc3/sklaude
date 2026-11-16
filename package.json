@@ -1,0 +1,12 @@
+{
+  "name": "skills-radar",
+  "private": true,
+  "type": "module",
+  "description": "Daily-updated static index of Claude skills. No backend, no paid APIs.",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "collect": "node scripts/collect.mjs",
+    "collect:quick": "QUICK=1 WRITE=1 node scripts/collect.mjs",
+    "serve": "cd site && python3 -m http.server 8000"
+  }
+}
