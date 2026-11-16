@@ -4,71 +4,76 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>רדאר סקילים</title>
-  <meta name="description" content="אינדקס סקילים ל-Claude שמתעדכן כל יום: סקילים חמים, לפי נושא, וחיפוש חופשי.">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='none' stroke='%23d9643a' stroke-width='3'/><circle cx='16' cy='16' r='4' fill='%23d9643a'/></svg>">
+  <meta name="description" content="אינדקס סקילים ל-Claude שמתעדכן כל יום. מתארים מה צריך, ומקבלים את הסקיל שעושה את זה.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><path d='M3 8h10l3 3h13v16H3z' fill='%232f3dd6'/><rect x='8' y='16' width='16' height='5' fill='%23ffe45c'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Hebrew:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="top">
-    <div class="wrap">
-      <div class="brand">
-        <h1>רדאר סקילים</h1>
-        <p class="sub" id="sub">טוען…</p>
-      </div>
-      <a class="btn ghost" id="submit-link" href="#" target="_blank" rel="noopener">+ הוספת סקיל</a>
-    </div>
+  <header class="bar">
+    <a class="mark" href="./" aria-label="רדאר סקילים, לדף הבית">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M3 8h10l3 3h13v16H3z"/><rect x="8" y="16" width="16" height="5"/></svg>
+      רדאר סקילים
+    </a>
+    <nav class="views" role="tablist" aria-label="תצוגה">
+      <button role="tab" data-view="hot" aria-selected="true">חמים השבוע</button>
+      <button role="tab" data-view="new" aria-selected="false">חדשים</button>
+      <button role="tab" data-view="top" aria-selected="false">הכי פופולריים</button>
+      <button role="tab" data-view="buzz" aria-selected="false">מדברים על זה</button>
+    </nav>
+    <a class="submit" id="submit-link" href="#" target="_blank" rel="noopener">הוספת סקיל</a>
   </header>
 
-  <main class="wrap">
-    <div class="searchbar">
-      <input id="q" type="search" placeholder="חיפוש חופשי: pdf, מצגת, code review, מחקר…" autocomplete="off" aria-label="חיפוש">
-    </div>
+  <main>
+    <section class="ask">
+      <label class="sentence" for="q">
+        <span class="lead">צריך סקיל ש</span><input id="q" type="search" placeholder="עורך מצגות" autocomplete="off" spellcheck="false" enterkeyhint="search">
+      </label>
+      <p class="hint" id="hint">אפשר לכתוב בעברית. המילים מתורגמות לאנגלית, השפה שבה הסקילים כתובים.</p>
+      <div class="topics" id="cats" aria-label="נושאים"></div>
+    </section>
 
-    <nav class="tabs" role="tablist">
-      <button role="tab" data-view="hot" aria-selected="true">🔥 חמים</button>
-      <button role="tab" data-view="new" aria-selected="false">✨ חדשים</button>
-      <button role="tab" data-view="top" aria-selected="false">⭐ פופולריים</button>
-      <button role="tab" data-view="buzz" aria-selected="false">💬 מדברים על זה</button>
-    </nav>
-
-    <div class="chips" id="cats" aria-label="נושאים"></div>
-
-    <div class="filters">
-      <label><input type="checkbox" id="f-safe"> בלי סימני סיכון גבוה</label>
-      <label><input type="checkbox" id="f-official"> רשמיים בלבד (Anthropic)</label>
-      <label><input type="checkbox" id="f-group" checked> עד 3 סקילים מכל ריפו</label>
-      <span class="count" id="count"></span>
-    </div>
-
-    <section id="list" class="grid" aria-live="polite"></section>
-    <div class="more-wrap"><button class="btn" id="more" hidden>עוד תוצאות</button></div>
-  </main>
-
-  <footer class="wrap foot">
-    <p>הנתונים נאספים אוטומטית פעם ביום מגיטהאב, מרשימות awesome, מ-Hacker News ומהגשות ידניות.
-      סימני הסיכון הם בדיקה סטטית של SKILL.md ושל רשימת הקבצים שבתיקייה. הם לא אישור שהסקיל בטוח. כדאי לקרוא את הקוד לפני התקנה.</p>
-  </footer>
-
-  <template id="card-tpl">
-    <article class="card">
-      <div class="card-head">
-        <h3 class="name" dir="ltr"></h3>
-        <span class="risk"></span>
-      </div>
-      <a class="repo" dir="ltr" target="_blank" rel="noopener"></a>
-      <p class="desc" dir="auto"></p>
-      <div class="tags"></div>
-      <div class="card-foot">
-        <span class="meta"></span>
-        <div class="actions">
-          <button class="btn small copy" type="button">העתקת התקנה</button>
-          <a class="btn small primary open" target="_blank" rel="noopener">פתיחה</a>
+    <section class="results">
+      <div class="status">
+        <p id="count" aria-live="polite"></p>
+        <div class="filters">
+          <label><input type="checkbox" id="f-safe"> להסתיר סימני סיכון</label>
+          <label><input type="checkbox" id="f-official"> רק של Anthropic</label>
+          <label><input type="checkbox" id="f-group" checked> עד 3 מכל ריפו</label>
         </div>
       </div>
-    </article>
+      <ol id="list" class="list"></ol>
+      <button class="more" id="more" hidden>עוד 60</button>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p id="sub"></p>
+    <p>האיסוף רץ פעם ביום: חיפוש בגיטהאב, רשימות awesome, Hacker News והגשות ידניות. סימני הסיכון הם בדיקה סטטית של SKILL.md ושל רשימת הקבצים בתיקייה, לא אישור שהסקיל בטוח. קראו את הקוד לפני התקנה.</p>
+  </footer>
+
+  <template id="row-tpl">
+    <li class="row">
+      <span class="rank" aria-hidden="true"></span>
+      <img class="avatar" alt="" loading="lazy" width="36" height="36">
+      <div class="body">
+        <div class="line1">
+          <a class="name" dir="ltr" target="_blank" rel="noopener"></a>
+          <span class="pulse"></span>
+        </div>
+        <a class="path" dir="ltr" target="_blank" rel="noopener"></a>
+        <p class="desc" dir="ltr"></p>
+        <div class="line3">
+          <span class="topics-of"></span>
+          <span class="warn"></span>
+          <button class="copy" type="button">העתקת פקודת התקנה</button>
+        </div>
+      </div>
+    </li>
   </template>
 
-  <div class="toast" id="toast" role="status"></div>
   <script src="app.js"></script>
 </body>
 </html>
