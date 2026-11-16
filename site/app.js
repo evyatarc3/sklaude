@@ -511,7 +511,8 @@
       if (info?.he) {
         heBlock.append(el('h2', null, 'בעברית'));
         const p = el('p', null, info.he); p.dir = 'rtl';
-        heBlock.append(p, el('p', 'note', 'תרגום אוטומטי של התיאור. הקובץ עצמו מוצג למטה כמו שהוא.'));
+        const who = info.heBy === 'claude' ? 'תרגום של Claude.' : 'תרגום אוטומטי במודל תרגום פתוח, ולכן לפעמים מגושם.';
+        heBlock.append(p, el('p', 'note', `${who} הקובץ עצמו מוצג למטה כמו שהוא.`));
         heBlock.hidden = false;
       }
       files.lastChild.remove();

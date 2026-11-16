@@ -24,6 +24,7 @@ import time
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 DATA = os.path.join(ROOT, "site", "data")
 CACHE = os.path.join(ROOT, "data", "he-cache.json")
+CURATED = os.path.join(ROOT, "data", "he-curated.json")  # Claude-written translations (scripts/curate.py)
 
 NON_LATIN = re.compile(r"[Ѐ-ӿ؀-ۿ฀-๿぀-ヿ㐀-鿿가-힯Ͱ-Ͽ]")
 HEB = re.compile(r"[א-ת]")
@@ -161,6 +162,7 @@ def main():
     ap.add_argument("--max-minutes", type=float, default=45)
     ap.add_argument("--batch", type=int, default=32)
     ap.add_argument("--beams", type=int, default=2)
+    ap.add_argument("--merge-only", action="store_true", help="don't translate; just rebuild outputs from the caches")
     a = ap.parse_args()
     t0 = time.time()
 
@@ -204,7 +206,7 @@ def main():
 
     deadline = t0 + a.max_minutes * 60
     done = 0
-    if todo:
+    if todo and not a.merge_only:
         en_he = make_translator("Helsinki-NLP/opus-mt-en-he", a.beams)
         pivot = [s for s in todo if needs_pivot(s)]
         direct = [s for s in todo if not needs_pivot(s)]
@@ -248,27 +250,40 @@ def main():
             return None
         return polish(" ".join(out))
 
-    short, full_by_skill, complete = [], {}, 0
-    for _, text, repo, path in entries:
-        he = hebrew(text)
+    curated = {}
+    if os.path.exists(CURATED):
+        with open(CURATED, encoding="utf-8") as f:
+            curated = json.load(f)
+    src_hash = lambda t: hashlib.sha1((t or "").encode("utf-8")).hexdigest()[:12]
+
+    # Claude-written translation (when its source hash still matches) wins over the MT one.
+    short, full_by_skill, by_claude, complete = [], {}, [], 0
+    for i, (_, text, repo, path) in enumerate(entries):
+        sid = (f"{repo}/{path}" if path else repo) if repo else None
+        c = curated.get(sid) if sid else None
+        if c and c.get("src") == src_hash(text):
+            he, who = c["he"], "claude"
+            by_claude.append(i)
+        else:
+            he, who = hebrew(text), "mt"
         short.append(shorten(he) if he else None)
         if he:
             complete += 1
             if repo:
-                full_by_skill[(repo, path)] = he
+                full_by_skill[(repo, path)] = (he, who)
     for repo, (p, d) in shards.items():
         changed = False
         for path, info in d["skills"].items():
-            he = full_by_skill.get((repo, path))
-            if he and info.get("he") != he:
-                info["he"] = he
+            he, who = full_by_skill.get((repo, path), (None, None))
+            if he and (info.get("he") != he or info.get("heBy") != who):
+                info["he"], info["heBy"] = he, who
                 changed = True
         if changed:
             with open(p, "w", encoding="utf-8") as f:
                 f.write(json.dumps(d, ensure_ascii=False) + "\n")
     with open(os.path.join(DATA, "he.json"), "w", encoding="utf-8") as f:
-        f.write(json.dumps({"v": 1, "index": ix["generatedAt"], "items": short}, ensure_ascii=False) + "\n")
-    print(f"he.json: {complete}/{len(entries)} skills have a Hebrew description")
+        f.write(json.dumps({"v": 1, "index": ix["generatedAt"], "items": short, "claude": by_claude}, ensure_ascii=False) + "\n")
+    print(f"he.json: {complete}/{len(entries)} skills have a Hebrew description ({len(by_claude)} translated by Claude)")
 
 
 if __name__ == "__main__":

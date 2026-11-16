@@ -1,1 +1,1 @@
-{"repo": "plasma-ai/wiki", "branch": "main", "skills": {"wiki/skills/wiki": {"description": "Indexed knowledge bases with command-line tools for agents.", "files": ["SKILL.md", "agents/openai.yaml"], "fileCount": 2, "he": "בסיסי ידע אינדקסים עם כלי-קו-פקודה לסוכנים."}}}
+{"repo": "plasma-ai/wiki", "branch": "main", "skills": {"wiki/skills/wiki": {"description": "Indexed knowledge bases with command-line tools for agents.", "files": ["SKILL.md", "agents/openai.yaml"], "fileCount": 2, "he": "בסיסי ידע אינדקסים עם כלי-קו-פקודה לסוכנים.", "heBy": "mt"}}}
