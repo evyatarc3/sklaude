@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T04:13:21.307Z",
+  "generatedAt": "2026-11-16T04:26:56.594Z",
   "items": [
     {
       "title": "Socratic Tutor",
@@ -146,6 +146,15 @@
       "source": "Hacker News"
     },
     {
+      "title": "Tell HN: Claude Code queries raw GitHub token on startup",
+      "url": "https://news.ycombinator.com/item?id=50365442",
+      "discussion": "https://news.ycombinator.com/item?id=50365442",
+      "points": 6,
+      "comments": 2,
+      "date": "2026-11-04",
+      "source": "Hacker News"
+    },
+    {
       "title": "Show HN: Gauge CLI – Open-Source Hillclimbing for Agent Experience",
       "url": "https://github.com/gauge-sh/gauge-cli",
       "discussion": "https://news.ycombinator.com/item?id=50170201",
@@ -161,15 +170,6 @@
       "points": 5,
       "comments": 0,
       "date": "2026-10-22",
-      "source": "Hacker News"
-    },
-    {
-      "title": "Tell HN: Claude Code queries raw GitHub token on startup",
-      "url": "https://news.ycombinator.com/item?id=50365442",
-      "discussion": "https://news.ycombinator.com/item?id=50365442",
-      "points": 5,
-      "comments": 2,
-      "date": "2026-11-04",
       "source": "Hacker News"
     },
     {
