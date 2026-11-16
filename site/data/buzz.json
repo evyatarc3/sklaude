@@ -1,4 +1,374 @@
 {
-  "generatedAt": "2026-11-16T03:37:14.052Z",
-  "items": []
+  "generatedAt": "2026-11-16T04:13:21.307Z",
+  "items": [
+    {
+      "title": "Socratic Tutor",
+      "url": "https://github.com/janestreet/agent_skills/blob/master/socratic-tutor/SKILL.md",
+      "discussion": "https://news.ycombinator.com/item?id=50438261",
+      "points": 714,
+      "comments": 170,
+      "date": "2026-11-10",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+      "url": "https://github.com/GoogleChrome/modern-web-guidance",
+      "discussion": "https://news.ycombinator.com/item?id=50443812",
+      "points": 447,
+      "comments": 146,
+      "date": "2026-11-10",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Show HN: Omnara – Open-source alternative to Claude Managed Agents",
+      "url": "https://github.com/omnara-ai/omnara",
+      "discussion": "https://news.ycombinator.com/item?id=50183892",
+      "points": 114,
+      "comments": 35,
+      "date": "2026-10-21",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Show HN: Klad, a paint app your coding agent can drive (source-available)",
+      "url": "https://github.com/klad-app/klad",
+      "discussion": "https://news.ycombinator.com/item?id=50454951",
+      "points": 84,
+      "comments": 34,
+      "date": "2026-11-11",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Launch HN: Respan (YC W24) – Open-source Rust AI gateway built around plugins",
+      "url": "https://news.ycombinator.com/item?id=50167583",
+      "discussion": "https://news.ycombinator.com/item?id=50167583",
+      "points": 53,
+      "comments": 24,
+      "date": "2026-10-20",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Show HN: Gauge – Open-Source CLI to recursively improve your docs",
+      "url": "https://github.com/gauge-sh/gauge-cli",
+      "discussion": "https://news.ycombinator.com/item?id=50371090",
+      "points": 43,
+      "comments": 10,
+      "date": "2026-11-04",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Ask HN: How do you evaluate the skills your AI agents use?",
+      "url": "https://news.ycombinator.com/item?id=50426070",
+      "discussion": "https://news.ycombinator.com/item?id=50426070",
+      "points": 25,
+      "comments": 7,
+      "date": "2026-11-09",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Open-source, cross-harness memory for AI agents",
+      "url": "https://news.ycombinator.com/item?id=50182883",
+      "discussion": "https://news.ycombinator.com/item?id=50182883",
+      "points": 18,
+      "comments": 14,
+      "date": "2026-10-21",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Agent-Skills.market",
+      "url": "https://agent-skills.market/",
+      "discussion": "https://news.ycombinator.com/item?id=50148882",
+      "points": 16,
+      "comments": 10,
+      "date": "2026-10-19",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Show HN: Apache 2.0 Registry to let agents share skills with each other",
+      "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry",
+      "discussion": "https://news.ycombinator.com/item?id=50303291",
+      "points": 9,
+      "comments": 5,
+      "date": "2026-10-30",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Show HN: Spooler – a simple, managed message queue",
+      "url": "https://spooler.sh/",
+      "discussion": "https://news.ycombinator.com/item?id=50359936",
+      "points": 9,
+      "comments": 6,
+      "date": "2026-11-04",
+      "source": "Hacker News"
+    },
+    {
+      "title": "I Just Deleted All My Agent Skills",
+      "url": "https://philippdubach.com/posts/i-just-deleted-all-my-agent-skills/",
+      "discussion": "https://news.ycombinator.com/item?id=50413912",
+      "points": 8,
+      "comments": 0,
+      "date": "2026-11-08",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Show HN: Ramasite, a Self-Contained Laravel/Filament/SQLite CMS",
+      "url": "https://github.com/DaleFranks/ramasite",
+      "discussion": "https://news.ycombinator.com/item?id=50462469",
+      "points": 8,
+      "comments": 2,
+      "date": "2026-11-12",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Show HN: Interview your analysts instead of auto-generating a semantic layer",
+      "url": "https://github.com/nodal-data/nodal-context",
+      "discussion": "https://news.ycombinator.com/item?id=50274358",
+      "points": 6,
+      "comments": 4,
+      "date": "2026-10-28",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Show HN: Skillstore – Expert skills your coding agent fetches as it works",
+      "url": "https://skillstore-jk.fly.dev/developers",
+      "discussion": "https://news.ycombinator.com/item?id=50195133",
+      "points": 6,
+      "comments": 0,
+      "date": "2026-10-22",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Why LSP, Why the LSP Plugin, and Why Claude Code Doesn't Save Tokens",
+      "url": "https://byteask.ai/research/lsp-claude-code-cpp",
+      "discussion": "https://news.ycombinator.com/item?id=50373413",
+      "points": 6,
+      "comments": 1,
+      "date": "2026-11-05",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Show HN: Gauge CLI – Open-Source Hillclimbing for Agent Experience",
+      "url": "https://github.com/gauge-sh/gauge-cli",
+      "discussion": "https://news.ycombinator.com/item?id=50170201",
+      "points": 5,
+      "comments": 0,
+      "date": "2026-10-20",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Donating Agent Skills to the Agentic AI Foundation",
+      "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+      "discussion": "https://news.ycombinator.com/item?id=50198911",
+      "points": 5,
+      "comments": 0,
+      "date": "2026-10-22",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Tell HN: Claude Code queries raw GitHub token on startup",
+      "url": "https://news.ycombinator.com/item?id=50365442",
+      "discussion": "https://news.ycombinator.com/item?id=50365442",
+      "points": 5,
+      "comments": 2,
+      "date": "2026-11-04",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Show HN: Claude Code skills and hooks that prove a fix's test fails without it",
+      "url": "https://github.com/ehnruiz/claude-skills",
+      "discussion": "https://news.ycombinator.com/item?id=50158230",
+      "points": 4,
+      "comments": 0,
+      "date": "2026-10-19",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Show HN: Skillsync – Coding agent memory but it's just search",
+      "url": "https://skillsync.com",
+      "discussion": "https://news.ycombinator.com/item?id=50169411",
+      "points": 4,
+      "comments": 1,
+      "date": "2026-10-20",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Show HN: Skillset: Easily curate and install agent skills collection",
+      "url": "https://github.com/itsmeyaw/skillset",
+      "discussion": "https://news.ycombinator.com/item?id=50511761",
+      "points": 4,
+      "comments": 0,
+      "date": "2026-11-15",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Agent Skills from Jane Street",
+      "url": "https://github.com/janestreet/agent_skills",
+      "discussion": "https://news.ycombinator.com/item?id=50429183",
+      "points": 4,
+      "comments": 0,
+      "date": "2026-11-09",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Popular AI Agent Skills Every Developer Should Know",
+      "url": "https://jsdev.space/30-agent-skills/",
+      "discussion": "https://news.ycombinator.com/item?id=50209346",
+      "points": 4,
+      "comments": 0,
+      "date": "2026-10-23",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Wiki-driven development: coding agents update a wiki for you, you set direction",
+      "url": "https://news.ycombinator.com/item?id=50180884",
+      "discussion": "https://news.ycombinator.com/item?id=50180884",
+      "points": 4,
+      "comments": 1,
+      "date": "2026-10-21",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Show HN: App Factory – 42 Claude Code skills to ship apps to App Store and Play",
+      "url": "https://github.com/yybd/app-factory",
+      "discussion": "https://news.ycombinator.com/item?id=50194964",
+      "points": 3,
+      "comments": 0,
+      "date": "2026-10-22",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Anatomy, a skill for Claude that draws any concept as a working 3D machine",
+      "url": "https://skills.wheresryan.sh/anatomy",
+      "discussion": "https://news.ycombinator.com/item?id=50392708",
+      "points": 3,
+      "comments": 0,
+      "date": "2026-11-06",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Show HN: Dánwò – Open-source E2E testing with emulators and fault injection",
+      "url": "https://github.com/carbonmeai/danwo",
+      "discussion": "https://news.ycombinator.com/item?id=50214578",
+      "points": 3,
+      "comments": 0,
+      "date": "2026-10-23",
+      "source": "Hacker News"
+    },
+    {
+      "title": "MuscleMemory: Skills learned by Codex, reused by Claude Code",
+      "url": "https://github.com/TheWariend/MuscleMemory",
+      "discussion": "https://news.ycombinator.com/item?id=50243968",
+      "points": 3,
+      "comments": 0,
+      "date": "2026-10-26",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Show HN: Skill-spotter, auto detect agent prompts and commands to create skills",
+      "url": "https://github.com/ykisana/skill-spotter",
+      "discussion": "https://news.ycombinator.com/item?id=50239988",
+      "points": 3,
+      "comments": 0,
+      "date": "2026-10-26",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Ask HN: What mistakes did AI make in your codebase?",
+      "url": "https://news.ycombinator.com/item?id=50328797",
+      "discussion": "https://news.ycombinator.com/item?id=50328797",
+      "points": 3,
+      "comments": 1,
+      "date": "2026-11-01",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Show HN: Socratui – A Socratic Tutor for the Terminal",
+      "url": "https://github.com/nodo-labs-uk/socratui",
+      "discussion": "https://news.ycombinator.com/item?id=50473650",
+      "points": 3,
+      "comments": 0,
+      "date": "2026-11-12",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Show HN: Apple-design-hig agent skill, DocC updater CLI, and MCP server",
+      "url": "https://github.com/mr8lu/apple-design-hig",
+      "discussion": "https://news.ycombinator.com/item?id=50214427",
+      "points": 3,
+      "comments": 1,
+      "date": "2026-10-23",
+      "source": "Hacker News"
+    },
+    {
+      "title": "What nobody tells you about writing agent skills",
+      "url": "https://newsletter.posthog.com/p/what-nobody-tells-you-about-writing",
+      "discussion": "https://news.ycombinator.com/item?id=50502869",
+      "points": 3,
+      "comments": 0,
+      "date": "2026-11-15",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Show HN: Back endskills – agent skills for safer auth, data and migration code",
+      "url": "https://github.com/globalmpc/backendskills",
+      "discussion": "https://news.ycombinator.com/item?id=50493538",
+      "points": 3,
+      "comments": 0,
+      "date": "2026-11-14",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Less Is More UI Agent Skill",
+      "url": "https://github.com/Mendiak/less-is-more-ui",
+      "discussion": "https://news.ycombinator.com/item?id=50397450",
+      "points": 3,
+      "comments": 0,
+      "date": "2026-11-06",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Uncle Bob's Agent Skill",
+      "url": "https://github.com/unclebob/ub-mode",
+      "discussion": "https://news.ycombinator.com/item?id=50369325",
+      "points": 3,
+      "comments": 0,
+      "date": "2026-11-04",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Five rules for evaluating agent skills before they bloat your context window",
+      "url": "https://cloud.google.com/blog/topics/developers-practitioners/evaluate-agent-skills-before-they-bloat-your-context-window",
+      "discussion": "https://news.ycombinator.com/item?id=50365487",
+      "points": 3,
+      "comments": 0,
+      "date": "2026-11-04",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Show HN: SkillWire, a searchable catalog for coding-agent skills",
+      "url": "https://skillwire.net",
+      "discussion": "https://news.ycombinator.com/item?id=50310865",
+      "points": 3,
+      "comments": 0,
+      "date": "2026-10-30",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Narrative Deck – AI Agent skill for creating interactive web stories",
+      "url": "https://aakatheeri.github.io/narrative-deck/",
+      "discussion": "https://news.ycombinator.com/item?id=50216138",
+      "points": 3,
+      "comments": 0,
+      "date": "2026-10-23",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Show HN: Radian, an agent puts development workflow on autopilot",
+      "url": "https://getrad.dev",
+      "discussion": "https://news.ycombinator.com/item?id=50233447",
+      "points": 3,
+      "comments": 0,
+      "date": "2026-10-25",
+      "source": "Hacker News"
+    }
+  ]
 }
