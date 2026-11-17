@@ -94,6 +94,10 @@ jobs:
           for attempt in 1 2 3; do
             git fetch -q origin "$BRANCH"
             git reset -q FETCH_HEAD
+            # The translator session may have pushed new Claude translations meanwhile: take the latest
+            # file and rebuild the Hebrew outputs from it (no model needed) so they don't go stale.
+            git checkout FETCH_HEAD -- data/he-curated.json 2>/dev/null || true
+            if [ -f site/data/index.json ] && [ -f data/he-cache.json ]; then python3 scripts/translate.py --merge-only; fi
             # submissions.json and he-curated.json are written by other flows; never overwrite them here.
             git add -A -- site/data data ':!data/submissions.json' ':!data/he-curated.json'
             if git diff --cached --quiet; then echo "No data changes"; exit 0; fi
