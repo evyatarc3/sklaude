@@ -237,10 +237,13 @@
     box.textContent = '';
     for (const c of data.categories) {
       if (!c.count) continue;
-      const b = el('button');
+      const b = el('button', 'tile');
       b.type = 'button';
       b.setAttribute('aria-pressed', String(state.cat === c.id));
-      b.append(c.label, el('span', 'n', c.count));
+      const art = SkillArt.paint(el('span'), c.id, `topic:${c.id}`);
+      const txt = el('span', 'tile-text');
+      txt.append(el('span', 'tile-label', c.label), el('span', 'n', `${c.count.toLocaleString('he-IL')} סקילים`));
+      b.append(art, txt);
       b.onclick = () => setCat(state.cat === c.id ? null : c.id);
       box.append(b);
     }
@@ -256,10 +259,15 @@
   function row(s, i, ctx) {
     const r = $('#row-tpl').content.firstElementChild.cloneNode(true);
     r.querySelector('.rank').textContent = i + 1;
+    const cover = r.querySelector('.cover');
+    SkillArt.paint(cover, s.categories[0] || 'other', s.id);
+    cover.href = s.repo ? skillHref(s.id) : s.url;
+    cover.setAttribute('aria-label', s.name);
+    if (!s.repo) { cover.target = '_blank'; cover.rel = 'noopener'; }
     const img = r.querySelector('.avatar');
-    if (s.repo) img.src = `https://avatars.githubusercontent.com/${s.repo.split('/')[0]}?s=72`;
-    else img.src = 'data:image/svg+xml,' + encodeURIComponent("<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23e9ebf0'/><path d='M7 10h7l2 2h9v11H7z' fill='%235d6270'/></svg>");
-    img.onerror = () => { img.style.visibility = 'hidden'; };
+    if (s.repo) img.src = `https://avatars.githubusercontent.com/${s.repo.split('/')[0]}?s=64`;
+    else img.remove();
+    img.onerror = () => img.remove();
 
     const name = r.querySelector('.name');
     highlight(name, s.name, ctx.hl);
@@ -282,7 +290,7 @@
 
     const pulse = r.querySelector('.pulse');
     if (ctx.view === 'hot' && !ctx.searching && s.delta7 > 0) {
-      const bar = el('span', 'bar');
+      const bar = el('span', 'meter');
       const fill = el('i');
       fill.style.width = `${Math.max(4, Math.round((s.delta7 / ctx.maxDelta) * 100))}%`;
       bar.append(fill);
@@ -391,6 +399,66 @@
     }, 1500);
   }
 
+  // ---------- showcase (arc carousel) ----------
+  const SC_TEXT = {
+    hot: ['החמים השבוע', 'הסקילים שצברו הכי הרבה כוכבים בשבוע האחרון.'],
+    top: ['הכי פופולריים', 'הסקילים מהריפואים עם הכי הרבה כוכבים.'],
+    new: ['חדשים על המדף', 'הסקילים האחרונים שנכנסו לאינדקס.'],
+  };
+  let showcase = null;
+  let heLoaded = false;
+  let showcaseKey = '';
+  function showcaseCover(s) {
+    const c = SkillArt.paint(el('span', 'arc-cover'), s.categories[0] || 'other', s.id);
+    if (s.repo) {
+      const img = el('img', 'avatar');
+      img.alt = ''; img.width = 36; img.height = 36; img.loading = 'lazy';
+      img.src = `https://avatars.githubusercontent.com/${s.repo.split('/')[0]}?s=72`;
+      img.onerror = () => img.remove();
+      c.append(img);
+    }
+    return c;
+  }
+  function focusInfo(s, i, source) {
+    const name = $('.sc-name');
+    name.textContent = s.name;
+    name.href = skillHref(s.id);
+    $('#sc-open').href = skillHref(s.id);
+    const desc = $('.sc-desc');
+    const he = state.he && s.he;
+    desc.textContent = he ? s.he : s.description;
+    desc.dir = he ? 'rtl' : 'ltr';
+    const topic = catById[s.categories[0]]?.label;
+    const stat = state.view === 'hot' && s.delta7 > 0 ? `+${num(s.delta7)} כוכבים השבוע` : `${num(s.stars)} כוכבים`;
+    $('.sc-meta').textContent = [stat, topic, s.repo].filter(Boolean).join('   ');
+    const copy = $('#sc-copy');
+    copy.onclick = async () => {
+      const cmd = installCmd(s);
+      try { await navigator.clipboard.writeText(cmd); } catch { prompt('העתקה ידנית:', cmd); return; }
+      track('copy_install', { skill_id: s.id, location: 'showcase' });
+      copy.textContent = 'הועתק'; copy.classList.add('done');
+      setTimeout(() => { copy.textContent = 'העתקת פקודת התקנה'; copy.classList.remove('done'); }, 1800);
+    };
+    if (source !== 'init') track('showcase_browse', { skill_id: s.id, position: i + 1, via: source, view: state.view });
+  }
+  function updateShowcase(list) {
+    if (!showcase) {
+      showcase = Showcase.create($('#showcase'), {
+        renderCover: showcaseCover,
+        onChange: focusInfo,
+        onOpen: (s) => { track('showcase_open', { skill_id: s.id, view: state.view }); location.hash = skillHref(s.id); },
+      });
+    }
+    // Hebrew arrives after the first render; include it so the focused description switches when it does.
+    const key = `${state.view}|${state.he}|${heLoaded}|${list.map((s) => s.id).join(',')}`;
+    if (key === showcaseKey) return;
+    showcaseKey = key;
+    const [title, sub] = SC_TEXT[state.view] || SC_TEXT.hot;
+    $('#sc-title').textContent = title;
+    $('#sc-sub').textContent = sub;
+    showcase.set(list);
+  }
+
   function render() {
     writeHash();
     const detail = state.skill && byId.get(state.skill);
@@ -401,6 +469,7 @@
     document.querySelectorAll('.views button').forEach((b) => b.setAttribute('aria-selected', String(b.dataset.view === state.view)));
     const isBuzz = state.view === 'buzz';
     $('#cats').hidden = isBuzz;
+    $('#showcase').hidden = true;
     $('.filters').hidden = isBuzz;
     renderTopics();
     const box = $('#list');
@@ -426,12 +495,33 @@
       $('#clear-cat')?.addEventListener('click', (e) => { e.preventDefault(); setCat(null); });
       return;
     }
+    // Browsing (no search, no topic): the top of the list goes on the arc, one per repo; the grid shows the rest.
+    let gridSkills = skills;
+    let offset = 0;
+    if (!searching && !state.cat && data.skills.length) {
+      const seen = new Set();
+      const shelf = [];
+      for (const s of skills) {
+        const k = s.repo || s.host;
+        if (seen.has(k)) continue;
+        seen.add(k);
+        shelf.push(s);
+        if (shelf.length === 12) break;
+      }
+      if (shelf.length >= 5) {
+        $('#showcase').hidden = false;
+        updateShowcase(shelf);
+        const ids = new Set(shelf.map((s) => s.id));
+        gridSkills = skills.filter((s) => !ids.has(s.id));
+        offset = shelf.length;
+      }
+    }
     const ctx = { hl, hlHe, searching, view: state.view, maxDelta: Math.max(1, ...skills.map((s) => s.delta7 || 0)) };
     const frag = document.createDocumentFragment();
-    skills.slice(0, state.limit).forEach((s, i) => frag.append(row(s, i, ctx)));
+    gridSkills.slice(0, state.limit).forEach((s, i) => frag.append(row(s, i + offset, ctx)));
     box.append(frag);
-    $('#more').hidden = skills.length <= state.limit;
-    $('#more').textContent = `עוד ${Math.min(PAGE, skills.length - state.limit)}`;
+    $('#more').hidden = gridSkills.length <= state.limit;
+    $('#more').textContent = `עוד ${Math.min(PAGE, gridSkills.length - state.limit)}`;
   }
 
   // ---------- skill page ----------
@@ -615,6 +705,7 @@
       .then((he) => {
         if (!he || he.index !== data.generatedAt || !Array.isArray(he.items)) return; // stale or missing
         data.skills.forEach((s, i) => { if (he.items[i]) s.he = he.items[i]; });
+        heLoaded = true;
         buildIndex();
         $('#f-he').closest('label').hidden = false;
         if (!state.skill) render();

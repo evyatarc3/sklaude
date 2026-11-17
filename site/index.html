@@ -32,8 +32,30 @@
         <span class="lead">צריך סקיל ש</span><input id="q" type="search" placeholder="עורך מצגות" autocomplete="off" spellcheck="false" enterkeyhint="search">
       </label>
       <p class="hint" id="hint">אפשר לכתוב בעברית. המילים מתורגמות לאנגלית, השפה שבה הסקילים כתובים.</p>
-      <div class="topics" id="cats" aria-label="נושאים"></div>
     </section>
+
+    <section class="showcase" id="showcase" aria-roledescription="carousel" aria-label="תצוגה של סקילים נבחרים">
+      <div class="sc-head">
+        <h2 id="sc-title">החמים השבוע</h2>
+        <p id="sc-sub">הסקילים שצברו הכי הרבה כוכבים בשבוע האחרון. אפשר לגרור, ללחוץ על כרטיס או להשתמש בחצים.</p>
+      </div>
+      <div class="arc" tabindex="0" aria-label="כרטיסי סקילים. חצים ימינה ושמאלה לדפדוף, Enter לפתיחה"></div>
+      <div class="sc-info" aria-live="polite">
+        <button class="sc-nav sc-prev" type="button" aria-label="הקודם"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+        <div class="sc-text">
+          <a class="sc-name" dir="ltr" href="#"></a>
+          <p class="sc-desc"></p>
+          <p class="sc-meta"></p>
+        </div>
+        <button class="sc-nav sc-next" type="button" aria-label="הבא"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+      </div>
+      <div class="sc-actions">
+        <a class="pill" id="sc-open" href="#">לעמוד הסקיל</a>
+        <button class="pill ghost" id="sc-copy" type="button">העתקת פקודת התקנה</button>
+      </div>
+    </section>
+
+    <div class="tiles" id="cats" aria-label="נושאים"></div>
 
     <section class="results">
       <div class="status">
@@ -58,27 +80,31 @@
   </footer>
 
   <template id="row-tpl">
-    <li class="row">
-      <span class="rank" aria-hidden="true"></span>
-      <img class="avatar" alt="" loading="lazy" width="36" height="36">
+    <li class="card">
+      <a class="cover">
+        <span class="rank" aria-hidden="true"></span>
+        <img class="avatar" alt="" loading="lazy" width="32" height="32">
+      </a>
       <div class="body">
         <div class="line1">
-          <a class="name" dir="ltr" target="_blank" rel="noopener"></a>
+          <a class="name" dir="ltr"></a>
+          <a class="path" dir="ltr" target="_blank" rel="noopener"></a>
           <span class="pulse"></span>
         </div>
-        <a class="path" dir="ltr" target="_blank" rel="noopener"></a>
         <p class="desc" dir="ltr"></p>
         <div class="line3">
           <span class="topics-of"></span>
           <span class="warn"></span>
-          <button class="copy" type="button">העתקת פקודת התקנה</button>
         </div>
+        <button class="copy" type="button">העתקת פקודת התקנה</button>
       </div>
     </li>
   </template>
 
   <script src="config.js"></script>
   <script src="analytics.js"></script>
+  <script src="art.js"></script>
+  <script src="showcase.js"></script>
   <script src="md.js"></script>
   <script src="app.js"></script>
 </body>
