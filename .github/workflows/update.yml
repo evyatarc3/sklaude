@@ -33,7 +33,11 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 120
     steps:
+      # Check out the branch tip, not the triggering commit: a run that waited in the queue would
+      # otherwise publish code or data that newer commits have already replaced.
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
 
       - uses: actions/setup-node@v4
         with:
