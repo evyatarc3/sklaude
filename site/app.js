@@ -135,15 +135,32 @@
   function buildIndex() {
     byId = new Map(data.skills.map((s) => [s.id, s]));
     catById = Object.fromEntries(data.categories.map((c) => [c.id, c]));
-    docs = data.skills.map((s) => ({
-      s,
-      name: norm(`${s.name} ${(s.path || '').split('/').pop().replace(/[_-]/g, ' ')}`),
-      repo: norm(s.repo || s.host || ''),
-      cat: norm(s.categories.map((id) => catById[id]).filter(Boolean)
-        .map((c) => `${c.label} ${(c.he || []).join(' ')} ${(c.keywords || []).join(' ')}`).join(' ')),
-      desc: norm(s.description),
-      he: norm(s.he || ''),
-    }));
+    docs = data.skills.map((s) => new Doc(s));
+    warmIndex();
+  }
+  /** Fill the search text in idle slices, so the first search is instant without blocking the first paint. */
+  function warmIndex() {
+    const list = docs;
+    let i = 0;
+    const idle = window.requestIdleCallback || ((fn) => setTimeout(() => fn({ timeRemaining: () => 8 }), 60));
+    const step = (deadline) => {
+      if (list !== docs) return;
+      while (i < list.length && deadline.timeRemaining() > 2) { const d = list[i++]; void d.name; void d.desc; void d.cat; void d.repo; void d.he; }
+      if (i < list.length) idle(step);
+    };
+    idle(step);
+  }
+  /** Search text for one skill. Normalised on first use, so browsing never pays for 12,000 skills up front. */
+  class Doc {
+    constructor(s) { this.s = s; }
+    get name() { return (this._name ??= norm(`${this.s.name} ${(this.s.path || '').split('/').pop().replace(/[_-]/g, ' ')}`)); }
+    get repo() { return (this._repo ??= norm(this.s.repo || this.s.host || '')); }
+    get cat() {
+      return (this._cat ??= norm(this.s.categories.map((id) => catById[id]).filter(Boolean)
+        .map((c) => `${c.label} ${(c.he || []).join(' ')} ${(c.keywords || []).join(' ')}`).join(' ')));
+    }
+    get desc() { return (this._desc ??= norm(this.s.description)); }
+    get he() { return (this._he ??= norm(this.s.he || '')); }
   }
 
   /** Query -> list of terms; each term is a list of alternatives (Hebrew words expand to English). */
@@ -704,9 +721,9 @@
       .then((r) => (r.ok ? r.json() : null))
       .then((he) => {
         if (!he || he.index !== data.generatedAt || !Array.isArray(he.items)) return; // stale or missing
-        data.skills.forEach((s, i) => { if (he.items[i]) s.he = he.items[i]; });
+        data.skills.forEach((s, i) => { if (he.items[i]) { s.he = he.items[i]; docs[i]._he = undefined; } });
         heLoaded = true;
-        buildIndex();
+        warmIndex();
         $('#f-he').closest('label').hidden = false;
         if (!state.skill) render();
       })

@@ -79,19 +79,20 @@ main { max-width: 1180px; margin: 0 auto; padding: 0 var(--edge); }
 
 /* ---------- covers (generated per skill / topic, see art.js) ---------- */
 .art {
-  position: relative; overflow: hidden; isolation: isolate; color: #fff;
+  position: relative; overflow: hidden; color: #fff;
   background:
     radial-gradient(55% 65% at var(--x1) var(--y1), hsl(var(--h2) var(--s) 72% / .95), transparent 70%),
     radial-gradient(50% 55% at var(--x2) var(--y2), hsl(var(--h3) var(--s) 62% / .9), transparent 72%),
     linear-gradient(var(--a), hsl(var(--h1) var(--s) 52%), hsl(var(--h1) var(--s) 27%));
 }
-.art::after { content: ""; position: absolute; inset: 0; opacity: .2; mix-blend-mode: soft-light; pointer-events: none; }
+/* A plain translucent overlay, not a blend mode: blending needs an extra offscreen pass for every cover. */
+.art::after { content: ""; position: absolute; inset: 0; opacity: .11; pointer-events: none; }
 .art[data-motif="rings"]::after { background: repeating-radial-gradient(circle at var(--x2) var(--y1), #fff 0 1px, transparent 1px 13px); }
 .art[data-motif="lines"]::after { background: repeating-linear-gradient(var(--a), #fff 0 1px, transparent 1px 9px); }
 .art[data-motif="dots"]::after { background: radial-gradient(#fff 1.2px, transparent 1.7px) 0 0 / 13px 13px; }
 .art .glyph {
   position: absolute; z-index: 1; width: 32%; height: auto; left: 9%; bottom: 11%;
-  color: rgb(255 255 255 / .94); filter: drop-shadow(0 2px 8px rgb(0 0 0 / .18));
+  color: rgb(255 255 255 / .94);
 }
 
 /* ---------- topic tiles ---------- */
@@ -113,14 +114,15 @@ main { max-width: 1180px; margin: 0 auto; padding: 0 var(--edge); }
 .showcase { margin: 26px calc(-1 * var(--edge)) 0; padding: 28px var(--edge) 36px; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); text-align: center; overflow: hidden; }
 .sc-head h2 { margin: 0; font-size: 1.05rem; font-weight: 600; }
 .sc-head p { margin: 2px auto 0; color: var(--muted); font-size: .88rem; max-width: 60ch; }
-.arc { position: relative; height: 360px; margin-top: 18px; touch-action: pan-y; user-select: none; -webkit-user-select: none; outline: none; }
+.arc { position: relative; height: 360px; margin-top: 18px; touch-action: pan-y; user-select: none; -webkit-user-select: none; outline: none; cursor: grab; }
+.arc.dragging { cursor: grabbing; }
+.arc.dragging .arc-card { transition: none; cursor: grabbing; }
 .arc:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; border-radius: 14px; }
 .arc-card {
   position: absolute; top: 6px; left: 50%; width: 236px; aspect-ratio: 4 / 5; padding: 0; border: 0; background: none; cursor: pointer;
-  transition: transform .62s cubic-bezier(.2, .75, .2, 1), opacity .5s ease; will-change: transform;
+  transition: transform .5s cubic-bezier(.22, .8, .24, 1), opacity .4s ease; will-change: transform, opacity;
 }
 .arc-cover { position: absolute; inset: 0; border-radius: 20px; box-shadow: 0 16px 34px -20px hsl(var(--h1) 60% 22% / .7); }
-.arc-card.focus .arc-cover { box-shadow: 0 28px 50px -22px hsl(var(--h1) 65% 22% / .85); }
 .arc-cover .glyph { width: 30%; }
 .arc-card .avatar { position: absolute; z-index: 2; top: 14px; right: 14px; width: 36px; height: 36px; border-radius: 10px; border: 2px solid rgb(255 255 255 / .7); }
 .arc-label {
@@ -156,7 +158,9 @@ main { max-width: 1180px; margin: 0 auto; padding: 0 var(--edge); }
 
 /* ---------- results: product cards ---------- */
 .list { list-style: none; margin: 0; padding: 22px 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 30px 22px; }
-.card { display: flex; flex-direction: column; min-width: 0; }
+/* Off-screen cards are not laid out or painted until they come near the viewport. The padding (undone by the
+   margin) keeps the hover lift and focus rings inside the box that containment clips to. */
+.card { display: flex; flex-direction: column; min-width: 0; padding: 6px; margin: -6px; content-visibility: auto; contain-intrinsic-size: auto 250px auto 380px; }
 .card .cover { position: relative; display: block; aspect-ratio: 16 / 10; border-radius: 14px; transition: transform .2s ease, box-shadow .2s ease; }
 .card .cover:hover { transform: translateY(-2px); box-shadow: 0 16px 30px -20px hsl(var(--h1) 60% 22% / .85); text-decoration: none; }
 .rank {

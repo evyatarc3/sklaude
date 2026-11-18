@@ -21,42 +21,55 @@ window.Showcase = (() => {
       };
     }
 
-    function layout() {
+    /** `pos` is the (possibly fractional) index in the middle: whole when at rest, in between while dragging. */
+    function layout(pos = active) {
       const g = geometry();
       const n = items.length;
+      const atRest = pos === active;
       cards.forEach((card, i) => {
-        let d = i - active;
+        let d = i - pos;
         if (d > n / 2) d -= n;
         if (d < -n / 2) d += n;
-        const far = Math.abs(d) > g.visible;
+        const ad = Math.abs(d);
+        const far = ad > g.visible + 0.5;
         const t = (d * g.step * Math.PI) / 180;
         const x = -Math.sin(t) * g.radius;           // RTL: positive d goes left
         const y = (1 - Math.cos(t)) * g.radius * 0.8;
         const rot = -d * g.step * 0.85;
-        const s = d === 0 ? 1 : Math.max(0.5, 0.74 - 0.05 * (Math.abs(d) - 1));
-        card.style.transform = `translate(-50%, 0) translate(${x.toFixed(1)}px, ${y.toFixed(1)}px) rotate(${rot.toFixed(2)}deg) scale(${s})`;
-        card.style.opacity = far ? 0 : d === 0 ? 1 : Math.max(0.35, 1 - 0.14 * Math.abs(d));
-        card.style.zIndex = String(20 - Math.abs(d));
+        const s = ad < 1 ? 1 - 0.26 * ad : Math.max(0.5, 0.74 - 0.05 * (ad - 1));
+        // Fades out over the last half step, so cards slide in and out instead of popping.
+        const edge = Math.min(1, Math.max(0, (g.visible + 0.5 - ad) * 2));
+        card.style.transform = `translate(-50%, 0) translate(${x.toFixed(1)}px, ${y.toFixed(1)}px) rotate(${rot.toFixed(2)}deg) scale(${s.toFixed(3)})`;
+        card.style.opacity = (Math.max(0.35, 1 - 0.14 * ad) * edge).toFixed(3);
+        card.style.zIndex = String(20 - Math.round(ad));
         card.style.pointerEvents = far ? 'none' : '';
-        card.classList.toggle('focus', d === 0);
-        card.tabIndex = -1;
-        card.setAttribute('aria-hidden', String(d !== 0));
+        if (atRest) {
+          card.classList.toggle('focus', i === active);
+          card.tabIndex = -1;
+          card.setAttribute('aria-hidden', String(i !== active));
+        }
       });
     }
 
     function go(i, source) {
       if (!items.length) return;
-      active = (i + items.length) % items.length;
+      const next = ((i % items.length) + items.length) % items.length;
+      const changed = next !== active;
+      active = next;
       layout();
-      onChange(items[active], active, source);
+      if (changed) onChange(items[active], active, source);
     }
 
     function set(list) {
-      // Same items again (e.g. Hebrew text arrived): keep the position the visitor is at.
-      const same = list.length === items.length && list.every((s, i) => s.id === items[i].id);
-      const keep = same ? active : 0;
+      // Same items again (e.g. Hebrew text arrived): keep the cards and the position, only refresh the text.
+      const same = cards.length && list.length === items.length && list.every((s, i) => s.id === items[i].id);
+      if (same) {
+        items = list;
+        onChange(items[active], active, 'init');
+        return;
+      }
       items = list;
-      active = keep;
+      active = 0;
       stage.textContent = '';
       cards = items.map((s, i) => {
         const card = document.createElement('button');
@@ -90,20 +103,50 @@ window.Showcase = (() => {
       if (items.length) onChange(items[active], active, 'init');
     }
 
-    // swipe / drag
-    let startX = null;
+    // Drag: the arc follows the pointer, then settles on the nearest card (a quick flick carries one further).
+    let drag = null;
     let moved = false;
-    stage.addEventListener('pointerdown', (e) => { startX = e.clientX; moved = false; });
-    stage.addEventListener('pointermove', (e) => { if (startX !== null && Math.abs(e.clientX - startX) > 8) moved = true; });
-    const end = (e) => {
-      if (startX === null) return;
-      const dx = e.clientX - startX;
-      startX = null;
-      if (Math.abs(dx) > 40) go(active + (dx < 0 ? 1 : -1), 'swipe'); // RTL: dragging left brings the next one
+    let raf = 0;
+    const spacing = () => { const g = geometry(); return Math.sin((g.step * Math.PI) / 180) * g.radius; };
+    stage.addEventListener('pointerdown', (e) => {
+      if (e.button) return;
+      drag = { id: e.pointerId, x0: e.clientX, x: e.clientX, t: e.timeStamp, v: 0, px: spacing() };
+      moved = false;
+    });
+    stage.addEventListener('pointermove', (e) => {
+      if (!drag || e.pointerId !== drag.id) return;
+      const dt = e.timeStamp - drag.t;
+      if (dt > 0) drag.v = 0.7 * drag.v + 0.3 * ((e.clientX - drag.x) / dt);
+      drag.x = e.clientX;
+      drag.t = e.timeStamp;
+      if (!moved && Math.abs(drag.x - drag.x0) > 8) {
+        moved = true;
+        stage.classList.add('dragging');
+        try { stage.setPointerCapture(drag.id); } catch { /* pointer already gone */ }
+      }
+      if (moved && !raf) {
+        raf = requestAnimationFrame(() => {
+          raf = 0;
+          if (drag) layout(active - (drag.x - drag.x0) / drag.px); // RTL: dragging left brings the next one
+        });
+      }
+    });
+    const end = (e, cancelled) => {
+      if (!drag || e.pointerId !== drag.id) return;
+      const d = drag;
+      drag = null;
+      cancelAnimationFrame(raf);
+      raf = 0;
+      if (!moved) return;
+      stage.getBoundingClientRect();        // commit the dragged position before transitions come back on
+      stage.classList.remove('dragging');
+      const flick = Math.abs(d.v) > 0.4 ? -Math.sign(d.v) * 0.5 : 0;
+      const target = cancelled ? active : Math.round(active - (d.x - d.x0) / d.px + flick);
+      if (target === active) layout(); else go(target, 'swipe');
       setTimeout(() => { moved = false; }, 0);
     };
-    stage.addEventListener('pointerup', end);
-    stage.addEventListener('pointercancel', () => { startX = null; });
+    stage.addEventListener('pointerup', (e) => end(e, false));
+    stage.addEventListener('pointercancel', (e) => end(e, true));
 
     root.addEventListener('keydown', (e) => {
       if (e.key === 'ArrowLeft') { go(active + 1, 'key'); e.preventDefault(); }
