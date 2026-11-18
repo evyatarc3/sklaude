@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T20:26:51.804Z",
+  "generatedAt": "2026-11-18T12:04:50.287Z",
   "items": [
     {
       "title": "Socratic Tutor",
@@ -32,7 +32,7 @@
       "title": "Show HN: Klad, a paint app your coding agent can drive (source-available)",
       "url": "https://github.com/klad-app/klad",
       "discussion": "https://news.ycombinator.com/item?id=50454951",
-      "points": 84,
+      "points": 85,
       "comments": 34,
       "date": "2026-11-11",
       "source": "Hacker News"
@@ -71,15 +71,6 @@
       "points": 18,
       "comments": 14,
       "date": "2026-10-21",
-      "source": "Hacker News"
-    },
-    {
-      "title": "Agent-Skills.market",
-      "url": "https://agent-skills.market/",
-      "discussion": "https://news.ycombinator.com/item?id=50148882",
-      "points": 16,
-      "comments": 10,
-      "date": "2026-10-19",
       "source": "Hacker News"
     },
     {
@@ -155,6 +146,15 @@
       "source": "Hacker News"
     },
     {
+      "title": "Show HN: Globalize.now – translations that land in your pull request",
+      "url": "https://news.ycombinator.com/item?id=50350444",
+      "discussion": "https://news.ycombinator.com/item?id=50350444",
+      "points": 6,
+      "comments": 0,
+      "date": "2026-11-03",
+      "source": "Hacker News"
+    },
+    {
       "title": "Why LSP, Why the LSP Plugin, and Why Claude Code Doesn't Save Tokens",
       "url": "https://byteask.ai/research/lsp-claude-code-cpp",
       "discussion": "https://news.ycombinator.com/item?id=50373413",
@@ -206,6 +206,15 @@
       "points": 4,
       "comments": 0,
       "date": "2026-10-19",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Show HN: Tool to measure log TCO savings without losing or migrating any data",
+      "url": "https://news.ycombinator.com/item?id=50535716",
+      "discussion": "https://news.ycombinator.com/item?id=50535716",
+      "points": 4,
+      "comments": 0,
+      "date": "2026-11-17",
       "source": "Hacker News"
     },
     {
