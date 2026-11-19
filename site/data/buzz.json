@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-18T12:04:50.287Z",
+  "generatedAt": "2026-11-19T12:01:47.530Z",
   "items": [
     {
       "title": "Socratic Tutor",
       "url": "https://github.com/janestreet/agent_skills/blob/master/socratic-tutor/SKILL.md",
       "discussion": "https://news.ycombinator.com/item?id=50438261",
-      "points": 721,
+      "points": 722,
       "comments": 171,
       "date": "2026-11-10",
       "source": "Hacker News"
@@ -71,6 +71,15 @@
       "points": 18,
       "comments": 14,
       "date": "2026-10-21",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Show HN: KradleBench – Multi-agent AI evals in Minecraft",
+      "url": "https://www.kradle.ai?1",
+      "discussion": "https://news.ycombinator.com/item?id=50550700",
+      "points": 9,
+      "comments": 7,
+      "date": "2026-11-18",
       "source": "Hacker News"
     },
     {
@@ -197,15 +206,6 @@
       "points": 5,
       "comments": 0,
       "date": "2026-10-22",
-      "source": "Hacker News"
-    },
-    {
-      "title": "Show HN: Claude Code skills and hooks that prove a fix's test fails without it",
-      "url": "https://github.com/ehnruiz/claude-skills",
-      "discussion": "https://news.ycombinator.com/item?id=50158230",
-      "points": 4,
-      "comments": 0,
-      "date": "2026-10-19",
       "source": "Hacker News"
     },
     {
