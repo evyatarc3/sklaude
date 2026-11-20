@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-19T12:01:47.530Z",
+  "generatedAt": "2026-11-20T12:00:48.600Z",
   "items": [
     {
       "title": "Socratic Tutor",
       "url": "https://github.com/janestreet/agent_skills/blob/master/socratic-tutor/SKILL.md",
       "discussion": "https://news.ycombinator.com/item?id=50438261",
       "points": 722,
-      "comments": 171,
+      "comments": 172,
       "date": "2026-11-10",
       "source": "Hacker News"
     },
@@ -14,7 +14,7 @@
       "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
       "url": "https://github.com/GoogleChrome/modern-web-guidance",
       "discussion": "https://news.ycombinator.com/item?id=50443812",
-      "points": 448,
+      "points": 449,
       "comments": 146,
       "date": "2026-11-10",
       "source": "Hacker News"
@@ -35,15 +35,6 @@
       "points": 85,
       "comments": 34,
       "date": "2026-11-11",
-      "source": "Hacker News"
-    },
-    {
-      "title": "Launch HN: Respan (YC W24) – Open-source Rust AI gateway built around plugins",
-      "url": "https://news.ycombinator.com/item?id=50167583",
-      "discussion": "https://news.ycombinator.com/item?id=50167583",
-      "points": 53,
-      "comments": 24,
-      "date": "2026-10-20",
       "source": "Hacker News"
     },
     {
@@ -191,15 +182,6 @@
       "source": "Hacker News"
     },
     {
-      "title": "Show HN: Gauge CLI – Open-Source Hillclimbing for Agent Experience",
-      "url": "https://github.com/gauge-sh/gauge-cli",
-      "discussion": "https://news.ycombinator.com/item?id=50170201",
-      "points": 5,
-      "comments": 0,
-      "date": "2026-10-20",
-      "source": "Hacker News"
-    },
-    {
       "title": "Donating Agent Skills to the Agentic AI Foundation",
       "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
       "discussion": "https://news.ycombinator.com/item?id=50198911",
@@ -215,15 +197,6 @@
       "points": 4,
       "comments": 0,
       "date": "2026-11-17",
-      "source": "Hacker News"
-    },
-    {
-      "title": "Show HN: Skillsync – Coding agent memory but it's just search",
-      "url": "https://skillsync.com",
-      "discussion": "https://news.ycombinator.com/item?id=50169411",
-      "points": 4,
-      "comments": 1,
-      "date": "2026-10-20",
       "source": "Hacker News"
     },
     {

@@ -1,1 +1,0 @@
-{"repo":"bablobanov/hermes-agent-telegram-checklist","branch":"main","skills":{"":{"description":"Native Telegram To-Do checklists: create, append, toggle.","files":[".gitattributes",".gitignore","CHANGELOG.md","CONTRIBUTING.md","LICENSE","README.md","README.zh-Hans.md","SECURITY.md","SKILL.md","telethon_checklist.py","test_telethon_checklist.py"],"fileCount":11}}}

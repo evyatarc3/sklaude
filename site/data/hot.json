@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-19T12:01:47.530Z",
+ "generatedAt": "2026-11-20T12:00:48.600Z",
  "note": "Top lists from the Skills Radar index. Full searchable index: index.json (format in README).",
  "hot": [
   {
@@ -7,8 +7,8 @@
    "repo": "morluto/rea",
    "path": ".agents/skills/reverse-engineer-anything",
    "url": "https://github.com/morluto/rea/tree/main/.agents/skills/reverse-engineer-anything",
-   "stars": 469152,
-   "gain7d": 15846,
+   "stars": 470789,
+   "gain7d": 14749,
    "description": "Reverse engineer native, managed, Electron/JavaScript, packaged, firmware, and browser targets with REA, and build agent environments (AgentEnv bundles) of web applications from a live instance or a capture, and of Linux desktop apps with a task from a request. Use shipped-artifact or requested…",
    "categories": [
     "dev"
@@ -23,8 +23,8 @@
    "repo": "morluto/rea",
    "path": ".agents/skills/rea-analysis-optimization",
    "url": "https://github.com/morluto/rea/tree/main/.agents/skills/rea-analysis-optimization",
-   "stars": 469152,
-   "gain7d": 15846,
+   "stars": 470789,
+   "gain7d": 14749,
    "description": "Optimize REA providers and shared analysis workflows for agent context, latency, CPU, and memory while preserving correctness and Evidence. Use for analysis bottlenecks and cache or query design; CI/test-suite optimization belongs to rea-ci-tests-audit.",
    "categories": [
     "testing"
@@ -37,8 +37,8 @@
    "repo": "morluto/rea",
    "path": ".agents/skills/rea-changelog-update",
    "url": "https://github.com/morluto/rea/tree/main/.agents/skills/rea-changelog-update",
-   "stars": 469152,
-   "gain7d": 15846,
+   "stars": 470789,
+   "gain7d": 14749,
    "description": "Prepare or rewrite REA release changelogs and GitHub release notes from pinned Git history, with verified contributor thanks and Release Please synchronization.",
    "categories": [
     "dev"
@@ -53,8 +53,8 @@
    "repo": "obra/superpowers",
    "path": "skills/brainstorming",
    "url": "https://github.com/obra/superpowers/tree/main/skills/brainstorming",
-   "stars": 321647,
-   "gain7d": 8150,
+   "stars": 322480,
+   "gain7d": 7571,
    "description": "You MUST use this before any creative work - creating features, building components, adding functionality, modifying behavior, or planning anything new, in software or out of it (a talk, a business, a renovation).",
    "categories": [
     "business"
@@ -69,8 +69,8 @@
    "repo": "obra/superpowers",
    "path": "skills/dispatching-parallel-agents",
    "url": "https://github.com/obra/superpowers/tree/main/skills/dispatching-parallel-agents",
-   "stars": 321647,
-   "gain7d": 8150,
+   "stars": 322480,
+   "gain7d": 7571,
    "description": "Use when facing 2+ independent tasks that can be worked on without shared state or sequential dependencies",
    "categories": [
     "ai"
@@ -83,8 +83,8 @@
    "repo": "obra/superpowers",
    "path": "skills/executing-plans",
    "url": "https://github.com/obra/superpowers/tree/main/skills/executing-plans",
-   "stars": 321647,
-   "gain7d": 8150,
+   "stars": 322480,
+   "gain7d": 7571,
    "description": "Use when executing an implementation plan in the current session as the implementer yourself — your human partner chose inline execution, or no subagent tool is available",
    "categories": [
     "ai"
@@ -97,8 +97,8 @@
    "repo": "affaan-m/ECC",
    "path": ".agents/skills/agent-introspection-debugging",
    "url": "https://github.com/affaan-m/ECC/tree/main/.agents/skills/agent-introspection-debugging",
-   "stars": 306913,
-   "gain7d": 6928,
+   "stars": 307502,
+   "gain7d": 6227,
    "description": "Structured self-debugging workflow for AI agent failures using capture, diagnosis, contained recovery, and introspection reports. Use when an agent run fails and you need a reproducible diagnosis instead of a retry.",
    "categories": [
     "dev"
@@ -111,8 +111,8 @@
    "repo": "affaan-m/ECC",
    "path": ".agents/skills/agent-sort",
    "url": "https://github.com/affaan-m/ECC/tree/main/.agents/skills/agent-sort",
-   "stars": 306913,
-   "gain7d": 6928,
+   "stars": 307502,
+   "gain7d": 6227,
    "description": "Build an evidence-backed ECC install plan for a specific repo by sorting skills, commands, rules, hooks, and extras into DAILY vs LIBRARY buckets using parallel repo-aware review passes. Use when ECC should be trimmed to what a project actually needs instead of loading the full bundle.",
    "categories": [
     "ai"
@@ -125,8 +125,8 @@
    "repo": "affaan-m/ECC",
    "path": ".agents/skills/api-design",
    "url": "https://github.com/affaan-m/ECC/tree/main/.agents/skills/api-design",
-   "stars": 306913,
-   "gain7d": 6928,
+   "stars": 307502,
+   "gain7d": 6227,
    "description": "REST API design patterns including resource naming, status codes, pagination, filtering, error responses, versioning, and rate limiting for production APIs. Use when designing or reviewing REST endpoints, resource names, status codes, pagination, or versioning.",
    "categories": [
     "frontend"
@@ -141,8 +141,8 @@
    "repo": "mvanhorn/last30days-skill",
    "path": "skills/last30days",
    "url": "https://github.com/mvanhorn/last30days-skill/tree/main/skills/last30days",
-   "stars": 70491,
-   "gain7d": 6274,
+   "stars": 71152,
+   "gain7d": 5863,
    "description": "Research what people actually say about any topic in the last 30 days. Pulls posts and engagement from Reddit, X, YouTube, TikTok, Hacker News, Polymarket, GitHub, and the web. Includes a doctor health check to diagnose broken or missing sources.",
    "categories": [
     "dev"
@@ -158,8 +158,8 @@
    "repo": "mattpocock/skills",
    "path": "skills/engineering/ask-matt",
    "url": "https://github.com/mattpocock/skills/tree/main/skills/engineering/ask-matt",
-   "stars": 327808,
-   "gain7d": 5761,
+   "stars": 328512,
+   "gain7d": 5553,
    "description": "Ask which skill or flow fits your situation. A router over the skills in this repo.",
    "categories": [
     "other"
@@ -174,8 +174,8 @@
    "repo": "mattpocock/skills",
    "path": "skills/engineering/code-review",
    "url": "https://github.com/mattpocock/skills/tree/main/skills/engineering/code-review",
-   "stars": 327808,
-   "gain7d": 5761,
+   "stars": 328512,
+   "gain7d": 5553,
    "description": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes: Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/spec asked for?). Runs both reviews in parallel sub-agents and reports them…",
    "categories": [
     "dev"
@@ -188,8 +188,8 @@
    "repo": "mattpocock/skills",
    "path": "skills/engineering/codebase-design",
    "url": "https://github.com/mattpocock/skills/tree/main/skills/engineering/codebase-design",
-   "stars": 327808,
-   "gain7d": 5761,
+   "stars": 328512,
+   "gain7d": 5553,
    "description": "Shared vocabulary for designing deep modules. Use when the user wants to design or improve a module's interface, find deepening opportunities, decide where a seam goes, make code more testable or AI-navigable, or when another skill needs the deep-module vocabulary.",
    "categories": [
     "frontend"
@@ -202,8 +202,8 @@
    "repo": "Leonxlnx/taste-skill",
    "path": "skills/taste-skill",
    "url": "https://github.com/Leonxlnx/taste-skill/tree/main/skills/taste-skill",
-   "stars": 118697,
-   "gain7d": 5479,
+   "stars": 119130,
+   "gain7d": 4867,
    "description": "tasteskill 2.5.1, the anti-slop frontend skill. Builds professional company websites at the level of figma.com and x.ai: plain copy in a voice of its own, one system, one section per screen, equal edges, real photographs and real product UI (licensed stand-in photographs when the client has none; a…",
    "categories": [
     "frontend",
@@ -219,8 +219,8 @@
    "repo": "cloudflare/security-audit-skill",
    "path": "skills/security-audit",
    "url": "https://github.com/cloudflare/security-audit-skill/tree/main/skills/security-audit",
-   "stars": 75596,
-   "gain7d": 5245,
+   "stars": 76055,
+   "gain7d": 4737,
    "description": "Security guidance and vulnerability review for codebases, APIs, services, CLI tools, libraries, and daemons. Use for security questions, focused reviews, vulnerability research, security audits, or pen tests. Run the complete workflow only for explicit codebase audit or pen-test requests…",
    "categories": [
     "security",
@@ -237,8 +237,8 @@
    "repo": "anthropics/skills",
    "path": "skills/algorithmic-art",
    "url": "https://github.com/anthropics/skills/tree/main/skills/algorithmic-art",
-   "stars": 197498,
-   "gain7d": 4706,
+   "stars": 197884,
+   "gain7d": 4205,
    "description": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to…",
    "categories": [
     "media"
@@ -253,8 +253,8 @@
    "repo": "anthropics/skills",
    "path": "skills/brand-guidelines",
    "url": "https://github.com/anthropics/skills/tree/main/skills/brand-guidelines",
-   "stars": 197498,
-   "gain7d": 4706,
+   "stars": 197884,
+   "gain7d": 4205,
    "description": "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it when brand colors or style guidelines, visual formatting, or company design standards apply.",
    "categories": [
     "frontend"
@@ -267,8 +267,8 @@
    "repo": "anthropics/skills",
    "path": "skills/canvas-design",
    "url": "https://github.com/anthropics/skills/tree/main/skills/canvas-design",
-   "stars": 197498,
-   "gain7d": 4706,
+   "stars": 197884,
+   "gain7d": 4205,
    "description": "Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a poster, piece of art, design, or other static piece. Create original visual designs, never copying existing artists' work to avoid copyright violations.",
    "categories": [
     "docs"
@@ -281,8 +281,8 @@
    "repo": "heygen-com/hyperframes",
    "path": ".agents/skills/captions-overlay",
    "url": "https://github.com/heygen-com/hyperframes/tree/main/.agents/skills/captions-overlay",
-   "stars": 86774,
-   "gain7d": 4501,
+   "stars": 87248,
+   "gain7d": 4205,
    "description": "Overlay doctrine for captions in HyperFrames videos — the caption MODEL (drop / rail / embed) and the rule that captions are an OVERLAY composited on top of the film, never a reserved bottom band you shift content up to avoid. Load when adding captions/subtitles to a talking-head or launch video…",
    "categories": [
     "media"
@@ -295,8 +295,8 @@
    "repo": "heygen-com/hyperframes",
    "path": ".agents/skills/changelog-video",
    "url": "https://github.com/heygen-com/hyperframes/tree/main/.agents/skills/changelog-video",
-   "stars": 86774,
-   "gain7d": 4501,
+   "stars": 87248,
+   "gain7d": 4205,
    "description": "Turn a weekly changelog .md into a finished branded changelog video (square 1080, ~45-60s, Annie VO, animated brand background, mock-UI visualizations, lowkey captions). Use when the user provides a changelog/digest markdown and wants the weekly video, or says \"changelog video\". Self-contained…",
    "categories": [
     "frontend"
@@ -311,8 +311,8 @@
    "repo": "heygen-com/hyperframes",
    "path": ".agents/skills/cut-the-curve",
    "url": "https://github.com/heygen-com/hyperframes/tree/main/.agents/skills/cut-the-curve",
-   "stars": 86774,
-   "gain7d": 4501,
+   "stars": 87248,
+   "gain7d": 4205,
    "description": "The technique catalog: five velocity-matched SEAMS (zoom-through, INVERSE zoom-through, cut-the-curve, waterfall cut, rack-focus blur-cut) plus the two in-scene techniques — waterfall ENTRY (staggered arrival cascades for title cards / segment openers) and the nudge curve (slow-fast-slow…",
    "categories": [
     "docs"
@@ -321,12 +321,76 @@
    "flags": []
   },
   {
+   "name": "banner-design",
+   "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+   "path": ".claude/skills/banner-design",
+   "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/tree/main/.claude/skills/banner-design",
+   "stars": 151993,
+   "gain7d": 3414,
+   "description": "Design banners for social media, ads, website heroes, creative assets, and print. Multiple art direction options with optional generated or supplied visuals. Actions: design, create, generate banner. Platforms: Facebook, Twitter/X, LinkedIn, YouTube, Instagram, Google Display, website hero, print…",
+   "categories": [
+    "marketing",
+    "frontend",
+    "media"
+   ],
+   "risk": "low",
+   "flags": []
+  },
+  {
+   "name": "brand",
+   "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+   "path": ".claude/skills/brand",
+   "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/tree/main/.claude/skills/brand",
+   "stars": 151993,
+   "gain7d": 3414,
+   "description": "Brand voice, visual identity, messaging frameworks, asset management, brand consistency. Activate for branded content, tone of voice, marketing assets, brand compliance, style guides.",
+   "categories": [
+    "frontend"
+   ],
+   "risk": "medium",
+   "flags": [
+    "scripts"
+   ]
+  },
+  {
+   "name": "design-system",
+   "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+   "path": ".claude/skills/design-system",
+   "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/tree/main/.claude/skills/design-system",
+   "stars": 151993,
+   "gain7d": 3414,
+   "description": "Token architecture, component specifications, and slide generation. Three-layer tokens (primitive→semantic→component), CSS variables, spacing/typography scales, component specs, strategic slide creation. Use for design tokens, systematic design, brand-compliant presentations.",
+   "categories": [
+    "frontend"
+   ],
+   "risk": "medium",
+   "flags": [
+    "scripts"
+   ]
+  },
+  {
+   "name": "humanizer",
+   "repo": "blader/humanizer",
+   "path": "",
+   "url": "https://github.com/blader/humanizer",
+   "stars": 71493,
+   "gain7d": 3381,
+   "description": "Rewrite AI-sounding text so it reads like the writer without changing what it says. Use when editing or reviewing prose for AI tells: not-X-but-Y contrasts, one-line closers, staged openers, forced triads, dashes everywhere, inflated claims, sales language, stock AI words, bold labels, or filler.",
+   "categories": [
+    "writing"
+   ],
+   "risk": "medium",
+   "flags": [
+    "network"
+   ]
+  },
+  {
    "name": "release-plannotator",
    "repo": "backnotprop/plannotator",
    "path": ".agents/skills/release",
    "url": "https://github.com/backnotprop/plannotator/tree/main/.agents/skills/release",
-   "stars": 13567,
-   "gain7d": 3626,
+   "stars": 13782,
+   "gain7d": 3096,
    "description": "Prepare and execute a Plannotator release — draft release notes with full contributor credit, bump versions across all package files, build in dependency order, and kick off the tag-driven release pipeline. Use this skill whenever the user mentions preparing a release, bumping versions, writing…",
    "categories": [
     "productivity"
@@ -342,8 +406,8 @@
    "repo": "backnotprop/plannotator",
    "path": ".agents/skills/review-renovate",
    "url": "https://github.com/backnotprop/plannotator/tree/main/.agents/skills/review-renovate",
-   "stars": 13567,
-   "gain7d": 3626,
+   "stars": 13782,
+   "gain7d": 3096,
    "description": "Review Renovate bot PRs that update GitHub Actions dependencies. Verifies supply chain integrity by checking pinned commit SHAs against upstream tagged releases, reviews changelogs for breaking changes, and confirms compatibility with existing workflow configurations. Use when a Renovate PR updates…",
    "categories": [
     "dev"
@@ -356,8 +420,8 @@
    "repo": "backnotprop/plannotator",
    "path": ".agents/skills/update-deps",
    "url": "https://github.com/backnotprop/plannotator/tree/main/.agents/skills/update-deps",
-   "stars": 13567,
-   "gain7d": 3626,
+   "stars": 13782,
+   "gain7d": 3096,
    "description": "Audit and update npm/Bun dependencies with supply chain integrity checks — verifies maintainers, publish age, tarball diffs, and provenance before bumping. Defers risky packages to ~/.supply-chain/notes/.",
    "categories": [
     "productivity"
@@ -368,67 +432,19 @@
    ]
   },
   {
-   "name": "banner-design",
-   "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
-   "path": ".claude/skills/banner-design",
-   "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/tree/main/.claude/skills/banner-design",
-   "stars": 151573,
-   "gain7d": 3572,
-   "description": "Design banners for social media, ads, website heroes, creative assets, and print. Multiple art direction options with optional generated or supplied visuals. Actions: design, create, generate banner. Platforms: Facebook, Twitter/X, LinkedIn, YouTube, Instagram, Google Display, website hero, print…",
+   "name": "diagram-design",
+   "repo": "cathrynlavery/diagram-design",
+   "path": "skills/diagram-design",
+   "url": "https://github.com/cathrynlavery/diagram-design/tree/main/skills/diagram-design",
+   "stars": 68970,
+   "gain7d": 2672,
+   "description": "Create branded architecture, architecture delta, IT current-state, flowchart, sequence, state machine, ER/data model, steps, timeline, swimlane, quadrant, radar/spider, polar chart (polar/radial lollipop), loop/flywheel, nested, tree, org chart, layer stack, exploded axonometric, axonometric plan…",
    "categories": [
-    "marketing",
-    "frontend",
-    "media"
-   ],
-   "risk": "low",
-   "flags": []
-  },
-  {
-   "name": "brand",
-   "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
-   "path": ".claude/skills/brand",
-   "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/tree/main/.claude/skills/brand",
-   "stars": 151573,
-   "gain7d": 3572,
-   "description": "Brand voice, visual identity, messaging frameworks, asset management, brand consistency. Activate for branded content, tone of voice, marketing assets, brand compliance, style guides.",
-   "categories": [
-    "frontend"
+    "data"
    ],
    "risk": "medium",
    "flags": [
     "scripts"
-   ]
-  },
-  {
-   "name": "design-system",
-   "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
-   "path": ".claude/skills/design-system",
-   "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/tree/main/.claude/skills/design-system",
-   "stars": 151573,
-   "gain7d": 3572,
-   "description": "Token architecture, component specifications, and slide generation. Three-layer tokens (primitive→semantic→component), CSS variables, spacing/typography scales, component specs, strategic slide creation. Use for design tokens, systematic design, brand-compliant presentations.",
-   "categories": [
-    "frontend"
-   ],
-   "risk": "medium",
-   "flags": [
-    "scripts"
-   ]
-  },
-  {
-   "name": "humanizer",
-   "repo": "blader/humanizer",
-   "path": "",
-   "url": "https://github.com/blader/humanizer",
-   "stars": 71036,
-   "gain7d": 3442,
-   "description": "Rewrite AI-sounding text so it reads like the writer without changing what it says. Use when editing or reviewing prose for AI tells: not-X-but-Y contrasts, one-line closers, staged openers, forced triads, dashes everywhere, inflated claims, sales language, stock AI words, bold labels, or filler.",
-   "categories": [
-    "writing"
-   ],
-   "risk": "medium",
-   "flags": [
-    "network"
    ]
   },
   {
@@ -436,8 +452,8 @@
    "repo": "Panniantong/Agent-Reach",
    "path": "agent_reach/skill",
    "url": "https://github.com/Panniantong/Agent-Reach/tree/main/agent_reach/skill",
-   "stars": 113187,
-   "gain7d": 2476,
+   "stars": 113456,
+   "gain7d": 2328,
    "description": "只读读取各平台内容：搜索、读帖、看评论、取字幕、查行情和职位。 Use when 用户提到或贴出链接：小红书/xiaohongshu、B站/bilibili、Twitter/X、Reddit、 YouTube（字幕、转录）、GitHub、V2EX、雪球/股票行情、LinkedIn/Boss直聘 职位、 Instagram、Facebook、小宇宙播客；或说\"帮我搜/看看/读一下这个链接\"而自带网页搜索/读取不可用、失败或拿不到正文； 或要安装、加上/去掉某个平台、登录/退出、看状态、更新、卸载 Agent Reach。 不做：发帖、评论、点赞、私信等任何写操作；不替用户登录、不索要密码。…",
    "categories": [
     "marketing"
@@ -450,8 +466,8 @@
    "repo": "tt-a1i/archify",
    "path": "archify",
    "url": "https://github.com/tt-a1i/archify/tree/main/archify",
-   "stars": 97915,
-   "gain7d": 2387,
+   "stars": 98213,
+   "gain7d": 2312,
    "description": "Create validated architecture, workflow, sequence, data-flow, lifecycle/state, ERD, class, tree, timeline, and waterfall diagrams as explorable standalone HTML with dark/light themes, motion and image/SVG/WebM export. Accept requirements or Mermaid; inspect repository evidence for code-backed…",
    "categories": [
     "media"
@@ -466,8 +482,8 @@
    "repo": "tt-a1i/archify",
    "path": ".agents/skills/archify-review",
    "url": "https://github.com/tt-a1i/archify/tree/main/.agents/skills/archify-review",
-   "stars": 97915,
-   "gain7d": 2387,
+   "stars": 98213,
+   "gain7d": 2312,
    "description": "Review Archify issues, PRs, or code through value, cost, and impact to support evidence-based maintenance decisions. Use for issue triage, change reviews, and code quality assessments.",
    "categories": [
     "dev",
@@ -481,8 +497,8 @@
    "repo": "tt-a1i/archify",
    "path": ".agents/skills/archify-tuning",
    "url": "https://github.com/tt-a1i/archify/tree/main/.agents/skills/archify-tuning",
-   "stars": 97915,
-   "gain7d": 2387,
+   "stars": 98213,
+   "gain7d": 2312,
    "description": "Improve Archify diagram accuracy, visual quality and complete authoring speed with fewer repairs. Use for generation experiments or evaluating changes to layout, routing, diagnostics, authoring instructions and acceptance rules against actual diagrams and agent traces.",
    "categories": [
     "dev",
@@ -498,8 +514,8 @@
    "repo": "AgriciDaniel/claude-seo",
    "path": "extensions/ahrefs/skills/seo-ahrefs",
    "url": "https://github.com/AgriciDaniel/claude-seo/tree/main/extensions/ahrefs/skills/seo-ahrefs",
-   "stars": 30796,
-   "gain7d": 2357,
+   "stars": 31041,
+   "gain7d": 2196,
    "description": "Ahrefs API analyst (extension). Reads referring domains, backlinks, organic keywords, and content explorer data via the tested @ahrefs/mcp@0.0.11 server. Pairs with seo-backlinks for multi-source confidence weighting.",
    "categories": [
     "marketing"
@@ -512,8 +528,8 @@
    "repo": "AgriciDaniel/claude-seo",
    "path": "extensions/banana/skills/seo-image-gen",
    "url": "https://github.com/AgriciDaniel/claude-seo/tree/main/extensions/banana/skills/seo-image-gen",
-   "stars": 30796,
-   "gain7d": 2357,
+   "stars": 31041,
+   "gain7d": 2196,
    "description": "AI image generation for SEO assets: OG/social preview images, blog hero images, schema images, product photography, infographics. Powered by Gemini via nanobanana-mcp. Requires banana extension installed. Use when the user wants an SEO asset and says \"OG image\", \"social preview\", \"hero image\"…",
    "categories": [
     "media"
@@ -528,8 +544,8 @@
    "repo": "AgriciDaniel/claude-seo",
    "path": "extensions/bing-webmaster/skills/seo-bing",
    "url": "https://github.com/AgriciDaniel/claude-seo/tree/main/extensions/bing-webmaster/skills/seo-bing",
-   "stars": 30796,
-   "gain7d": 2357,
+   "stars": 31041,
+   "gain7d": 2196,
    "description": "Bing Webmaster Tools + IndexNow extension. Microsoft Copilot citations are fed by the Bing index; this skill makes Bing visibility, link data, and IndexNow URL submission first-class.",
    "categories": [
     "marketing"
@@ -544,8 +560,8 @@
    "repo": "JuliusBrussee/caveman",
    "path": "plugins/caveman/skills/cavecrew",
    "url": "https://github.com/JuliusBrussee/caveman/tree/main/plugins/caveman/skills/cavecrew",
-   "stars": 121424,
-   "gain7d": 2119,
+   "stars": 121680,
+   "gain7d": 2037,
    "description": "When to delegate to `cavecrew-investigator` (locate code), `cavecrew-builder` (1-2 file edit) or `cavecrew-reviewer` (diff review) instead of working inline or using `Explore`. Their output is compressed, so main context lasts longer.",
    "categories": [
     "ai"
@@ -558,8 +574,8 @@
    "repo": "JuliusBrussee/caveman",
    "path": "plugins/caveman/skills/caveman-compress",
    "url": "https://github.com/JuliusBrussee/caveman/tree/main/plugins/caveman/skills/caveman-compress",
-   "stars": 121424,
-   "gain7d": 2119,
+   "stars": 121680,
+   "gain7d": 2037,
    "description": "Compress a memory file such as CLAUDE.md or a todo list into caveman format to save input tokens, keeping a readable backup. Sends the file's text to the configured model provider. Trigger: /caveman-compress.",
    "categories": [
     "productivity"
@@ -575,8 +591,8 @@
    "repo": "JuliusBrussee/caveman",
    "path": "plugins/caveman/skills/caveman-stats",
    "url": "https://github.com/JuliusBrussee/caveman/tree/main/plugins/caveman/skills/caveman-stats",
-   "stars": 121424,
-   "gain7d": 2119,
+   "stars": 121680,
+   "gain7d": 2037,
    "description": "Show recorded output and cache-read token usage and mode attribution for the current Claude Code session, or locate the host's native usage report. Trigger: /caveman-stats.",
    "categories": [
     "ai"
@@ -585,28 +601,26 @@
    "flags": []
   },
   {
-   "name": "diagram-design",
-   "repo": "cathrynlavery/diagram-design",
-   "path": "skills/diagram-design",
-   "url": "https://github.com/cathrynlavery/diagram-design/tree/main/skills/diagram-design",
-   "stars": 68340,
-   "gain7d": 2093,
-   "description": "Create branded architecture, architecture delta, IT current-state, flowchart, sequence, state machine, ER/data model, steps, timeline, swimlane, quadrant, radar/spider, polar chart (polar/radial lollipop), loop/flywheel, nested, tree, org chart, layer stack, exploded axonometric, axonometric plan…",
+   "name": "karpathy-guidelines",
+   "repo": "multica-ai/andrej-karpathy-skills",
+   "path": "skills/karpathy-guidelines",
+   "url": "https://github.com/multica-ai/andrej-karpathy-skills/tree/main/skills/karpathy-guidelines",
+   "stars": 234629,
+   "gain7d": 1950,
+   "description": "Behavioral guidelines to reduce common LLM coding mistakes. Use when writing, reviewing, or refactoring code to avoid overcomplication, make surgical changes, surface assumptions, and define verifiable success criteria.",
    "categories": [
-    "data"
+    "dev"
    ],
-   "risk": "medium",
-   "flags": [
-    "scripts"
-   ]
+   "risk": "low",
+   "flags": []
   },
   {
    "name": "community-sweep",
    "repo": "thedotmack/claude-mem",
    "path": ".claude/skills/community-sweep",
    "url": "https://github.com/thedotmack/claude-mem/tree/main/.claude/skills/community-sweep",
-   "stars": 118324,
-   "gain7d": 2065,
+   "stars": 118548,
+   "gain7d": 1941,
    "description": "Land community pull requests as the contributor and answer community issues on thedotmack/claude-mem. Takes stock of every open PR (the owner's own included, except the ones the owner marked experimental) and community issue, triages each against the owner's merge philosophy and the cmem.ai…",
    "categories": [
     "business"
@@ -621,8 +635,8 @@
    "repo": "thedotmack/claude-mem",
    "path": "claude-mem-cursor/skills/agent-cost-report",
    "url": "https://github.com/thedotmack/claude-mem/tree/main/claude-mem-cursor/skills/agent-cost-report",
-   "stars": 118324,
-   "gain7d": 2065,
+   "stars": 118548,
+   "gain7d": 1941,
    "description": "Believable agent cost report for any period, default the last 7 full days PT, not counting today. Measured tokens from Claude Code transcripts priced at OpenRouter list prices (ESTIMATED), measured provider spend when a sanctioned source exists, note-taker cost separate, Timing-style HTML/PDF plus…",
    "categories": [
     "docs"
@@ -638,25 +652,11 @@
    "repo": "thedotmack/claude-mem",
    "path": "claude-mem-cursor/skills/install",
    "url": "https://github.com/thedotmack/claude-mem/tree/main/claude-mem-cursor/skills/install",
-   "stars": 118324,
-   "gain7d": 2065,
+   "stars": 118548,
+   "gain7d": 1941,
    "description": "Use this when setting up claude-mem on Cursor: local or remote worker, local host-login observer or remote cmem.ai inference.",
    "categories": [
     "ai"
-   ],
-   "risk": "low",
-   "flags": []
-  },
-  {
-   "name": "karpathy-guidelines",
-   "repo": "multica-ai/andrej-karpathy-skills",
-   "path": "skills/karpathy-guidelines",
-   "url": "https://github.com/multica-ai/andrej-karpathy-skills/tree/main/skills/karpathy-guidelines",
-   "stars": 234385,
-   "gain7d": 2030,
-   "description": "Behavioral guidelines to reduce common LLM coding mistakes. Use when writing, reviewing, or refactoring code to avoid overcomplication, make surgical changes, surface assumptions, and define verifiable success criteria.",
-   "categories": [
-    "dev"
    ],
    "risk": "low",
    "flags": []
@@ -666,8 +666,8 @@
    "repo": "career-ops-hq/career-ops",
    "path": ".agents/skills/career-ops",
    "url": "https://github.com/career-ops-hq/career-ops/tree/main/.agents/skills/career-ops",
-   "stars": 83674,
-   "gain7d": 1979,
+   "stars": 83884,
+   "gain7d": 1852,
    "description": "Open-source AI job search agent -- evaluate offers, generate CVs, scan portals, track applications. Use when the user pastes a job URL or JD, asks to scan portals, generate a CV/PDF, track applications, prepare for interviews, draft outreach/emails, or run any career-ops mode.",
    "categories": [
     "docs"
@@ -680,8 +680,8 @@
    "repo": "career-ops-hq/career-ops",
    "path": "plugins/apify",
    "url": "https://github.com/career-ops-hq/career-ops/tree/main/plugins/apify",
-   "stars": 83674,
-   "gain7d": 1979,
+   "stars": 83884,
+   "gain7d": 1852,
    "description": "How to scan a job source through an Apify actor as a keyed provider.",
    "categories": [
     "ai"
@@ -696,8 +696,8 @@
    "repo": "career-ops-hq/career-ops",
    "path": "plugins/gmail",
    "url": "https://github.com/career-ops-hq/career-ops/tree/main/plugins/gmail",
-   "stars": 83674,
-   "gain7d": 1979,
+   "stars": 83884,
+   "gain7d": 1852,
    "description": "How to pull job leads from a Gmail label into the career-ops pipeline.",
    "categories": [
     "productivity"
@@ -712,8 +712,8 @@
    "repo": "coreyhaines31/marketingskills",
    "path": "skills/ab-testing",
    "url": "https://github.com/coreyhaines31/marketingskills/tree/main/skills/ab-testing",
-   "stars": 61373,
-   "gain7d": 1734,
+   "stars": 61616,
+   "gain7d": 1726,
    "description": "When the user wants to plan, run, or read A/B tests, or asks a judgement call on one: is the result real, can we stop, which version won, is this worth testing at all: sample size, duration, significance, hypotheses, and experiment backlogs. For tracking setup, see analytics. For page-level…",
    "categories": [
     "testing"
@@ -726,8 +726,8 @@
    "repo": "coreyhaines31/marketingskills",
    "path": "skills/ad-creative",
    "url": "https://github.com/coreyhaines31/marketingskills/tree/main/skills/ad-creative",
-   "stars": 61373,
-   "gain7d": 1734,
+   "stars": 61616,
+   "gain7d": 1726,
    "description": "When the user wants to write or judge ad creative, or asks which ad, hook, or angle to run or kill: headlines, primary text, and variations for Google, Meta, LinkedIn, and TikTok, fresh angles when creative fatigues. Test hypotheses name the metric, comparison, and expected direction. No AI tells…",
    "categories": [
     "marketing"
@@ -740,8 +740,8 @@
    "repo": "coreyhaines31/marketingskills",
    "path": "skills/ads",
    "url": "https://github.com/coreyhaines31/marketingskills/tree/main/skills/ads",
-   "stars": 61373,
-   "gain7d": 1734,
+   "stars": 61616,
+   "gain7d": 1726,
    "description": "When the user wants to plan, run, or fix paid ads on Google, Meta, and LinkedIn, or asks a judgement call on them: are ads worth it, which channel or budget split, why CPA rose, kill or keep a campaign. End with facts, hypotheses, and missing data; label unavailable inputs MISSING instead of…",
    "categories": [
     "marketing"
@@ -754,8 +754,8 @@
    "repo": "NVIDIA/SkillSpector",
    "path": "skills/skill-inspector",
    "url": "https://github.com/NVIDIA/SkillSpector/tree/main/skills/skill-inspector",
-   "stars": 26888,
-   "gain7d": 1447,
+   "stars": 27012,
+   "gain7d": 1302,
    "description": "Review AI agent skills before installation using NVIDIA SkillSpector and source-aware semantic review. Use when asked whether a skill or downloaded skill folder is safe, trustworthy, installable, over-permissioned, or malicious.",
    "categories": [
     "ai"
@@ -770,8 +770,8 @@
    "repo": "Egonex-AI/Understand-Anything",
    "path": "understand-anything-plugin/skills/understand-chat",
    "url": "https://github.com/Egonex-AI/Understand-Anything/tree/main/understand-anything-plugin/skills/understand-chat",
-   "stars": 93242,
-   "gain7d": 1125,
+   "stars": 93400,
+   "gain7d": 1120,
    "description": "Use when you need to ask questions about a codebase or understand code using a knowledge graph",
    "categories": [
     "dev"
@@ -784,8 +784,8 @@
    "repo": "Egonex-AI/Understand-Anything",
    "path": "understand-anything-plugin/skills/understand-dashboard",
    "url": "https://github.com/Egonex-AI/Understand-Anything/tree/main/understand-anything-plugin/skills/understand-dashboard",
-   "stars": 93242,
-   "gain7d": 1125,
+   "stars": 93400,
+   "gain7d": 1120,
    "description": "Launch the interactive web dashboard to visualize a codebase's knowledge graph",
    "categories": [
     "data"
@@ -800,8 +800,8 @@
    "repo": "Egonex-AI/Understand-Anything",
    "path": "understand-anything-plugin/skills/understand-diff",
    "url": "https://github.com/Egonex-AI/Understand-Anything/tree/main/understand-anything-plugin/skills/understand-diff",
-   "stars": 93242,
-   "gain7d": 1125,
+   "stars": 93400,
+   "gain7d": 1120,
    "description": "Use when you need to analyze git diffs or pull requests to understand what changed, affected components, and risks",
    "categories": [
     "dev"
@@ -814,8 +814,8 @@
    "repo": "K-Dense-AI/scientific-agent-skills",
    "path": "skills/13c-metabolic-flux",
    "url": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/main/skills/13c-metabolic-flux",
-   "stars": 57799,
-   "gain7d": 1057,
+   "stars": 57906,
+   "gain7d": 980,
    "description": "Estimates intracellular metabolic fluxes from steady-state carbon-13 isotope-tracing measurements using validated atom maps, mfapy isotope simulation, constrained multistart fitting, and flux-profile diagnostics. Use for 13C-MFA, carbon tracing, mass isotopomer distributions (MDVs/MIDs), positional…",
    "categories": [
     "research"
@@ -831,8 +831,8 @@
    "repo": "K-Dense-AI/scientific-agent-skills",
    "path": "skills/adaptyv",
    "url": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/main/skills/adaptyv",
-   "stars": 57799,
-   "gain7d": 1057,
+   "stars": 57906,
+   "gain7d": 980,
    "description": "Uses the Adaptyv Bio Foundry API and Python SDK to design protein characterization experiments, estimate costs, submit sequences, monitor laboratory progress, and retrieve results. Applies to Adaptyv Foundry, its target catalog, binding screening and affinity assays, thermostability, expression…",
    "categories": [
     "dev"
@@ -848,56 +848,11 @@
    "repo": "K-Dense-AI/scientific-agent-skills",
    "path": "skills/aeon",
    "url": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/main/skills/aeon",
-   "stars": 57799,
-   "gain7d": 1057,
+   "stars": 57906,
+   "gain7d": 980,
    "description": "This skill should be used for time series machine learning tasks including classification, regression, clustering, forecasting, anomaly detection, segmentation, and similarity search. Use when working with temporal data, sequential patterns, or time-indexed observations requiring specialized…",
    "categories": [
     "education"
-   ],
-   "risk": "low",
-   "flags": []
-  },
-  {
-   "name": "vercel-composition-patterns",
-   "repo": "vercel-labs/agent-skills",
-   "path": "skills/composition-patterns",
-   "url": "https://github.com/vercel-labs/agent-skills/tree/main/skills/composition-patterns",
-   "stars": 34509,
-   "gain7d": 854,
-   "description": "React composition patterns that scale. Use when refactoring components with boolean prop proliferation, building flexible component libraries, or designing reusable APIs. Triggers on tasks involving compound components, render props, context providers, or component architecture. Includes React 19…",
-   "categories": [
-    "dev"
-   ],
-   "risk": "low",
-   "flags": []
-  },
-  {
-   "name": "deploy-to-vercel",
-   "repo": "vercel-labs/agent-skills",
-   "path": "skills/deploy-to-vercel",
-   "url": "https://github.com/vercel-labs/agent-skills/tree/main/skills/deploy-to-vercel",
-   "stars": 34509,
-   "gain7d": 854,
-   "description": "Deploy applications and websites to Vercel. Use when the user requests deployment actions like \"deploy my app\", \"deploy and give me the link\", \"push this live\", or \"create a preview deployment\".",
-   "categories": [
-    "devops"
-   ],
-   "risk": "medium",
-   "flags": [
-    "network",
-    "secrets"
-   ]
-  },
-  {
-   "name": "vercel-react-best-practices",
-   "repo": "vercel-labs/agent-skills",
-   "path": "skills/react-best-practices",
-   "url": "https://github.com/vercel-labs/agent-skills/tree/main/skills/react-best-practices",
-   "stars": 34509,
-   "gain7d": 854,
-   "description": "React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React/Next.js code to ensure optimal performance patterns. Triggers on tasks involving React components, Next.js pages, data fetching, bundle…",
-   "categories": [
-    "dev"
    ],
    "risk": "low",
    "flags": []
@@ -907,8 +862,8 @@
    "repo": "tw93/Mole",
    "path": "skills/mole",
    "url": "https://github.com/tw93/Mole/tree/main/skills/mole",
-   "stars": 75576,
-   "gain7d": 849,
+   "stars": 75687,
+   "gain7d": 831,
    "description": "Drive the Mole CLI (`mo`) on macOS or Windows: find what uses disk space, preview and run cleanup, uninstall apps, and read system health and cleanup history. Use before running any `mo` command. Not for editing Mole source code.",
    "categories": [
     "dev"
@@ -923,8 +878,8 @@
    "repo": "tw93/Mole",
    "path": ".claude/skills/bugs",
    "url": "https://github.com/tw93/Mole/tree/main/.claude/skills/bugs",
-   "stars": 75576,
-   "gain7d": 849,
+   "stars": 75687,
+   "gain7d": 831,
    "description": "Mole incident catalog for cleanup safety, bounded probes, cancellation, dry-run parity, and actionable gates. Use for a Mole safety-sensitive diff; not for docs, release notes, or generic review.",
    "categories": [
     "productivity"
@@ -937,8 +892,8 @@
    "repo": "tw93/Mole",
    "path": ".claude/skills/release-flow",
    "url": "https://github.com/tw93/Mole/tree/main/.claude/skills/release-flow",
-   "stars": 75576,
-   "gain7d": 849,
+   "stars": 75687,
+   "gain7d": 831,
    "description": "Mole CLI release runbook for distribution channels, pre-flight checks, capital-V tags, artifacts, and curated-note handoff. Use when assessing or executing a Mole release. Not for release-note copy alone or ordinary code review.",
    "categories": [
     "dev"
@@ -953,8 +908,8 @@
    "repo": "garrytan/gstack",
    "path": "",
    "url": "https://github.com/garrytan/gstack",
-   "stars": 142067,
-   "gain7d": 796,
+   "stars": 142185,
+   "gain7d": 803,
    "description": "Picks the gstack skill that fits a request: planning, review, QA, shipping, docs, security or design. Use for: gstack, which gstack skill, route this with gstack. (gstack)",
    "categories": [
     "frontend"
@@ -969,8 +924,8 @@
    "repo": "garrytan/gstack",
    "path": "autoplan",
    "url": "https://github.com/garrytan/gstack/tree/main/autoplan",
-   "stars": 142067,
-   "gain7d": 796,
+   "stars": 142185,
+   "gain7d": 803,
    "description": "Auto-review pipeline — runs the CEO, design, eng and DX reviews in order (lean run: one reviewer), auto-deciding. Use for: run all reviews, automatic review pipeline. (gstack)",
    "categories": [
     "frontend"
@@ -986,8 +941,8 @@
    "repo": "garrytan/gstack",
    "path": "benchmark-models",
    "url": "https://github.com/garrytan/gstack/tree/main/benchmark-models",
-   "stars": 142067,
-   "gain7d": 796,
+   "stars": 142185,
+   "gain7d": 803,
    "description": "Cross-model benchmark for gstack skills. Use for: cross model benchmark, compare claude gpt gemini. (gstack)",
    "categories": [
     "testing"
@@ -998,12 +953,57 @@
    ]
   },
   {
+   "name": "vercel-composition-patterns",
+   "repo": "vercel-labs/agent-skills",
+   "path": "skills/composition-patterns",
+   "url": "https://github.com/vercel-labs/agent-skills/tree/main/skills/composition-patterns",
+   "stars": 34585,
+   "gain7d": 774,
+   "description": "React composition patterns that scale. Use when refactoring components with boolean prop proliferation, building flexible component libraries, or designing reusable APIs. Triggers on tasks involving compound components, render props, context providers, or component architecture. Includes React 19…",
+   "categories": [
+    "dev"
+   ],
+   "risk": "low",
+   "flags": []
+  },
+  {
+   "name": "deploy-to-vercel",
+   "repo": "vercel-labs/agent-skills",
+   "path": "skills/deploy-to-vercel",
+   "url": "https://github.com/vercel-labs/agent-skills/tree/main/skills/deploy-to-vercel",
+   "stars": 34585,
+   "gain7d": 774,
+   "description": "Deploy applications and websites to Vercel. Use when the user requests deployment actions like \"deploy my app\", \"deploy and give me the link\", \"push this live\", or \"create a preview deployment\".",
+   "categories": [
+    "devops"
+   ],
+   "risk": "medium",
+   "flags": [
+    "network",
+    "secrets"
+   ]
+  },
+  {
+   "name": "vercel-react-best-practices",
+   "repo": "vercel-labs/agent-skills",
+   "path": "skills/react-best-practices",
+   "url": "https://github.com/vercel-labs/agent-skills/tree/main/skills/react-best-practices",
+   "stars": 34585,
+   "gain7d": 774,
+   "description": "React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React/Next.js code to ensure optimal performance patterns. Triggers on tasks involving React components, Next.js pages, data fetching, bundle…",
+   "categories": [
+    "dev"
+   ],
+   "risk": "low",
+   "flags": []
+  },
+  {
    "name": "access",
    "repo": "anthropics/claude-plugins-official",
    "path": "external_plugins/discord/skills/access",
    "url": "https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/discord/skills/access",
-   "stars": 47696,
-   "gain7d": 670,
+   "stars": 47777,
+   "gain7d": 644,
    "description": "Manage Discord channel access — approve pairings, edit allowlists, set DM/group policy. Use when the user asks to pair, approve someone, check who's allowed, or change policy for the Discord channel.",
    "categories": [
     "ai"
@@ -1016,8 +1016,8 @@
    "repo": "anthropics/claude-plugins-official",
    "path": "external_plugins/discord/skills/configure",
    "url": "https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/discord/skills/configure",
-   "stars": 47696,
-   "gain7d": 670,
+   "stars": 47777,
+   "gain7d": 644,
    "description": "Set up the Discord channel — save the bot token and review access policy. Use when the user pastes a Discord bot token, asks to configure Discord, asks \"how do I set this up\" or \"who can reach me,\" or wants to check channel status.",
    "categories": [
     "ai"
@@ -1032,8 +1032,8 @@
    "repo": "anthropics/claude-plugins-official",
    "path": "external_plugins/imessage/skills/access",
    "url": "https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/imessage/skills/access",
-   "stars": 47696,
-   "gain7d": 670,
+   "stars": 47777,
+   "gain7d": 644,
    "description": "Manage iMessage channel access — approve pairings, edit allowlists, set DM/group policy. Use when the user asks to pair, approve someone, check who's allowed, or change policy for the iMessage channel.",
    "categories": [
     "ai"
@@ -1046,8 +1046,8 @@
    "repo": "ComposioHQ/awesome-claude-skills",
    "path": "content-research-writer",
    "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/content-research-writer",
-   "stars": 79856,
-   "gain7d": 607,
+   "stars": 79920,
+   "gain7d": 567,
    "description": "Assists in writing high-quality content by conducting research, adding citations, improving hooks, iterating on outlines, and providing real-time feedback on each section. Transforms your writing process from solo effort to collaborative partnership.",
    "categories": [
     "writing",
@@ -1061,8 +1061,8 @@
    "repo": "ComposioHQ/awesome-claude-skills",
    "path": "file-organizer",
    "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/file-organizer",
-   "stars": 79856,
-   "gain7d": 607,
+   "stars": 79920,
+   "gain7d": 567,
    "description": "Intelligently organizes your files and folders across your computer by understanding context, finding duplicates, suggesting better structures, and automating cleanup tasks. Reduces cognitive load and keeps your digital workspace tidy without manual effort.",
    "categories": [
     "ai"
@@ -1075,8 +1075,8 @@
    "repo": "ComposioHQ/awesome-claude-skills",
    "path": "image-enhancer",
    "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/image-enhancer",
-   "stars": 79856,
-   "gain7d": 607,
+   "stars": 79920,
+   "gain7d": 567,
    "description": "Improves the quality of images, especially screenshots, by enhancing resolution, sharpness, and clarity. Perfect for preparing images for presentations, documentation, or social media posts.",
    "categories": [
     "media"
@@ -1085,33 +1085,15 @@
    "flags": []
   },
   {
-   "name": "orca-replay",
-   "repo": "Continuum-AI-Corp/OrcaReplay",
-   "path": "skills/orca-replay",
-   "url": "https://github.com/Continuum-AI-Corp/OrcaReplay/tree/main/skills/orca-replay",
-   "stars": 1002,
-   "gain7d": 499,
-   "description": "Answers questions about a past agent run from its recording rather than from memory, and replays or forks that run. Use when asked why an earlier run did something, or to reproduce a failure.",
+   "name": "rederive",
+   "repo": "EricJujianZou/rederive",
+   "path": "skills/rederive",
+   "url": "https://github.com/EricJujianZou/rederive/tree/master/skills/rederive",
+   "stars": 1185,
+   "gain7d": 487,
+   "description": "Teaches a codebase by making the user re-derive its design decisions from first principles through Socratic questions, instead of explaining the code. Works on the user's own repo or any open source repo (local path or git URL). Use when the user runs /rederive, wants to explain a project they…",
    "categories": [
-    "ai",
     "dev"
-   ],
-   "risk": "medium",
-   "flags": [
-    "network",
-    "secrets"
-   ]
-  },
-  {
-   "name": "answer-me-with-html",
-   "repo": "QingYunA/answer-me-with-html",
-   "path": "skills/answer-me-with-html",
-   "url": "https://github.com/QingYunA/answer-me-with-html/tree/main/skills/answer-me-with-html",
-   "stars": 6552,
-   "gain7d": 476,
-   "description": "Turns an answer into a one-page visual HTML explainer: the model writes a short Markdown draft and the bundled CLI builds one page. Use it proactively and liberally in replies to the user, without being asked, whenever a page would help the reader more than plain text, even if plain text would also…",
-   "categories": [
-    "docs"
    ],
    "risk": "medium",
    "flags": [
@@ -1123,8 +1105,8 @@
    "repo": "ScrapeCreators/social-media-research-skills",
    "path": "skills/ad-library-teardown",
    "url": "https://github.com/ScrapeCreators/social-media-research-skills/tree/main/skills/ad-library-teardown",
-   "stars": 6741,
-   "gain7d": 474,
+   "stars": 6814,
+   "gain7d": 483,
    "description": "Use when the user wants to analyze active ads from Meta/Facebook, Google, or LinkedIn ad libraries; tear down a competitor's messaging; extract hooks, offers, CTAs, video transcripts, landing page claims, and test ideas from public ads.",
    "categories": [
     "marketing"
@@ -1137,8 +1119,8 @@
    "repo": "ScrapeCreators/social-media-research-skills",
    "path": "skills/audience-research",
    "url": "https://github.com/ScrapeCreators/social-media-research-skills/tree/main/skills/audience-research",
-   "stars": 6741,
-   "gain7d": 474,
+   "stars": 6814,
+   "gain7d": 483,
    "description": "Use when the user wants to evaluate a creator, influencer, or brand audience using public profile signals, TikTok audience demographics, follower/following data, comments, geography, language, and content fit. Helps judge sponsorship and market fit.",
    "categories": [
     "research"
@@ -1151,11 +1133,71 @@
    "repo": "ScrapeCreators/social-media-research-skills",
    "path": "skills/comment-mining",
    "url": "https://github.com/ScrapeCreators/social-media-research-skills/tree/main/skills/comment-mining",
-   "stars": 6741,
-   "gain7d": 474,
+   "stars": 6814,
+   "gain7d": 483,
    "description": "Use when the user wants to mine comments and replies for audience reactions, customer language, questions, objections, complaints, product ideas, buying intent, sentiment, or voice-of-customer insights from public social posts and videos.",
    "categories": [
     "media"
+   ],
+   "risk": "low",
+   "flags": []
+  },
+  {
+   "name": "orca-replay",
+   "repo": "Continuum-AI-Corp/OrcaReplay",
+   "path": "skills/orca-replay",
+   "url": "https://github.com/Continuum-AI-Corp/OrcaReplay/tree/main/skills/orca-replay",
+   "stars": 1041,
+   "gain7d": 443,
+   "description": "Answers questions about a past agent run from its recording rather than from memory, and replays or forks that run. Use when asked why an earlier run did something, or to reproduce a failure.",
+   "categories": [
+    "ai",
+    "dev"
+   ],
+   "risk": "medium",
+   "flags": [
+    "network",
+    "secrets"
+   ]
+  },
+  {
+   "name": "pstack-routing",
+   "repo": "michael-denyer/pstack-claude",
+   "path": "plugins/pstack/grok/skills/pstack-routing",
+   "url": "https://github.com/michael-denyer/pstack-claude/tree/main/plugins/pstack/grok/skills/pstack-routing",
+   "stars": 4608,
+   "gain7d": 432,
+   "description": "On every task, read pstack's poteto-mode skill first and follow its routing instructions when applicable.",
+   "categories": [
+    "dev"
+   ],
+   "risk": "low",
+   "flags": []
+  },
+  {
+   "name": "architect",
+   "repo": "michael-denyer/pstack-claude",
+   "path": "plugins/pstack/skills/architect",
+   "url": "https://github.com/michael-denyer/pstack-claude/tree/main/plugins/pstack/skills/architect",
+   "stars": 4608,
+   "gain7d": 432,
+   "description": "Sketch types, signatures, and module structure before code, then stay in the loop while implementation fills in. Use for /architect, 'architect this', 'design this', or non-trivial work where jumping to code would lock in the wrong shape.",
+   "categories": [
+    "frontend"
+   ],
+   "risk": "low",
+   "flags": []
+  },
+  {
+   "name": "arena",
+   "repo": "michael-denyer/pstack-claude",
+   "path": "plugins/pstack/skills/arena",
+   "url": "https://github.com/michael-denyer/pstack-claude/tree/main/plugins/pstack/skills/arena",
+   "stars": 4608,
+   "gain7d": 432,
+   "description": "Spawn N parallel candidates at the same task, pick a base, graft the strongest parts of the losers into it. Use for /arena, 'arena this', 'throw it in the arena', or when one attempt at a non-trivial artifact would lock in the wrong shape.",
+   "categories": [
+    "dev"
    ],
    "risk": "low",
    "flags": []
@@ -1165,8 +1207,8 @@
    "repo": "wanshuiyin/Auto-claude-code-research-in-sleep",
    "path": "skills/ablation-planner",
    "url": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/tree/main/skills/ablation-planner",
-   "stars": 19459,
-   "gain7d": 460,
+   "stars": 19508,
+   "gain7d": 431,
    "description": "Use when main results pass result-to-claim (claim_supported=yes or partial) and ablation studies are needed for paper submission.",
    "categories": [
     "productivity"
@@ -1179,8 +1221,8 @@
    "repo": "wanshuiyin/Auto-claude-code-research-in-sleep",
    "path": "skills/alphaxiv",
    "url": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/tree/main/skills/alphaxiv",
-   "stars": 19459,
-   "gain7d": 460,
+   "stars": 19508,
+   "gain7d": 431,
    "description": "Quick single-paper lookup via AlphaXiv LLM-optimized summaries with tiered source fallback. Use when user says \"explain this paper\", \"summarize paper\", pastes an arXiv/AlphaXiv URL, or provides a bare arXiv ID for quick understanding - not for broad literature search.",
    "categories": [
     "research"
@@ -1195,8 +1237,8 @@
    "repo": "wanshuiyin/Auto-claude-code-research-in-sleep",
    "path": "skills/analyze-results",
    "url": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/tree/main/skills/analyze-results",
-   "stars": 19459,
-   "gain7d": 460,
+   "stars": 19508,
+   "gain7d": 431,
    "description": "Analyze ML experiment results, compute statistics, generate comparison tables and insights. Use when user says \"analyze results\", \"compare\", or needs to interpret experimental data.",
    "categories": [
     "data"
@@ -1205,54 +1247,29 @@
    "flags": []
   },
   {
-   "name": "pstack-routing",
-   "repo": "michael-denyer/pstack-claude",
-   "path": "plugins/pstack/grok/skills/pstack-routing",
-   "url": "https://github.com/michael-denyer/pstack-claude/tree/main/plugins/pstack/grok/skills/pstack-routing",
-   "stars": 4552,
-   "gain7d": 446,
-   "description": "On every task, read pstack's poteto-mode skill first and follow its routing instructions when applicable.",
+   "name": "geo-sleuth",
+   "repo": "Oldcircle/geo-sleuth",
+   "path": "skills/geo-sleuth",
+   "url": "https://github.com/Oldcircle/geo-sleuth/tree/main/skills/geo-sleuth",
+   "stars": 7331,
+   "gain7d": 422,
+   "description": "Geolocate or chronolocate a photo with tool-verified reasoning (where was this taken / when was it taken / photo geolocation / geo-guessing). Given one or more photos, intake.py does metadata, OCR and reverse image search (Baidu/Yandex) in one command; clues and candidates go on a candidate board…",
    "categories": [
-    "dev"
+    "media"
    ],
-   "risk": "low",
-   "flags": []
-  },
-  {
-   "name": "architect",
-   "repo": "michael-denyer/pstack-claude",
-   "path": "plugins/pstack/skills/architect",
-   "url": "https://github.com/michael-denyer/pstack-claude/tree/main/plugins/pstack/skills/architect",
-   "stars": 4552,
-   "gain7d": 446,
-   "description": "Sketch types, signatures, and module structure before code, then stay in the loop while implementation fills in. Use for /architect, 'architect this', 'design this', or non-trivial work where jumping to code would lock in the wrong shape.",
-   "categories": [
-    "frontend"
-   ],
-   "risk": "low",
-   "flags": []
-  },
-  {
-   "name": "arena",
-   "repo": "michael-denyer/pstack-claude",
-   "path": "plugins/pstack/skills/arena",
-   "url": "https://github.com/michael-denyer/pstack-claude/tree/main/plugins/pstack/skills/arena",
-   "stars": 4552,
-   "gain7d": 446,
-   "description": "Spawn N parallel candidates at the same task, pick a base, graft the strongest parts of the losers into it. Use for /arena, 'arena this', 'throw it in the arena', or when one attempt at a non-trivial artifact would lock in the wrong shape.",
-   "categories": [
-    "dev"
-   ],
-   "risk": "low",
-   "flags": []
+   "risk": "medium",
+   "flags": [
+    "scripts",
+    "network"
+   ]
   },
   {
    "name": "abusing-dpapi-for-credential-access",
    "repo": "mukul975/Anthropic-Cybersecurity-Skills",
    "path": "skills/abusing-dpapi-for-credential-access",
    "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills/tree/main/skills/abusing-dpapi-for-credential-access",
-   "stars": 36395,
-   "gain7d": 434,
+   "stars": 36446,
+   "gain7d": 415,
    "description": "Extract and decrypt Windows DPAPI-protected secrets (Credential Manager, browser logins/cookies, Wi-Fi credentials, KeePass keys) online or offline using SharpDPAPI, SharpChrome, Mimikatz, or Impacket's dpapi.py, including domain-wide decryption via the DPAPI backup key. Use during authorized…",
    "categories": [
     "security"
@@ -1268,8 +1285,8 @@
    "repo": "mukul975/Anthropic-Cybersecurity-Skills",
    "path": "skills/abusing-shadow-credentials-for-privesc",
    "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills/tree/main/skills/abusing-shadow-credentials-for-privesc",
-   "stars": 36395,
-   "gain7d": 434,
+   "stars": 36446,
+   "gain7d": 415,
    "description": "Take over Active Directory accounts by writing attacker-controlled public keys to msDS-KeyCredentialLink (Shadow Credentials) with pyWhisker, Whisker, or Certipy, then authenticate via PKINIT to recover the target's NT hash without a password reset. Use when BloodHound shows…",
    "categories": [
     "writing"
@@ -1285,11 +1302,27 @@
    "repo": "mukul975/Anthropic-Cybersecurity-Skills",
    "path": "skills/achieving-cmmc-level-2-compliance",
    "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills/tree/main/skills/achieving-cmmc-level-2-compliance",
-   "stars": 36395,
-   "gain7d": 434,
+   "stars": 36446,
+   "gain7d": 415,
    "description": "Prepare a defense-contractor environment for CMMC Level 2 certification: scope CUI and FCI, implement the 110 NIST SP 800-171 Rev 2 security requirements across 14 families, compute the SPRS score with the DoD Assessment Methodology, manage a compliant POA&M, and ready the organization for a C3PAO…",
    "categories": [
     "business"
+   ],
+   "risk": "medium",
+   "flags": [
+    "scripts"
+   ]
+  },
+  {
+   "name": "answer-me-with-html",
+   "repo": "QingYunA/answer-me-with-html",
+   "path": "skills/answer-me-with-html",
+   "url": "https://github.com/QingYunA/answer-me-with-html/tree/main/skills/answer-me-with-html",
+   "stars": 6570,
+   "gain7d": 389,
+   "description": "Turns an answer into a one-page visual HTML explainer: the model writes a short Markdown draft and the bundled CLI builds one page. Use it proactively and liberally in replies to the user, without being asked, whenever a page would help the reader more than plain text, even if plain text would also…",
+   "categories": [
+    "docs"
    ],
    "risk": "medium",
    "flags": [
@@ -1301,8 +1334,8 @@
    "repo": "shareAI-lab/learn-claude-code",
    "path": "skills/agent-builder",
    "url": "https://github.com/shareAI-lab/learn-claude-code/tree/main/skills/agent-builder",
-   "stars": 80638,
-   "gain7d": 432,
+   "stars": 80671,
+   "gain7d": 382,
    "description": "Design and build AI agents for any domain. Use when users: (1) ask to \"create an agent\", \"build an assistant\", or \"design an AI system\" (2) want to understand agent architecture, agentic patterns, or autonomous AI (3) need help with capabilities, subagents, planning, or skill mechanisms (4) ask…",
    "categories": [
     "ai"
@@ -1317,8 +1350,8 @@
    "repo": "shareAI-lab/learn-claude-code",
    "path": "skills/code-review",
    "url": "https://github.com/shareAI-lab/learn-claude-code/tree/main/skills/code-review",
-   "stars": 80638,
-   "gain7d": 432,
+   "stars": 80671,
+   "gain7d": 382,
    "description": "Perform thorough code reviews with security, performance, and maintainability analysis. Use when user asks to review code, check for bugs, or audit a codebase.",
    "categories": [
     "dev"
@@ -1334,8 +1367,8 @@
    "repo": "shareAI-lab/learn-claude-code",
    "path": "skills/mcp-builder",
    "url": "https://github.com/shareAI-lab/learn-claude-code/tree/main/skills/mcp-builder",
-   "stars": 80638,
-   "gain7d": 432,
+   "stars": 80671,
+   "gain7d": 382,
    "description": "Build MCP (Model Context Protocol) servers that give Claude new capabilities. Use when user wants to create an MCP server, add tools to Claude, or integrate external services.",
    "categories": [
     "ai"
@@ -1346,130 +1379,12 @@
    ]
   },
   {
-   "name": "geo-sleuth",
-   "repo": "Oldcircle/geo-sleuth",
-   "path": "skills/geo-sleuth",
-   "url": "https://github.com/Oldcircle/geo-sleuth/tree/main/skills/geo-sleuth",
-   "stars": 7269,
-   "gain7d": 418,
-   "description": "Geolocate or chronolocate a photo with tool-verified reasoning (where was this taken / when was it taken / photo geolocation / geo-guessing). Given one or more photos, intake.py does metadata, OCR and reverse image search (Baidu/Yandex) in one command; clues and candidates go on a candidate board…",
-   "categories": [
-    "media"
-   ],
-   "risk": "medium",
-   "flags": [
-    "scripts",
-    "network"
-   ]
-  },
-  {
-   "name": "rederive",
-   "repo": "EricJujianZou/rederive",
-   "path": "skills/rederive",
-   "url": "https://github.com/EricJujianZou/rederive/tree/master/skills/rederive",
-   "stars": 1083,
-   "gain7d": 411,
-   "description": "Teaches a codebase by making the user re-derive its design decisions from first principles through Socratic questions, instead of explaining the code. Works on the user's own repo or any open source repo (local path or git URL). Use when the user runs /rederive, wants to explain a project they…",
-   "categories": [
-    "dev"
-   ],
-   "risk": "medium",
-   "flags": [
-    "scripts"
-   ]
-  },
-  {
-   "name": "lesson-quiz",
-   "repo": "luongnv89/claude-howto",
-   "path": ".claude/skills/lesson-quiz",
-   "url": "https://github.com/luongnv89/claude-howto/tree/main/.claude/skills/lesson-quiz",
-   "stars": 47431,
-   "gain7d": 378,
-   "description": "Test a learner on a single Claude Code tutorial lesson (01-10) with 10 questions, scoring answers and flagging weak spots. Use before, during, or after a lesson. Don't use for whole-tutorial assessment or explaining a topic instead of testing it.",
-   "categories": [
-    "education",
-    "testing"
-   ],
-   "risk": "low",
-   "flags": []
-  },
-  {
-   "name": "self-assessment",
-   "repo": "luongnv89/claude-howto",
-   "path": ".claude/skills/self-assessment",
-   "url": "https://github.com/luongnv89/claude-howto/tree/main/.claude/skills/self-assessment",
-   "stars": 47431,
-   "gain7d": 378,
-   "description": "Comprehensive Claude Code self-assessment and learning path advisor. Runs a multi-category quiz covering 10 feature areas, produces a detailed skill profile with per-topic scores, identifies specific gaps, and generates a personalized learning path with prioritized next steps. Use when asked to…",
-   "categories": [
-    "education"
-   ],
-   "risk": "low",
-   "flags": []
-  },
-  {
-   "name": "blog-draft",
-   "repo": "luongnv89/claude-howto",
-   "path": "03-skills/blog-draft",
-   "url": "https://github.com/luongnv89/claude-howto/tree/main/03-skills/blog-draft",
-   "stars": 47431,
-   "gain7d": 378,
-   "description": "Draft a blog post from ideas and resources. Use when users want to write a blog post, create content from research, or draft articles. Guides through research, brainstorming, outlining, and iterative drafting with version control.",
-   "categories": [
-    "writing"
-   ],
-   "risk": "low",
-   "flags": []
-  },
-  {
-   "name": "ab-test-analysis",
-   "repo": "phuryn/pm-skills",
-   "path": "pm-data-analytics/skills/ab-test-analysis",
-   "url": "https://github.com/phuryn/pm-skills/tree/main/pm-data-analytics/skills/ab-test-analysis",
-   "stars": 28166,
-   "gain7d": 331,
-   "description": "Analyze A/B test results with statistical significance, sample size validation, confidence intervals, and ship/extend/stop recommendations. Use when evaluating experiment results, checking if a test reached significance, interpreting split test data, or deciding whether to ship a variant.",
-   "categories": [
-    "testing"
-   ],
-   "risk": "low",
-   "flags": []
-  },
-  {
-   "name": "cohort-analysis",
-   "repo": "phuryn/pm-skills",
-   "path": "pm-data-analytics/skills/cohort-analysis",
-   "url": "https://github.com/phuryn/pm-skills/tree/main/pm-data-analytics/skills/cohort-analysis",
-   "stars": 28166,
-   "gain7d": 331,
-   "description": "Perform cohort analysis on user engagement data — retention curves, feature adoption trends, and segment-level insights. Use when analyzing user retention by cohort, studying feature adoption over time, investigating churn patterns, or identifying engagement trends.",
-   "categories": [
-    "ai"
-   ],
-   "risk": "low",
-   "flags": []
-  },
-  {
-   "name": "sql-queries",
-   "repo": "phuryn/pm-skills",
-   "path": "pm-data-analytics/skills/sql-queries",
-   "url": "https://github.com/phuryn/pm-skills/tree/main/pm-data-analytics/skills/sql-queries",
-   "stars": 28166,
-   "gain7d": 331,
-   "description": "Generate SQL queries from natural language descriptions. Supports BigQuery, PostgreSQL, MySQL, and other dialects. Reads database schemas from uploaded diagrams or documentation. Use when writing SQL, building data reports, exploring databases, or translating business questions into queries.",
-   "categories": [
-    "data"
-   ],
-   "risk": "low",
-   "flags": []
-  },
-  {
    "name": "handdraw-style-prompter",
    "repo": "yang0/handraw-style",
    "path": "",
    "url": "https://github.com/yang0/handraw-style",
-   "stars": 7862,
-   "gain7d": 329,
+   "stars": 7933,
+   "gain7d": 371,
    "description": "Turn a 001–371 hand-drawn and realistic style number and image theme into bilingual prompts, using model capability data to decide when core traits and a numbered reference image are required.",
    "categories": [
     "media"
@@ -1485,8 +1400,8 @@
    "repo": "yang0/handraw-style",
    "path": "skills/article-cover-designer",
    "url": "https://github.com/yang0/handraw-style/tree/master/skills/article-cover-designer",
-   "stars": 7862,
-   "gain7d": 329,
+   "stars": 7933,
+   "gain7d": 371,
    "description": "极简高效的文章与视频封面设计技能。根据输入文章或视频字幕文件自动提炼200字核心摘要、推算受众群体、默认输出微信公众号标准 2.35:1 超宽画幅封面（兼顾X 5:2与安全留白），或按需匹配小红书(3:4)、B站/YouTube/短视频(16:9/9:16)场景；深度协同全库 365 种视觉风格与36种经典配色；视频封面模式自动注入“视频封面设计，网感强，吸引人眼球”，并结合“先设计隐喻再出图，主标题明显，小字少或者没有小字”核心指令，一键输出高质量结构化封面生图提示词。",
    "categories": [
     "writing"
@@ -1499,8 +1414,8 @@
    "repo": "yang0/handraw-style",
    "path": "skills/article-illustration-planner",
    "url": "https://github.com/yang0/handraw-style/tree/master/skills/article-illustration-planner",
-   "stars": 7862,
-   "gain7d": 329,
+   "stars": 7933,
+   "gain7d": 371,
    "description": "深度分析文章脉络，精准规划插图点位与视觉意象。对知识类/教程类文章默认启动“认知降负与高保真图替繁文机制”，严禁删除公式与量化指标，强制协同 170 种排版图型（IG-*信息图/SC-*社媒卡）与 365 种视觉风格/36 种经典配色，杜绝微缩杂物摆拍；对非知识类文章保持叙事氛围与意境。严格执行双向间距（400~1200字）与全篇章节均衡覆盖，支持自主生图或全自动插图回填排版。",
    "categories": [
     "writing"
@@ -1511,12 +1426,97 @@
    ]
   },
   {
+   "name": "lesson-quiz",
+   "repo": "luongnv89/claude-howto",
+   "path": ".claude/skills/lesson-quiz",
+   "url": "https://github.com/luongnv89/claude-howto/tree/main/.claude/skills/lesson-quiz",
+   "stars": 47463,
+   "gain7d": 340,
+   "description": "Test a learner on a single Claude Code tutorial lesson (01-10) with 10 questions, scoring answers and flagging weak spots. Use before, during, or after a lesson. Don't use for whole-tutorial assessment or explaining a topic instead of testing it.",
+   "categories": [
+    "education",
+    "testing"
+   ],
+   "risk": "low",
+   "flags": []
+  },
+  {
+   "name": "self-assessment",
+   "repo": "luongnv89/claude-howto",
+   "path": ".claude/skills/self-assessment",
+   "url": "https://github.com/luongnv89/claude-howto/tree/main/.claude/skills/self-assessment",
+   "stars": 47463,
+   "gain7d": 340,
+   "description": "Comprehensive Claude Code self-assessment and learning path advisor. Runs a multi-category quiz covering 10 feature areas, produces a detailed skill profile with per-topic scores, identifies specific gaps, and generates a personalized learning path with prioritized next steps. Use when asked to…",
+   "categories": [
+    "education"
+   ],
+   "risk": "low",
+   "flags": []
+  },
+  {
+   "name": "blog-draft",
+   "repo": "luongnv89/claude-howto",
+   "path": "03-skills/blog-draft",
+   "url": "https://github.com/luongnv89/claude-howto/tree/main/03-skills/blog-draft",
+   "stars": 47463,
+   "gain7d": 340,
+   "description": "Draft a blog post from ideas and resources. Use when users want to write a blog post, create content from research, or draft articles. Guides through research, brainstorming, outlining, and iterative drafting with version control.",
+   "categories": [
+    "writing"
+   ],
+   "risk": "low",
+   "flags": []
+  },
+  {
+   "name": "ab-test-analysis",
+   "repo": "phuryn/pm-skills",
+   "path": "pm-data-analytics/skills/ab-test-analysis",
+   "url": "https://github.com/phuryn/pm-skills/tree/main/pm-data-analytics/skills/ab-test-analysis",
+   "stars": 28194,
+   "gain7d": 298,
+   "description": "Analyze A/B test results with statistical significance, sample size validation, confidence intervals, and ship/extend/stop recommendations. Use when evaluating experiment results, checking if a test reached significance, interpreting split test data, or deciding whether to ship a variant.",
+   "categories": [
+    "testing"
+   ],
+   "risk": "low",
+   "flags": []
+  },
+  {
+   "name": "cohort-analysis",
+   "repo": "phuryn/pm-skills",
+   "path": "pm-data-analytics/skills/cohort-analysis",
+   "url": "https://github.com/phuryn/pm-skills/tree/main/pm-data-analytics/skills/cohort-analysis",
+   "stars": 28194,
+   "gain7d": 298,
+   "description": "Perform cohort analysis on user engagement data — retention curves, feature adoption trends, and segment-level insights. Use when analyzing user retention by cohort, studying feature adoption over time, investigating churn patterns, or identifying engagement trends.",
+   "categories": [
+    "ai"
+   ],
+   "risk": "low",
+   "flags": []
+  },
+  {
+   "name": "sql-queries",
+   "repo": "phuryn/pm-skills",
+   "path": "pm-data-analytics/skills/sql-queries",
+   "url": "https://github.com/phuryn/pm-skills/tree/main/pm-data-analytics/skills/sql-queries",
+   "stars": 28194,
+   "gain7d": 298,
+   "description": "Generate SQL queries from natural language descriptions. Supports BigQuery, PostgreSQL, MySQL, and other dialects. Reads database schemas from uploaded diagrams or documentation. Use when writing SQL, building data reports, exploring databases, or translating business questions into queries.",
+   "categories": [
+    "data"
+   ],
+   "risk": "low",
+   "flags": []
+  },
+  {
    "name": "analyzing-financial-statements",
    "repo": "anthropics/claude-cookbooks",
    "path": "skills/custom_skills/analyzing-financial-statements",
    "url": "https://github.com/anthropics/claude-cookbooks/tree/main/skills/custom_skills/analyzing-financial-statements",
-   "stars": 54875,
-   "gain7d": 327,
+   "stars": 54897,
+   "gain7d": 284,
    "description": "This skill calculates key financial ratios and metrics from financial statement data for investment analysis",
    "categories": [
     "business"
@@ -1533,8 +1533,8 @@
    "repo": "morluto/rea",
    "path": ".agents/skills/reverse-engineer-anything",
    "url": "https://github.com/morluto/rea/tree/main/.agents/skills/reverse-engineer-anything",
-   "stars": 469152,
-   "gain7d": 15846,
+   "stars": 470789,
+   "gain7d": 14749,
    "description": "Reverse engineer native, managed, Electron/JavaScript, packaged, firmware, and browser targets with REA, and build agent environments (AgentEnv bundles) of web applications from a live instance or a capture, and of Linux desktop apps with a task from a request. Use shipped-artifact or requested…",
    "categories": [
     "dev"
@@ -1549,8 +1549,8 @@
    "repo": "morluto/rea",
    "path": ".agents/skills/rea-analysis-optimization",
    "url": "https://github.com/morluto/rea/tree/main/.agents/skills/rea-analysis-optimization",
-   "stars": 469152,
-   "gain7d": 15846,
+   "stars": 470789,
+   "gain7d": 14749,
    "description": "Optimize REA providers and shared analysis workflows for agent context, latency, CPU, and memory while preserving correctness and Evidence. Use for analysis bottlenecks and cache or query design; CI/test-suite optimization belongs to rea-ci-tests-audit.",
    "categories": [
     "testing"
@@ -1563,8 +1563,8 @@
    "repo": "morluto/rea",
    "path": ".agents/skills/rea-changelog-update",
    "url": "https://github.com/morluto/rea/tree/main/.agents/skills/rea-changelog-update",
-   "stars": 469152,
-   "gain7d": 15846,
+   "stars": 470789,
+   "gain7d": 14749,
    "description": "Prepare or rewrite REA release changelogs and GitHub release notes from pinned Git history, with verified contributor thanks and Release Please synchronization.",
    "categories": [
     "dev"
@@ -1579,8 +1579,8 @@
    "repo": "mattpocock/skills",
    "path": "skills/engineering/ask-matt",
    "url": "https://github.com/mattpocock/skills/tree/main/skills/engineering/ask-matt",
-   "stars": 327808,
-   "gain7d": 5761,
+   "stars": 328512,
+   "gain7d": 5553,
    "description": "Ask which skill or flow fits your situation. A router over the skills in this repo.",
    "categories": [
     "other"
@@ -1595,8 +1595,8 @@
    "repo": "mattpocock/skills",
    "path": "skills/engineering/code-review",
    "url": "https://github.com/mattpocock/skills/tree/main/skills/engineering/code-review",
-   "stars": 327808,
-   "gain7d": 5761,
+   "stars": 328512,
+   "gain7d": 5553,
    "description": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes: Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/spec asked for?). Runs both reviews in parallel sub-agents and reports them…",
    "categories": [
     "dev"
@@ -1609,8 +1609,8 @@
    "repo": "mattpocock/skills",
    "path": "skills/engineering/codebase-design",
    "url": "https://github.com/mattpocock/skills/tree/main/skills/engineering/codebase-design",
-   "stars": 327808,
-   "gain7d": 5761,
+   "stars": 328512,
+   "gain7d": 5553,
    "description": "Shared vocabulary for designing deep modules. Use when the user wants to design or improve a module's interface, find deepening opportunities, decide where a seam goes, make code more testable or AI-navigable, or when another skill needs the deep-module vocabulary.",
    "categories": [
     "frontend"
@@ -1623,8 +1623,8 @@
    "repo": "obra/superpowers",
    "path": "skills/brainstorming",
    "url": "https://github.com/obra/superpowers/tree/main/skills/brainstorming",
-   "stars": 321647,
-   "gain7d": 8150,
+   "stars": 322480,
+   "gain7d": 7571,
    "description": "You MUST use this before any creative work - creating features, building components, adding functionality, modifying behavior, or planning anything new, in software or out of it (a talk, a business, a renovation).",
    "categories": [
     "business"
@@ -1639,8 +1639,8 @@
    "repo": "obra/superpowers",
    "path": "skills/dispatching-parallel-agents",
    "url": "https://github.com/obra/superpowers/tree/main/skills/dispatching-parallel-agents",
-   "stars": 321647,
-   "gain7d": 8150,
+   "stars": 322480,
+   "gain7d": 7571,
    "description": "Use when facing 2+ independent tasks that can be worked on without shared state or sequential dependencies",
    "categories": [
     "ai"
@@ -1653,8 +1653,8 @@
    "repo": "obra/superpowers",
    "path": "skills/executing-plans",
    "url": "https://github.com/obra/superpowers/tree/main/skills/executing-plans",
-   "stars": 321647,
-   "gain7d": 8150,
+   "stars": 322480,
+   "gain7d": 7571,
    "description": "Use when executing an implementation plan in the current session as the implementer yourself — your human partner chose inline execution, or no subagent tool is available",
    "categories": [
     "ai"
@@ -1667,8 +1667,8 @@
    "repo": "affaan-m/ECC",
    "path": ".agents/skills/agent-introspection-debugging",
    "url": "https://github.com/affaan-m/ECC/tree/main/.agents/skills/agent-introspection-debugging",
-   "stars": 306913,
-   "gain7d": 6928,
+   "stars": 307502,
+   "gain7d": 6227,
    "description": "Structured self-debugging workflow for AI agent failures using capture, diagnosis, contained recovery, and introspection reports. Use when an agent run fails and you need a reproducible diagnosis instead of a retry.",
    "categories": [
     "dev"
@@ -1681,8 +1681,8 @@
    "repo": "affaan-m/ECC",
    "path": ".agents/skills/agent-sort",
    "url": "https://github.com/affaan-m/ECC/tree/main/.agents/skills/agent-sort",
-   "stars": 306913,
-   "gain7d": 6928,
+   "stars": 307502,
+   "gain7d": 6227,
    "description": "Build an evidence-backed ECC install plan for a specific repo by sorting skills, commands, rules, hooks, and extras into DAILY vs LIBRARY buckets using parallel repo-aware review passes. Use when ECC should be trimmed to what a project actually needs instead of loading the full bundle.",
    "categories": [
     "ai"
@@ -1695,8 +1695,8 @@
    "repo": "affaan-m/ECC",
    "path": ".agents/skills/api-design",
    "url": "https://github.com/affaan-m/ECC/tree/main/.agents/skills/api-design",
-   "stars": 306913,
-   "gain7d": 6928,
+   "stars": 307502,
+   "gain7d": 6227,
    "description": "REST API design patterns including resource naming, status codes, pagination, filtering, error responses, versioning, and rate limiting for production APIs. Use when designing or reviewing REST endpoints, resource names, status codes, pagination, or versioning.",
    "categories": [
     "frontend"
@@ -1711,8 +1711,8 @@
    "repo": "multica-ai/andrej-karpathy-skills",
    "path": "skills/karpathy-guidelines",
    "url": "https://github.com/multica-ai/andrej-karpathy-skills/tree/main/skills/karpathy-guidelines",
-   "stars": 234385,
-   "gain7d": 2030,
+   "stars": 234629,
+   "gain7d": 1950,
    "description": "Behavioral guidelines to reduce common LLM coding mistakes. Use when writing, reviewing, or refactoring code to avoid overcomplication, make surgical changes, surface assumptions, and define verifiable success criteria.",
    "categories": [
     "dev"
@@ -1725,8 +1725,8 @@
    "repo": "anthropics/skills",
    "path": "skills/algorithmic-art",
    "url": "https://github.com/anthropics/skills/tree/main/skills/algorithmic-art",
-   "stars": 197498,
-   "gain7d": 4706,
+   "stars": 197884,
+   "gain7d": 4205,
    "description": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to…",
    "categories": [
     "media"
@@ -1741,8 +1741,8 @@
    "repo": "anthropics/skills",
    "path": "skills/brand-guidelines",
    "url": "https://github.com/anthropics/skills/tree/main/skills/brand-guidelines",
-   "stars": 197498,
-   "gain7d": 4706,
+   "stars": 197884,
+   "gain7d": 4205,
    "description": "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it when brand colors or style guidelines, visual formatting, or company design standards apply.",
    "categories": [
     "frontend"
@@ -1755,8 +1755,8 @@
    "repo": "anthropics/skills",
    "path": "skills/canvas-design",
    "url": "https://github.com/anthropics/skills/tree/main/skills/canvas-design",
-   "stars": 197498,
-   "gain7d": 4706,
+   "stars": 197884,
+   "gain7d": 4205,
    "description": "Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a poster, piece of art, design, or other static piece. Create original visual designs, never copying existing artists' work to avoid copyright violations.",
    "categories": [
     "docs"
@@ -1769,8 +1769,8 @@
    "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
    "path": ".claude/skills/banner-design",
    "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/tree/main/.claude/skills/banner-design",
-   "stars": 151573,
-   "gain7d": 3572,
+   "stars": 151993,
+   "gain7d": 3414,
    "description": "Design banners for social media, ads, website heroes, creative assets, and print. Multiple art direction options with optional generated or supplied visuals. Actions: design, create, generate banner. Platforms: Facebook, Twitter/X, LinkedIn, YouTube, Instagram, Google Display, website hero, print…",
    "categories": [
     "marketing",
@@ -1785,8 +1785,8 @@
    "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
    "path": ".claude/skills/brand",
    "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/tree/main/.claude/skills/brand",
-   "stars": 151573,
-   "gain7d": 3572,
+   "stars": 151993,
+   "gain7d": 3414,
    "description": "Brand voice, visual identity, messaging frameworks, asset management, brand consistency. Activate for branded content, tone of voice, marketing assets, brand compliance, style guides.",
    "categories": [
     "frontend"
@@ -1801,8 +1801,8 @@
    "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
    "path": ".claude/skills/design-system",
    "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/tree/main/.claude/skills/design-system",
-   "stars": 151573,
-   "gain7d": 3572,
+   "stars": 151993,
+   "gain7d": 3414,
    "description": "Token architecture, component specifications, and slide generation. Three-layer tokens (primitive→semantic→component), CSS variables, spacing/typography scales, component specs, strategic slide creation. Use for design tokens, systematic design, brand-compliant presentations.",
    "categories": [
     "frontend"
@@ -1817,8 +1817,8 @@
    "repo": "garrytan/gstack",
    "path": "",
    "url": "https://github.com/garrytan/gstack",
-   "stars": 142067,
-   "gain7d": 796,
+   "stars": 142185,
+   "gain7d": 803,
    "description": "Picks the gstack skill that fits a request: planning, review, QA, shipping, docs, security or design. Use for: gstack, which gstack skill, route this with gstack. (gstack)",
    "categories": [
     "frontend"
@@ -1833,8 +1833,8 @@
    "repo": "garrytan/gstack",
    "path": "autoplan",
    "url": "https://github.com/garrytan/gstack/tree/main/autoplan",
-   "stars": 142067,
-   "gain7d": 796,
+   "stars": 142185,
+   "gain7d": 803,
    "description": "Auto-review pipeline — runs the CEO, design, eng and DX reviews in order (lean run: one reviewer), auto-deciding. Use for: run all reviews, automatic review pipeline. (gstack)",
    "categories": [
     "frontend"
@@ -1850,8 +1850,8 @@
    "repo": "garrytan/gstack",
    "path": "benchmark-models",
    "url": "https://github.com/garrytan/gstack/tree/main/benchmark-models",
-   "stars": 142067,
-   "gain7d": 796,
+   "stars": 142185,
+   "gain7d": 803,
    "description": "Cross-model benchmark for gstack skills. Use for: cross model benchmark, compare claude gpt gemini. (gstack)",
    "categories": [
     "testing"
@@ -1866,8 +1866,8 @@
    "repo": "JuliusBrussee/caveman",
    "path": "plugins/caveman/skills/cavecrew",
    "url": "https://github.com/JuliusBrussee/caveman/tree/main/plugins/caveman/skills/cavecrew",
-   "stars": 121424,
-   "gain7d": 2119,
+   "stars": 121680,
+   "gain7d": 2037,
    "description": "When to delegate to `cavecrew-investigator` (locate code), `cavecrew-builder` (1-2 file edit) or `cavecrew-reviewer` (diff review) instead of working inline or using `Explore`. Their output is compressed, so main context lasts longer.",
    "categories": [
     "ai"
@@ -1880,8 +1880,8 @@
    "repo": "JuliusBrussee/caveman",
    "path": "plugins/caveman/skills/caveman-compress",
    "url": "https://github.com/JuliusBrussee/caveman/tree/main/plugins/caveman/skills/caveman-compress",
-   "stars": 121424,
-   "gain7d": 2119,
+   "stars": 121680,
+   "gain7d": 2037,
    "description": "Compress a memory file such as CLAUDE.md or a todo list into caveman format to save input tokens, keeping a readable backup. Sends the file's text to the configured model provider. Trigger: /caveman-compress.",
    "categories": [
     "productivity"
@@ -1897,8 +1897,8 @@
    "repo": "JuliusBrussee/caveman",
    "path": "plugins/caveman/skills/caveman-stats",
    "url": "https://github.com/JuliusBrussee/caveman/tree/main/plugins/caveman/skills/caveman-stats",
-   "stars": 121424,
-   "gain7d": 2119,
+   "stars": 121680,
+   "gain7d": 2037,
    "description": "Show recorded output and cache-read token usage and mode attribution for the current Claude Code session, or locate the host's native usage report. Trigger: /caveman-stats.",
    "categories": [
     "ai"
@@ -1911,8 +1911,8 @@
    "repo": "Leonxlnx/taste-skill",
    "path": "skills/taste-skill",
    "url": "https://github.com/Leonxlnx/taste-skill/tree/main/skills/taste-skill",
-   "stars": 118697,
-   "gain7d": 5479,
+   "stars": 119130,
+   "gain7d": 4867,
    "description": "tasteskill 2.5.1, the anti-slop frontend skill. Builds professional company websites at the level of figma.com and x.ai: plain copy in a voice of its own, one system, one section per screen, equal edges, real photographs and real product UI (licensed stand-in photographs when the client has none; a…",
    "categories": [
     "frontend",
@@ -1928,8 +1928,8 @@
    "repo": "thedotmack/claude-mem",
    "path": ".claude/skills/community-sweep",
    "url": "https://github.com/thedotmack/claude-mem/tree/main/.claude/skills/community-sweep",
-   "stars": 118324,
-   "gain7d": 2065,
+   "stars": 118548,
+   "gain7d": 1941,
    "description": "Land community pull requests as the contributor and answer community issues on thedotmack/claude-mem. Takes stock of every open PR (the owner's own included, except the ones the owner marked experimental) and community issue, triages each against the owner's merge philosophy and the cmem.ai…",
    "categories": [
     "business"
@@ -1944,8 +1944,8 @@
    "repo": "thedotmack/claude-mem",
    "path": "claude-mem-cursor/skills/agent-cost-report",
    "url": "https://github.com/thedotmack/claude-mem/tree/main/claude-mem-cursor/skills/agent-cost-report",
-   "stars": 118324,
-   "gain7d": 2065,
+   "stars": 118548,
+   "gain7d": 1941,
    "description": "Believable agent cost report for any period, default the last 7 full days PT, not counting today. Measured tokens from Claude Code transcripts priced at OpenRouter list prices (ESTIMATED), measured provider spend when a sanctioned source exists, note-taker cost separate, Timing-style HTML/PDF plus…",
    "categories": [
     "docs"
@@ -1961,8 +1961,8 @@
    "repo": "thedotmack/claude-mem",
    "path": "claude-mem-cursor/skills/install",
    "url": "https://github.com/thedotmack/claude-mem/tree/main/claude-mem-cursor/skills/install",
-   "stars": 118324,
-   "gain7d": 2065,
+   "stars": 118548,
+   "gain7d": 1941,
    "description": "Use this when setting up claude-mem on Cursor: local or remote worker, local host-login observer or remote cmem.ai inference.",
    "categories": [
     "ai"
@@ -1975,8 +1975,8 @@
    "repo": "Panniantong/Agent-Reach",
    "path": "agent_reach/skill",
    "url": "https://github.com/Panniantong/Agent-Reach/tree/main/agent_reach/skill",
-   "stars": 113187,
-   "gain7d": 2476,
+   "stars": 113456,
+   "gain7d": 2328,
    "description": "只读读取各平台内容：搜索、读帖、看评论、取字幕、查行情和职位。 Use when 用户提到或贴出链接：小红书/xiaohongshu、B站/bilibili、Twitter/X、Reddit、 YouTube（字幕、转录）、GitHub、V2EX、雪球/股票行情、LinkedIn/Boss直聘 职位、 Instagram、Facebook、小宇宙播客；或说\"帮我搜/看看/读一下这个链接\"而自带网页搜索/读取不可用、失败或拿不到正文； 或要安装、加上/去掉某个平台、登录/退出、看状态、更新、卸载 Agent Reach。 不做：发帖、评论、点赞、私信等任何写操作；不替用户登录、不索要密码。…",
    "categories": [
     "marketing"
@@ -1989,8 +1989,8 @@
    "repo": "tt-a1i/archify",
    "path": "archify",
    "url": "https://github.com/tt-a1i/archify/tree/main/archify",
-   "stars": 97915,
-   "gain7d": 2387,
+   "stars": 98213,
+   "gain7d": 2312,
    "description": "Create validated architecture, workflow, sequence, data-flow, lifecycle/state, ERD, class, tree, timeline, and waterfall diagrams as explorable standalone HTML with dark/light themes, motion and image/SVG/WebM export. Accept requirements or Mermaid; inspect repository evidence for code-backed…",
    "categories": [
     "media"
@@ -2005,8 +2005,8 @@
    "repo": "tt-a1i/archify",
    "path": ".agents/skills/archify-review",
    "url": "https://github.com/tt-a1i/archify/tree/main/.agents/skills/archify-review",
-   "stars": 97915,
-   "gain7d": 2387,
+   "stars": 98213,
+   "gain7d": 2312,
    "description": "Review Archify issues, PRs, or code through value, cost, and impact to support evidence-based maintenance decisions. Use for issue triage, change reviews, and code quality assessments.",
    "categories": [
     "dev",
@@ -2020,8 +2020,8 @@
    "repo": "tt-a1i/archify",
    "path": ".agents/skills/archify-tuning",
    "url": "https://github.com/tt-a1i/archify/tree/main/.agents/skills/archify-tuning",
-   "stars": 97915,
-   "gain7d": 2387,
+   "stars": 98213,
+   "gain7d": 2312,
    "description": "Improve Archify diagram accuracy, visual quality and complete authoring speed with fewer repairs. Use for generation experiments or evaluating changes to layout, routing, diagnostics, authoring instructions and acceptance rules against actual diagrams and agent traces.",
    "categories": [
     "dev",
@@ -2037,8 +2037,8 @@
    "repo": "Egonex-AI/Understand-Anything",
    "path": "understand-anything-plugin/skills/understand-chat",
    "url": "https://github.com/Egonex-AI/Understand-Anything/tree/main/understand-anything-plugin/skills/understand-chat",
-   "stars": 93242,
-   "gain7d": 1125,
+   "stars": 93400,
+   "gain7d": 1120,
    "description": "Use when you need to ask questions about a codebase or understand code using a knowledge graph",
    "categories": [
     "dev"
@@ -2051,8 +2051,8 @@
    "repo": "Egonex-AI/Understand-Anything",
    "path": "understand-anything-plugin/skills/understand-dashboard",
    "url": "https://github.com/Egonex-AI/Understand-Anything/tree/main/understand-anything-plugin/skills/understand-dashboard",
-   "stars": 93242,
-   "gain7d": 1125,
+   "stars": 93400,
+   "gain7d": 1120,
    "description": "Launch the interactive web dashboard to visualize a codebase's knowledge graph",
    "categories": [
     "data"
@@ -2067,8 +2067,8 @@
    "repo": "Egonex-AI/Understand-Anything",
    "path": "understand-anything-plugin/skills/understand-diff",
    "url": "https://github.com/Egonex-AI/Understand-Anything/tree/main/understand-anything-plugin/skills/understand-diff",
-   "stars": 93242,
-   "gain7d": 1125,
+   "stars": 93400,
+   "gain7d": 1120,
    "description": "Use when you need to analyze git diffs or pull requests to understand what changed, affected components, and risks",
    "categories": [
     "dev"
@@ -2081,8 +2081,8 @@
    "repo": "heygen-com/hyperframes",
    "path": ".agents/skills/captions-overlay",
    "url": "https://github.com/heygen-com/hyperframes/tree/main/.agents/skills/captions-overlay",
-   "stars": 86774,
-   "gain7d": 4501,
+   "stars": 87248,
+   "gain7d": 4205,
    "description": "Overlay doctrine for captions in HyperFrames videos — the caption MODEL (drop / rail / embed) and the rule that captions are an OVERLAY composited on top of the film, never a reserved bottom band you shift content up to avoid. Load when adding captions/subtitles to a talking-head or launch video…",
    "categories": [
     "media"
@@ -2095,8 +2095,8 @@
    "repo": "heygen-com/hyperframes",
    "path": ".agents/skills/changelog-video",
    "url": "https://github.com/heygen-com/hyperframes/tree/main/.agents/skills/changelog-video",
-   "stars": 86774,
-   "gain7d": 4501,
+   "stars": 87248,
+   "gain7d": 4205,
    "description": "Turn a weekly changelog .md into a finished branded changelog video (square 1080, ~45-60s, Annie VO, animated brand background, mock-UI visualizations, lowkey captions). Use when the user provides a changelog/digest markdown and wants the weekly video, or says \"changelog video\". Self-contained…",
    "categories": [
     "frontend"
@@ -2111,8 +2111,8 @@
    "repo": "heygen-com/hyperframes",
    "path": ".agents/skills/cut-the-curve",
    "url": "https://github.com/heygen-com/hyperframes/tree/main/.agents/skills/cut-the-curve",
-   "stars": 86774,
-   "gain7d": 4501,
+   "stars": 87248,
+   "gain7d": 4205,
    "description": "The technique catalog: five velocity-matched SEAMS (zoom-through, INVERSE zoom-through, cut-the-curve, waterfall cut, rack-focus blur-cut) plus the two in-scene techniques — waterfall ENTRY (staggered arrival cascades for title cards / segment openers) and the nudge curve (slow-fast-slow…",
    "categories": [
     "docs"
@@ -2125,8 +2125,8 @@
    "repo": "career-ops-hq/career-ops",
    "path": ".agents/skills/career-ops",
    "url": "https://github.com/career-ops-hq/career-ops/tree/main/.agents/skills/career-ops",
-   "stars": 83674,
-   "gain7d": 1979,
+   "stars": 83884,
+   "gain7d": 1852,
    "description": "Open-source AI job search agent -- evaluate offers, generate CVs, scan portals, track applications. Use when the user pastes a job URL or JD, asks to scan portals, generate a CV/PDF, track applications, prepare for interviews, draft outreach/emails, or run any career-ops mode.",
    "categories": [
     "docs"
@@ -2139,8 +2139,8 @@
    "repo": "career-ops-hq/career-ops",
    "path": "plugins/apify",
    "url": "https://github.com/career-ops-hq/career-ops/tree/main/plugins/apify",
-   "stars": 83674,
-   "gain7d": 1979,
+   "stars": 83884,
+   "gain7d": 1852,
    "description": "How to scan a job source through an Apify actor as a keyed provider.",
    "categories": [
     "ai"
@@ -2155,8 +2155,8 @@
    "repo": "career-ops-hq/career-ops",
    "path": "plugins/gmail",
    "url": "https://github.com/career-ops-hq/career-ops/tree/main/plugins/gmail",
-   "stars": 83674,
-   "gain7d": 1979,
+   "stars": 83884,
+   "gain7d": 1852,
    "description": "How to pull job leads from a Gmail label into the career-ops pipeline.",
    "categories": [
     "productivity"
@@ -2171,8 +2171,8 @@
    "repo": "shareAI-lab/learn-claude-code",
    "path": "skills/agent-builder",
    "url": "https://github.com/shareAI-lab/learn-claude-code/tree/main/skills/agent-builder",
-   "stars": 80638,
-   "gain7d": 432,
+   "stars": 80671,
+   "gain7d": 382,
    "description": "Design and build AI agents for any domain. Use when users: (1) ask to \"create an agent\", \"build an assistant\", or \"design an AI system\" (2) want to understand agent architecture, agentic patterns, or autonomous AI (3) need help with capabilities, subagents, planning, or skill mechanisms (4) ask…",
    "categories": [
     "ai"
@@ -2187,8 +2187,8 @@
    "repo": "shareAI-lab/learn-claude-code",
    "path": "skills/code-review",
    "url": "https://github.com/shareAI-lab/learn-claude-code/tree/main/skills/code-review",
-   "stars": 80638,
-   "gain7d": 432,
+   "stars": 80671,
+   "gain7d": 382,
    "description": "Perform thorough code reviews with security, performance, and maintainability analysis. Use when user asks to review code, check for bugs, or audit a codebase.",
    "categories": [
     "dev"
@@ -2204,8 +2204,8 @@
    "repo": "shareAI-lab/learn-claude-code",
    "path": "skills/mcp-builder",
    "url": "https://github.com/shareAI-lab/learn-claude-code/tree/main/skills/mcp-builder",
-   "stars": 80638,
-   "gain7d": 432,
+   "stars": 80671,
+   "gain7d": 382,
    "description": "Build MCP (Model Context Protocol) servers that give Claude new capabilities. Use when user wants to create an MCP server, add tools to Claude, or integrate external services.",
    "categories": [
     "ai"
@@ -2220,8 +2220,8 @@
    "repo": "ComposioHQ/awesome-claude-skills",
    "path": "content-research-writer",
    "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/content-research-writer",
-   "stars": 79856,
-   "gain7d": 607,
+   "stars": 79920,
+   "gain7d": 567,
    "description": "Assists in writing high-quality content by conducting research, adding citations, improving hooks, iterating on outlines, and providing real-time feedback on each section. Transforms your writing process from solo effort to collaborative partnership.",
    "categories": [
     "writing",
@@ -2235,8 +2235,8 @@
    "repo": "ComposioHQ/awesome-claude-skills",
    "path": "file-organizer",
    "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/file-organizer",
-   "stars": 79856,
-   "gain7d": 607,
+   "stars": 79920,
+   "gain7d": 567,
    "description": "Intelligently organizes your files and folders across your computer by understanding context, finding duplicates, suggesting better structures, and automating cleanup tasks. Reduces cognitive load and keeps your digital workspace tidy without manual effort.",
    "categories": [
     "ai"
@@ -2249,8 +2249,8 @@
    "repo": "ComposioHQ/awesome-claude-skills",
    "path": "image-enhancer",
    "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/image-enhancer",
-   "stars": 79856,
-   "gain7d": 607,
+   "stars": 79920,
+   "gain7d": 567,
    "description": "Improves the quality of images, especially screenshots, by enhancing resolution, sharpness, and clarity. Perfect for preparing images for presentations, documentation, or social media posts.",
    "categories": [
     "media"
@@ -2263,8 +2263,8 @@
    "repo": "cloudflare/security-audit-skill",
    "path": "skills/security-audit",
    "url": "https://github.com/cloudflare/security-audit-skill/tree/main/skills/security-audit",
-   "stars": 75596,
-   "gain7d": 5245,
+   "stars": 76055,
+   "gain7d": 4737,
    "description": "Security guidance and vulnerability review for codebases, APIs, services, CLI tools, libraries, and daemons. Use for security questions, focused reviews, vulnerability research, security audits, or pen tests. Run the complete workflow only for explicit codebase audit or pen-test requests…",
    "categories": [
     "security",
@@ -2281,8 +2281,8 @@
    "repo": "tw93/Mole",
    "path": "skills/mole",
    "url": "https://github.com/tw93/Mole/tree/main/skills/mole",
-   "stars": 75576,
-   "gain7d": 849,
+   "stars": 75687,
+   "gain7d": 831,
    "description": "Drive the Mole CLI (`mo`) on macOS or Windows: find what uses disk space, preview and run cleanup, uninstall apps, and read system health and cleanup history. Use before running any `mo` command. Not for editing Mole source code.",
    "categories": [
     "dev"
@@ -2297,8 +2297,8 @@
    "repo": "tw93/Mole",
    "path": ".claude/skills/bugs",
    "url": "https://github.com/tw93/Mole/tree/main/.claude/skills/bugs",
-   "stars": 75576,
-   "gain7d": 849,
+   "stars": 75687,
+   "gain7d": 831,
    "description": "Mole incident catalog for cleanup safety, bounded probes, cancellation, dry-run parity, and actionable gates. Use for a Mole safety-sensitive diff; not for docs, release notes, or generic review.",
    "categories": [
     "productivity"
@@ -2311,8 +2311,8 @@
    "repo": "tw93/Mole",
    "path": ".claude/skills/release-flow",
    "url": "https://github.com/tw93/Mole/tree/main/.claude/skills/release-flow",
-   "stars": 75576,
-   "gain7d": 849,
+   "stars": 75687,
+   "gain7d": 831,
    "description": "Mole CLI release runbook for distribution channels, pre-flight checks, capital-V tags, artifacts, and curated-note handoff. Use when assessing or executing a Mole release. Not for release-note copy alone or ordinary code review.",
    "categories": [
     "dev"
@@ -2327,8 +2327,8 @@
    "repo": "blader/humanizer",
    "path": "",
    "url": "https://github.com/blader/humanizer",
-   "stars": 71036,
-   "gain7d": 3442,
+   "stars": 71493,
+   "gain7d": 3381,
    "description": "Rewrite AI-sounding text so it reads like the writer without changing what it says. Use when editing or reviewing prose for AI tells: not-X-but-Y contrasts, one-line closers, staged openers, forced triads, dashes everywhere, inflated claims, sales language, stock AI words, bold labels, or filler.",
    "categories": [
     "writing"
@@ -2343,8 +2343,8 @@
    "repo": "mvanhorn/last30days-skill",
    "path": "skills/last30days",
    "url": "https://github.com/mvanhorn/last30days-skill/tree/main/skills/last30days",
-   "stars": 70491,
-   "gain7d": 6274,
+   "stars": 71152,
+   "gain7d": 5863,
    "description": "Research what people actually say about any topic in the last 30 days. Pulls posts and engagement from Reddit, X, YouTube, TikTok, Hacker News, Polymarket, GitHub, and the web. Includes a doctor health check to diagnose broken or missing sources.",
    "categories": [
     "dev"
@@ -2360,8 +2360,8 @@
    "repo": "cathrynlavery/diagram-design",
    "path": "skills/diagram-design",
    "url": "https://github.com/cathrynlavery/diagram-design/tree/main/skills/diagram-design",
-   "stars": 68340,
-   "gain7d": 2093,
+   "stars": 68970,
+   "gain7d": 2672,
    "description": "Create branded architecture, architecture delta, IT current-state, flowchart, sequence, state machine, ER/data model, steps, timeline, swimlane, quadrant, radar/spider, polar chart (polar/radial lollipop), loop/flywheel, nested, tree, org chart, layer stack, exploded axonometric, axonometric plan…",
    "categories": [
     "data"
@@ -2376,8 +2376,8 @@
    "repo": "coreyhaines31/marketingskills",
    "path": "skills/ab-testing",
    "url": "https://github.com/coreyhaines31/marketingskills/tree/main/skills/ab-testing",
-   "stars": 61373,
-   "gain7d": 1734,
+   "stars": 61616,
+   "gain7d": 1726,
    "description": "When the user wants to plan, run, or read A/B tests, or asks a judgement call on one: is the result real, can we stop, which version won, is this worth testing at all: sample size, duration, significance, hypotheses, and experiment backlogs. For tracking setup, see analytics. For page-level…",
    "categories": [
     "testing"
@@ -2390,8 +2390,8 @@
    "repo": "coreyhaines31/marketingskills",
    "path": "skills/ad-creative",
    "url": "https://github.com/coreyhaines31/marketingskills/tree/main/skills/ad-creative",
-   "stars": 61373,
-   "gain7d": 1734,
+   "stars": 61616,
+   "gain7d": 1726,
    "description": "When the user wants to write or judge ad creative, or asks which ad, hook, or angle to run or kill: headlines, primary text, and variations for Google, Meta, LinkedIn, and TikTok, fresh angles when creative fatigues. Test hypotheses name the metric, comparison, and expected direction. No AI tells…",
    "categories": [
     "marketing"
@@ -2404,8 +2404,8 @@
    "repo": "coreyhaines31/marketingskills",
    "path": "skills/ads",
    "url": "https://github.com/coreyhaines31/marketingskills/tree/main/skills/ads",
-   "stars": 61373,
-   "gain7d": 1734,
+   "stars": 61616,
+   "gain7d": 1726,
    "description": "When the user wants to plan, run, or fix paid ads on Google, Meta, and LinkedIn, or asks a judgement call on them: are ads worth it, which channel or budget split, why CPA rose, kill or keep a campaign. End with facts, hypotheses, and missing data; label unavailable inputs MISSING instead of…",
    "categories": [
     "marketing"
@@ -2418,8 +2418,8 @@
    "repo": "K-Dense-AI/scientific-agent-skills",
    "path": "skills/13c-metabolic-flux",
    "url": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/main/skills/13c-metabolic-flux",
-   "stars": 57799,
-   "gain7d": 1057,
+   "stars": 57906,
+   "gain7d": 980,
    "description": "Estimates intracellular metabolic fluxes from steady-state carbon-13 isotope-tracing measurements using validated atom maps, mfapy isotope simulation, constrained multistart fitting, and flux-profile diagnostics. Use for 13C-MFA, carbon tracing, mass isotopomer distributions (MDVs/MIDs), positional…",
    "categories": [
     "research"
@@ -2435,8 +2435,8 @@
    "repo": "K-Dense-AI/scientific-agent-skills",
    "path": "skills/adaptyv",
    "url": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/main/skills/adaptyv",
-   "stars": 57799,
-   "gain7d": 1057,
+   "stars": 57906,
+   "gain7d": 980,
    "description": "Uses the Adaptyv Bio Foundry API and Python SDK to design protein characterization experiments, estimate costs, submit sequences, monitor laboratory progress, and retrieve results. Applies to Adaptyv Foundry, its target catalog, binding screening and affinity assays, thermostability, expression…",
    "categories": [
     "dev"
@@ -2452,8 +2452,8 @@
    "repo": "K-Dense-AI/scientific-agent-skills",
    "path": "skills/aeon",
    "url": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/main/skills/aeon",
-   "stars": 57799,
-   "gain7d": 1057,
+   "stars": 57906,
+   "gain7d": 980,
    "description": "This skill should be used for time series machine learning tasks including classification, regression, clustering, forecasting, anomaly detection, segmentation, and similarity search. Use when working with temporal data, sequential patterns, or time-indexed observations requiring specialized…",
    "categories": [
     "education"
@@ -2466,8 +2466,8 @@
    "repo": "anthropics/claude-cookbooks",
    "path": "skills/custom_skills/analyzing-financial-statements",
    "url": "https://github.com/anthropics/claude-cookbooks/tree/main/skills/custom_skills/analyzing-financial-statements",
-   "stars": 54875,
-   "gain7d": 327,
+   "stars": 54897,
+   "gain7d": 284,
    "description": "This skill calculates key financial ratios and metrics from financial statement data for investment analysis",
    "categories": [
     "business"
@@ -2482,8 +2482,8 @@
    "repo": "anthropics/claude-cookbooks",
    "path": "skills/custom_skills/applying-brand-guidelines",
    "url": "https://github.com/anthropics/claude-cookbooks/tree/main/skills/custom_skills/applying-brand-guidelines",
-   "stars": 54875,
-   "gain7d": 327,
+   "stars": 54897,
+   "gain7d": 284,
    "description": "This skill applies consistent corporate branding and styling to all generated documents including colors, fonts, layouts, and messaging",
    "categories": [
     "frontend"
@@ -2498,8 +2498,8 @@
    "repo": "anthropics/claude-cookbooks",
    "path": "skills/custom_skills/creating-financial-models",
    "url": "https://github.com/anthropics/claude-cookbooks/tree/main/skills/custom_skills/creating-financial-models",
-   "stars": 54875,
-   "gain7d": 327,
+   "stars": 54897,
+   "gain7d": 284,
    "description": "This skill provides an advanced financial modeling suite with DCF analysis, sensitivity testing, Monte Carlo simulations, and scenario planning for investment decisions",
    "categories": [
     "business"
@@ -2514,8 +2514,8 @@
    "repo": "anthropics/claude-plugins-official",
    "path": "external_plugins/discord/skills/access",
    "url": "https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/discord/skills/access",
-   "stars": 47696,
-   "gain7d": 670,
+   "stars": 47777,
+   "gain7d": 644,
    "description": "Manage Discord channel access — approve pairings, edit allowlists, set DM/group policy. Use when the user asks to pair, approve someone, check who's allowed, or change policy for the Discord channel.",
    "categories": [
     "ai"
@@ -2528,8 +2528,8 @@
    "repo": "anthropics/claude-plugins-official",
    "path": "external_plugins/discord/skills/configure",
    "url": "https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/discord/skills/configure",
-   "stars": 47696,
-   "gain7d": 670,
+   "stars": 47777,
+   "gain7d": 644,
    "description": "Set up the Discord channel — save the bot token and review access policy. Use when the user pastes a Discord bot token, asks to configure Discord, asks \"how do I set this up\" or \"who can reach me,\" or wants to check channel status.",
    "categories": [
     "ai"
@@ -2544,8 +2544,8 @@
    "repo": "anthropics/claude-plugins-official",
    "path": "external_plugins/imessage/skills/access",
    "url": "https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/imessage/skills/access",
-   "stars": 47696,
-   "gain7d": 670,
+   "stars": 47777,
+   "gain7d": 644,
    "description": "Manage iMessage channel access — approve pairings, edit allowlists, set DM/group policy. Use when the user asks to pair, approve someone, check who's allowed, or change policy for the iMessage channel.",
    "categories": [
     "ai"
@@ -2558,8 +2558,8 @@
    "repo": "luongnv89/claude-howto",
    "path": ".claude/skills/lesson-quiz",
    "url": "https://github.com/luongnv89/claude-howto/tree/main/.claude/skills/lesson-quiz",
-   "stars": 47431,
-   "gain7d": 378,
+   "stars": 47463,
+   "gain7d": 340,
    "description": "Test a learner on a single Claude Code tutorial lesson (01-10) with 10 questions, scoring answers and flagging weak spots. Use before, during, or after a lesson. Don't use for whole-tutorial assessment or explaining a topic instead of testing it.",
    "categories": [
     "education",
@@ -2573,8 +2573,8 @@
    "repo": "luongnv89/claude-howto",
    "path": ".claude/skills/self-assessment",
    "url": "https://github.com/luongnv89/claude-howto/tree/main/.claude/skills/self-assessment",
-   "stars": 47431,
-   "gain7d": 378,
+   "stars": 47463,
+   "gain7d": 340,
    "description": "Comprehensive Claude Code self-assessment and learning path advisor. Runs a multi-category quiz covering 10 feature areas, produces a detailed skill profile with per-topic scores, identifies specific gaps, and generates a personalized learning path with prioritized next steps. Use when asked to…",
    "categories": [
     "education"
@@ -2587,8 +2587,8 @@
    "repo": "luongnv89/claude-howto",
    "path": "03-skills/blog-draft",
    "url": "https://github.com/luongnv89/claude-howto/tree/main/03-skills/blog-draft",
-   "stars": 47431,
-   "gain7d": 378,
+   "stars": 47463,
+   "gain7d": 340,
    "description": "Draft a blog post from ideas and resources. Use when users want to write a blog post, create content from research, or draft articles. Guides through research, brainstorming, outlining, and iterative drafting with version control.",
    "categories": [
     "writing"
@@ -2601,8 +2601,8 @@
    "repo": "mukul975/Anthropic-Cybersecurity-Skills",
    "path": "skills/abusing-dpapi-for-credential-access",
    "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills/tree/main/skills/abusing-dpapi-for-credential-access",
-   "stars": 36395,
-   "gain7d": 434,
+   "stars": 36446,
+   "gain7d": 415,
    "description": "Extract and decrypt Windows DPAPI-protected secrets (Credential Manager, browser logins/cookies, Wi-Fi credentials, KeePass keys) online or offline using SharpDPAPI, SharpChrome, Mimikatz, or Impacket's dpapi.py, including domain-wide decryption via the DPAPI backup key. Use during authorized…",
    "categories": [
     "security"
@@ -2618,8 +2618,8 @@
    "repo": "mukul975/Anthropic-Cybersecurity-Skills",
    "path": "skills/abusing-shadow-credentials-for-privesc",
    "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills/tree/main/skills/abusing-shadow-credentials-for-privesc",
-   "stars": 36395,
-   "gain7d": 434,
+   "stars": 36446,
+   "gain7d": 415,
    "description": "Take over Active Directory accounts by writing attacker-controlled public keys to msDS-KeyCredentialLink (Shadow Credentials) with pyWhisker, Whisker, or Certipy, then authenticate via PKINIT to recover the target's NT hash without a password reset. Use when BloodHound shows…",
    "categories": [
     "writing"
@@ -2635,8 +2635,8 @@
    "repo": "mukul975/Anthropic-Cybersecurity-Skills",
    "path": "skills/achieving-cmmc-level-2-compliance",
    "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills/tree/main/skills/achieving-cmmc-level-2-compliance",
-   "stars": 36395,
-   "gain7d": 434,
+   "stars": 36446,
+   "gain7d": 415,
    "description": "Prepare a defense-contractor environment for CMMC Level 2 certification: scope CUI and FCI, implement the 110 NIST SP 800-171 Rev 2 security requirements across 14 families, compute the SPRS score with the DoD Assessment Methodology, manage a compliant POA&M, and ready the organization for a C3PAO…",
    "categories": [
     "business"
@@ -2651,8 +2651,8 @@
    "repo": "vercel-labs/agent-skills",
    "path": "skills/composition-patterns",
    "url": "https://github.com/vercel-labs/agent-skills/tree/main/skills/composition-patterns",
-   "stars": 34509,
-   "gain7d": 854,
+   "stars": 34585,
+   "gain7d": 774,
    "description": "React composition patterns that scale. Use when refactoring components with boolean prop proliferation, building flexible component libraries, or designing reusable APIs. Triggers on tasks involving compound components, render props, context providers, or component architecture. Includes React 19…",
    "categories": [
     "dev"
@@ -2665,8 +2665,8 @@
    "repo": "vercel-labs/agent-skills",
    "path": "skills/deploy-to-vercel",
    "url": "https://github.com/vercel-labs/agent-skills/tree/main/skills/deploy-to-vercel",
-   "stars": 34509,
-   "gain7d": 854,
+   "stars": 34585,
+   "gain7d": 774,
    "description": "Deploy applications and websites to Vercel. Use when the user requests deployment actions like \"deploy my app\", \"deploy and give me the link\", \"push this live\", or \"create a preview deployment\".",
    "categories": [
     "devops"
@@ -2682,8 +2682,8 @@
    "repo": "vercel-labs/agent-skills",
    "path": "skills/react-best-practices",
    "url": "https://github.com/vercel-labs/agent-skills/tree/main/skills/react-best-practices",
-   "stars": 34509,
-   "gain7d": 854,
+   "stars": 34585,
+   "gain7d": 774,
    "description": "React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React/Next.js code to ensure optimal performance patterns. Triggers on tasks involving React components, Next.js pages, data fetching, bundle…",
    "categories": [
     "dev"
@@ -2696,8 +2696,8 @@
    "repo": "AgriciDaniel/claude-seo",
    "path": "extensions/ahrefs/skills/seo-ahrefs",
    "url": "https://github.com/AgriciDaniel/claude-seo/tree/main/extensions/ahrefs/skills/seo-ahrefs",
-   "stars": 30796,
-   "gain7d": 2357,
+   "stars": 31041,
+   "gain7d": 2196,
    "description": "Ahrefs API analyst (extension). Reads referring domains, backlinks, organic keywords, and content explorer data via the tested @ahrefs/mcp@0.0.11 server. Pairs with seo-backlinks for multi-source confidence weighting.",
    "categories": [
     "marketing"
@@ -2710,8 +2710,8 @@
    "repo": "AgriciDaniel/claude-seo",
    "path": "extensions/banana/skills/seo-image-gen",
    "url": "https://github.com/AgriciDaniel/claude-seo/tree/main/extensions/banana/skills/seo-image-gen",
-   "stars": 30796,
-   "gain7d": 2357,
+   "stars": 31041,
+   "gain7d": 2196,
    "description": "AI image generation for SEO assets: OG/social preview images, blog hero images, schema images, product photography, infographics. Powered by Gemini via nanobanana-mcp. Requires banana extension installed. Use when the user wants an SEO asset and says \"OG image\", \"social preview\", \"hero image\"…",
    "categories": [
     "media"
@@ -2726,8 +2726,8 @@
    "repo": "AgriciDaniel/claude-seo",
    "path": "extensions/bing-webmaster/skills/seo-bing",
    "url": "https://github.com/AgriciDaniel/claude-seo/tree/main/extensions/bing-webmaster/skills/seo-bing",
-   "stars": 30796,
-   "gain7d": 2357,
+   "stars": 31041,
+   "gain7d": 2196,
    "description": "Bing Webmaster Tools + IndexNow extension. Microsoft Copilot citations are fed by the Bing index; this skill makes Bing visibility, link data, and IndexNow URL submission first-class.",
    "categories": [
     "marketing"
@@ -2742,8 +2742,8 @@
    "repo": "jarrodwatts/claude-hud",
    "path": "skills/hud",
    "url": "https://github.com/jarrodwatts/claude-hud/tree/main/skills/hud",
-   "stars": 29255,
-   "gain7d": 103,
+   "stars": 29273,
+   "gain7d": 109,
    "description": "Set up, check, change, preview, or report a problem with the claude-hud status line. Use when the user mentions the HUD or status line, wants something shown or hidden below the input, says it is blank, broken or wrong, or sees \"Type /hud to fix it\".",
    "categories": [
     "dev"
@@ -2756,8 +2756,8 @@
    "repo": "phuryn/pm-skills",
    "path": "pm-data-analytics/skills/ab-test-analysis",
    "url": "https://github.com/phuryn/pm-skills/tree/main/pm-data-analytics/skills/ab-test-analysis",
-   "stars": 28166,
-   "gain7d": 331,
+   "stars": 28194,
+   "gain7d": 298,
    "description": "Analyze A/B test results with statistical significance, sample size validation, confidence intervals, and ship/extend/stop recommendations. Use when evaluating experiment results, checking if a test reached significance, interpreting split test data, or deciding whether to ship a variant.",
    "categories": [
     "testing"
@@ -2770,8 +2770,8 @@
    "repo": "phuryn/pm-skills",
    "path": "pm-data-analytics/skills/cohort-analysis",
    "url": "https://github.com/phuryn/pm-skills/tree/main/pm-data-analytics/skills/cohort-analysis",
-   "stars": 28166,
-   "gain7d": 331,
+   "stars": 28194,
+   "gain7d": 298,
    "description": "Perform cohort analysis on user engagement data — retention curves, feature adoption trends, and segment-level insights. Use when analyzing user retention by cohort, studying feature adoption over time, investigating churn patterns, or identifying engagement trends.",
    "categories": [
     "ai"
@@ -2784,8 +2784,8 @@
    "repo": "phuryn/pm-skills",
    "path": "pm-data-analytics/skills/sql-queries",
    "url": "https://github.com/phuryn/pm-skills/tree/main/pm-data-analytics/skills/sql-queries",
-   "stars": 28166,
-   "gain7d": 331,
+   "stars": 28194,
+   "gain7d": 298,
    "description": "Generate SQL queries from natural language descriptions. Supports BigQuery, PostgreSQL, MySQL, and other dialects. Reads database schemas from uploaded diagrams or documentation. Use when writing SQL, building data reports, exploring databases, or translating business questions into queries.",
    "categories": [
     "data"
@@ -2798,8 +2798,8 @@
    "repo": "NVIDIA/SkillSpector",
    "path": "skills/skill-inspector",
    "url": "https://github.com/NVIDIA/SkillSpector/tree/main/skills/skill-inspector",
-   "stars": 26888,
-   "gain7d": 1447,
+   "stars": 27012,
+   "gain7d": 1302,
    "description": "Review AI agent skills before installation using NVIDIA SkillSpector and source-aware semantic review. Use when asked whether a skill or downloaded skill folder is safe, trustworthy, installable, over-permissioned, or malicious.",
    "categories": [
     "ai"
@@ -2814,7 +2814,7 @@
    "repo": "EveryInc/compound-engineering-plugin",
    "path": ".agents/skills/ce-skill-work",
    "url": "https://github.com/EveryInc/compound-engineering-plugin/tree/main/.agents/skills/ce-skill-work",
-   "stars": 26153,
+   "stars": 26166,
    "gain7d": 93,
    "description": "Applies this repository's skill-authoring standard as a procedure. Use for any change to, or judgment about, a file under skills/** — a SKILL.md, a reference, a persona prompt, a bundled script's instructions: creating a skill, editing one, reviewing a skill change, or acting on review feedback…",
    "categories": [
@@ -2828,7 +2828,7 @@
    "repo": "EveryInc/compound-engineering-plugin",
    "path": "skills/ce-babysit-pr",
    "url": "https://github.com/EveryInc/compound-engineering-plugin/tree/main/skills/ce-babysit-pr",
-   "stars": 26153,
+   "stars": 26166,
    "gain7d": 93,
    "description": "Babysits an open GitHub PR until merge-ready, first judging whether an old PR still belongs. Use when asked to watch a PR over time or update an old one — not for one-shot comment resolution or one CI failure. GitHub (incl. Enterprise) only.",
    "categories": [
@@ -2842,7 +2842,7 @@
    "repo": "EveryInc/compound-engineering-plugin",
    "path": "skills/ce-bakeoff",
    "url": "https://github.com/EveryInc/compound-engineering-plugin/tree/main/skills/ce-bakeoff",
-   "stars": 26153,
+   "stars": 26166,
    "gain7d": 93,
    "description": "Develop independent competing solutions to a defined brief, compare them, and synthesize a winning approach. Use when choosing well requires developing alternatives beyond their current form. Use ce-pov to judge developed material and ce-ideate to discover opportunities.",
    "categories": [
@@ -2856,8 +2856,8 @@
    "repo": "slopus/happy",
    "path": ".agents/skills/agent-browser",
    "url": "https://github.com/slopus/happy/tree/main/.agents/skills/agent-browser",
-   "stars": 24710,
-   "gain7d": 128,
+   "stars": 24722,
+   "gain7d": 117,
    "description": "Browser automation CLI for AI agents. Use this when asked to test something in a real browser.",
    "categories": [
     "ai"
@@ -2872,8 +2872,8 @@
    "repo": "slopus/happy",
    "path": ".agents/skills/control-flow",
    "url": "https://github.com/slopus/happy/tree/main/.agents/skills/control-flow",
-   "stars": 24710,
-   "gain7d": 128,
+   "stars": 24722,
+   "gain7d": 117,
    "description": "Analyze and design control flows and data structures. Produces compact ASCII tree diagrams showing triggers, call chains, payload shapes, state mutations, and re-render effects. Use when user asks to diagram, trace, visualize, or design a flow or data structure.",
    "categories": [
     "frontend"
@@ -2886,8 +2886,8 @@
    "repo": "slopus/happy",
    "path": ".agents/skills/dev",
    "url": "https://github.com/slopus/happy/tree/main/.agents/skills/dev",
-   "stars": 24710,
-   "gain7d": 128,
+   "stars": 24722,
+   "gain7d": 117,
    "description": "Local development guide for the Happy monorepo. How to build, install, test, and run the CLI, server, native iOS and Android apps locally. Use when the user types /dev, asks how to \"build\", \"start dev\", \"install locally\", or \"run the ___ package\".",
    "categories": [
     "testing"
@@ -2900,8 +2900,8 @@
    "repo": "google/skills",
    "path": "skills/cloud/agent-platform-skill-registry",
    "url": "https://github.com/google/skills/tree/main/skills/cloud/agent-platform-skill-registry",
-   "stars": 24439,
-   "gain7d": 224,
+   "stars": 24469,
+   "gain7d": 221,
    "description": "Interact with the Gemini Enterprise Agent Platform Skill Registry to create and search for available skills. Use this skill to enable agents to register functionality or discover new capabilities.",
    "categories": [
     "other"
@@ -2917,8 +2917,8 @@
    "repo": "google/skills",
    "path": "skills/cloud/alloydb-basics",
    "url": "https://github.com/google/skills/tree/main/skills/cloud/alloydb-basics",
-   "stars": 24439,
-   "gain7d": 224,
+   "stars": 24469,
+   "gain7d": 221,
    "description": "Manages clusters, instances, and backups for AlloyDB for PostgreSQL, and integrates with AlloyDB Model Context Protocol (MCP) tools for automated database operations. Use when creating, configuring, or administering AlloyDB databases. Do NOT use for general PostgreSQL instances (e.g. Cloud SQL) or…",
    "categories": [
     "data"
@@ -2933,8 +2933,8 @@
    "repo": "google/skills",
    "path": "skills/cloud/bigquery-basics",
    "url": "https://github.com/google/skills/tree/main/skills/cloud/bigquery-basics",
-   "stars": 24439,
-   "gain7d": 224,
+   "stars": 24469,
+   "gain7d": 221,
    "description": "Manages datasets, tables, and jobs in BigQuery. Use when you need to interact with BigQuery, run SQL queries, manage BigQuery resources (datasets, tables, views), or perform basic data ingestion and analysis.",
    "categories": [
     "data"
@@ -2947,8 +2947,8 @@
    "repo": "SuperClaude-Org/SuperClaude_Framework",
    "path": ".claude/skills/confidence-check",
    "url": "https://github.com/SuperClaude-Org/SuperClaude_Framework/tree/master/.claude/skills/confidence-check",
-   "stars": 23938,
-   "gain7d": 2,
+   "stars": 23949,
+   "gain7d": 21,
    "description": "Pre-implementation confidence assessment (≥90% required). Use before starting any implementation to verify readiness with duplicate check, architecture compliance, official docs verification, OSS references, and root cause identification.",
    "categories": [
     "business"
@@ -2963,8 +2963,8 @@
    "repo": "SuperClaude-Org/SuperClaude_Framework",
    "path": "plugins/superclaude/skills/brainstorm",
    "url": "https://github.com/SuperClaude-Org/SuperClaude_Framework/tree/master/plugins/superclaude/skills/brainstorm",
-   "stars": 23938,
-   "gain7d": 2,
+   "stars": 23949,
+   "gain7d": 21,
    "description": "Activate brainstorming mode for collaborative discovery and creative problem-solving. Use when users have vague requests, want to explore ideas, or need requirements discovery.",
    "categories": [
     "other"
@@ -2977,8 +2977,8 @@
    "repo": "SuperClaude-Org/SuperClaude_Framework",
    "path": "plugins/superclaude/skills/deep-research",
    "url": "https://github.com/SuperClaude-Org/SuperClaude_Framework/tree/master/plugins/superclaude/skills/deep-research",
-   "stars": 23938,
-   "gain7d": 2,
+   "stars": 23949,
+   "gain7d": 21,
    "description": "Activate deep research mode for systematic investigation. Use when the user asks to research, investigate, explore, or needs current information with citations.",
    "categories": [
     "research"
@@ -2991,8 +2991,8 @@
    "repo": "screenpipe/screenpipe",
    "path": "crates/screenpipe-core/assets/skills/screenpipe-api",
    "url": "https://github.com/screenpipe/screenpipe/tree/main/crates/screenpipe-core/assets/skills/screenpipe-api",
-   "stars": 22472,
-   "gain7d": 189,
+   "stars": 22486,
+   "gain7d": 166,
    "description": "Query the user's local and synced-device data via the screenpipe REST API at localhost:3030 — recordings, audio, UI, meetings, connected services, and memory. Use for starred work, screen activity, other-device or cross-device history, productivity, media export, connections, durable memory, or…",
    "categories": [
     "productivity"
@@ -3008,8 +3008,8 @@
    "repo": "screenpipe/screenpipe",
    "path": ".claude/skills/develop-screenpipe-windows",
    "url": "https://github.com/screenpipe/screenpipe/tree/main/.claude/skills/develop-screenpipe-windows",
-   "stars": 22472,
-   "gain7d": 189,
+   "stars": 22486,
+   "gain7d": 166,
    "description": "Develop and test Screenpipe Windows-native changes on a disposable Azure VM created from the prepared Screenpipe Windows dev image. Use for Windows compiler, process, service, local API, desktop, capture, installer, or permission behavior. Do not use for React-only work proved by the browser mock.",
    "categories": [
     "dev"
@@ -3024,8 +3024,8 @@
    "repo": "screenpipe/screenpipe",
    "path": ".claude/skills/release",
    "url": "https://github.com/screenpipe/screenpipe/tree/main/.claude/skills/release",
-   "stars": 22472,
-   "gain7d": 189,
+   "stars": 22486,
+   "gain7d": 166,
    "description": "Release the screenpipe monorepo. Bumps versions, triggers GitHub Actions for app, CLI, MCP, and JS packages.",
    "categories": [
     "dev"
@@ -3038,8 +3038,8 @@
    "repo": "dailydotdev/daily",
    "path": ".claude-plugin/plugins/daily-dev/skills/daily-dev-ask",
    "url": "https://github.com/dailydotdev/daily/tree/master/.claude-plugin/plugins/daily-dev/skills/daily-dev-ask",
-   "stars": 20154,
-   "gain7d": 28,
+   "stars": 20155,
+   "gain7d": 23,
    "description": "Your agent's WebSearch for development. Search community-vetted developer articles ranked by upvotes — like having a senior dev's reading list. Answers are grounded in real sources, never hallucinated.",
    "categories": [
     "marketing"
@@ -3050,12 +3050,311 @@
  ],
  "newest": [
   {
+   "name": "ui-canvas",
+   "repo": "affaan-m/ECC",
+   "path": ".agents/skills/ui-canvas",
+   "url": "https://github.com/affaan-m/ECC/tree/main/.agents/skills/ui-canvas",
+   "stars": 307502,
+   "gain7d": 6227,
+   "description": "Preview a UI component mockup in a local browser canvas where the human directly edits it (move, resize, edit text, delete, restyle), switches mobile/desktop/custom viewports, tests it, chats with you, and clicks Save and Finish. You then turn the exported edited markup into the production…",
+   "categories": [
+    "frontend"
+   ],
+   "risk": "low",
+   "flags": []
+  },
+  {
+   "name": "agent-platform-agent-registry",
+   "repo": "google/skills",
+   "path": "skills/cloud/agent-platform-agent-registry",
+   "url": "https://github.com/google/skills/tree/main/skills/cloud/agent-platform-agent-registry",
+   "stars": 24469,
+   "gain7d": 221,
+   "description": "Manages Google Cloud Agent Registry (agentregistry.googleapis.com) resources using gcloud CLI and Kubernetes manifests, including agents, MCP servers, endpoints, services, bindings, AI applications, skills and skill revisions, resource-level IAM policies, Cloud Run and GKE automatic workload…",
+   "categories": [
+    "ai"
+   ],
+   "risk": "medium",
+   "flags": [
+    "scripts",
+    "secrets"
+   ]
+  },
+  {
+   "name": "code-comments",
+   "repo": "ccusage/ccusage",
+   "path": ".agents/skills/code-comments",
+   "url": "https://github.com/ccusage/ccusage/tree/main/.agents/skills/code-comments",
+   "stars": 19522,
+   "gain7d": 130,
+   "description": "Applies the ccusage comment rule when writing, reviewing, or deleting code comments in any repository language, including source files, configuration, workflows, and build scripts.",
+   "categories": [
+    "writing"
+   ],
+   "risk": "low",
+   "flags": []
+  },
+  {
+   "name": "omh-skill-eval",
+   "repo": "rlaope/oh-my-hermes",
+   "path": ".claude/agent-skills/omh-skill-eval",
+   "url": "https://github.com/rlaope/oh-my-hermes/tree/main/.claude/agent-skills/omh-skill-eval",
+   "stars": 5804,
+   "gain7d": 168,
+   "description": "[omh] Agent skill to check before shipping it: run `omh skill-eval`…",
+   "categories": [
+    "ai"
+   ],
+   "risk": "low",
+   "flags": []
+  },
+  {
+   "name": "omh-accessibility-audit",
+   "repo": "rlaope/oh-my-hermes",
+   "path": "skills/omh-accessibility-audit",
+   "url": "https://github.com/rlaope/oh-my-hermes/tree/main/skills/omh-accessibility-audit",
+   "stars": 5804,
+   "gain7d": 168,
+   "description": "[omh] Screen-reader or keyboard accessibility gaps: prepare WCAG, keyboard, focus, screen-reader, target-size, and reflow evidence gates for UI surfaces. Use when the user says: accessibility-audit, accessibility audit, a11y audit, a11y architect, wcag audit, wcag 2.2, wcag 2.2 aa, accessibility…",
+   "categories": [
+    "frontend"
+   ],
+   "risk": "medium",
+   "flags": [
+    "secrets"
+   ]
+  },
+  {
+   "name": "omh-adversarial-consensus",
+   "repo": "rlaope/oh-my-hermes",
+   "path": "skills/omh-adversarial-consensus",
+   "url": "https://github.com/rlaope/oh-my-hermes/tree/main/skills/omh-adversarial-consensus",
+   "stars": 5804,
+   "gain7d": 168,
+   "description": "[omh] Technical proposal facing adversarial scrutiny: independent perspectives attack a proposal, then distill into a bundle a separate planner consumes. Use when the user says: adversarial-consensus, adversarial planning, adversarial plan review, red team this plan, red-team this plan, red team…",
+   "categories": [
+    "productivity"
+   ],
+   "risk": "low",
+   "flags": []
+  },
+  {
+   "name": "kumo-custom-populations",
+   "repo": "NVIDIA/skills",
+   "path": "skills/kumo-custom-populations",
+   "url": "https://github.com/NVIDIA/skills/tree/main/skills/kumo-custom-populations",
+   "stars": 4094,
+   "gain7d": 147,
+   "description": "Train with caller-supplied labels, weights and splits or score exact entity/anchor rows through Snowflake source tables using the local Kumo API. Use when generated populations do not represent the requested rows.",
+   "categories": [
+    "data"
+   ],
+   "risk": "low",
+   "flags": []
+  },
+  {
+   "name": "kumo-data-science",
+   "repo": "NVIDIA/skills",
+   "path": "skills/kumo-data-science",
+   "url": "https://github.com/NVIDIA/skills/tree/main/skills/kumo-data-science",
+   "stars": 4094,
+   "gain7d": 147,
+   "description": "Use for KumoAI graphs and predictive models on relational data in a warehouse, an object store or local files: inspect, visualize or export a graph's schema and relationships; train a model, score data with a trained one, explain its predictions, diagnose its training, publish, reload or retain it…",
+   "categories": [
+    "research"
+   ],
+   "risk": "medium",
+   "flags": [
+    "secrets"
+   ]
+  },
+  {
+   "name": "kumo-graph-visualization",
+   "repo": "NVIDIA/skills",
+   "path": "skills/kumo-graph-visualization",
+   "url": "https://github.com/NVIDIA/skills/tree/main/skills/kumo-graph-visualization",
+   "stars": 4094,
+   "gain7d": 147,
+   "description": "Provide graph visuals in Kumo notebooks and SDK scripts, display or export relationships on request, and inspect Markdown schemas during model iteration.",
+   "categories": [
+    "data"
+   ],
+   "risk": "low",
+   "flags": []
+  },
+  {
+   "name": "icp-mcp",
+   "repo": "aeonfun/aeon",
+   "path": "skills/icp-mcp",
+   "url": "https://github.com/aeonfun/aeon/tree/main/skills/icp-mcp",
+   "stars": 796,
+   "gain7d": 4,
+   "description": "Read an Internet Computer app as you through the hosted ICP MCP (mcp.internetcomputer.org) - open an app, read its canister interfaces and docs, and answer a question with live query calls. Read-only; works on apps that opted in with an ic-architecture manifest. OAuth Connect with Internet Identity…",
+   "categories": [
+    "ai"
+   ],
+   "risk": "medium",
+   "flags": [
+    "secrets"
+   ]
+  },
+  {
+   "name": "notebooklm",
+   "repo": "roomi-fields/gemini-notebook-mcp",
+   "path": "skills/notebooklm",
+   "url": "https://github.com/roomi-fields/gemini-notebook-mcp/tree/main/skills/notebooklm",
+   "stars": 241,
+   "gain7d": 0,
+   "description": "This skill should be used when the user wants to query their Google NotebookLM notebooks for citation-backed, source-grounded answers, or manage notebooks, sources, and Studio content (audio, report, video, infographic, presentation, data table, flashcards, quiz, mind map). It drives the…",
+   "categories": [
+    "media",
+    "education"
+   ],
+   "risk": "medium",
+   "flags": [
+    "scripts"
+   ]
+  },
+  {
+   "name": "coderabbit-secure",
+   "repo": "coderabbitai/skills",
+   "path": "skills/coderabbit-secure",
+   "url": "https://github.com/coderabbitai/skills/tree/main/skills/coderabbit-secure",
+   "stars": 223,
+   "gain7d": 9,
+   "description": "Triage CodeRabbit Deep Scan findings and secrets, prioritize fixes, draft tickets, and manage scans, schedules, exports and Security learnings through hosted MCP.",
+   "categories": [
+    "security"
+   ],
+   "risk": "low",
+   "flags": []
+  },
+  {
+   "name": "agent-friendly",
+   "repo": "mblode/agent-skills",
+   "path": "skills/agent-friendly",
+   "url": "https://github.com/mblode/agent-skills/tree/main/skills/agent-friendly",
+   "stars": 213,
+   "gain7d": 14,
+   "description": "Makes a codebase agent-friendly: builds the guardrails, instructions and verification agents need, or audits a repo against the catalogue and fixes the top gap. Use when asked to \"make this repo agent-friendly\", \"set up a repo for agents\", \"audit this for agents\", or \"agents keep making the same…",
+   "categories": [
+    "dev"
+   ],
+   "risk": "low",
+   "flags": []
+  },
+  {
+   "name": "algorithmic-color-palette",
+   "repo": "dembrandt/dembrandt-skills",
+   "path": "directory/skills/algorithmic-color-palette",
+   "url": "https://github.com/dembrandt/dembrandt-skills/tree/main/directory/skills/algorithmic-color-palette",
+   "stars": 197,
+   "gain7d": 5,
+   "description": "Derive a full UI palette from one or two brand colours — state variants, brand-tinted greys, semantic colours. Use when building or expanding a colour system.",
+   "categories": [
+    "frontend"
+   ],
+   "risk": "low",
+   "flags": []
+  },
+  {
+   "name": "app-shell",
+   "repo": "dembrandt/dembrandt-skills",
+   "path": "directory/skills/app-shell",
+   "url": "https://github.com/dembrandt/dembrandt-skills/tree/main/directory/skills/app-shell",
+   "stars": 197,
+   "gain7d": 5,
+   "description": "Top bar, sidebar rail, app launcher, tenant and environment cue, status bar. Use when designing the persistent shell, a collapsible sidebar, or navigation between apps behind one login.",
+   "categories": [
+    "frontend",
+    "ai"
+   ],
+   "risk": "low",
+   "flags": []
+  },
+  {
+   "name": "authentic-product-representation",
+   "repo": "dembrandt/dembrandt-skills",
+   "path": "directory/skills/authentic-product-representation",
+   "url": "https://github.com/dembrandt/dembrandt-skills/tree/main/directory/skills/authentic-product-representation",
+   "stars": 197,
+   "gain7d": 5,
+   "description": "Product visuals must show the real product with real data. Use when building landing pages, hero sections, screenshots or demo panels.",
+   "categories": [
+    "frontend",
+    "ai"
+   ],
+   "risk": "low",
+   "flags": []
+  },
+  {
+   "name": "brewpage-publish-safe",
+   "repo": "kochetkov-ma/claude-brewcode",
+   "path": "skills/brewpage-publish-safe",
+   "url": "https://github.com/kochetkov-ma/claude-brewcode/tree/main/skills/brewpage-publish-safe",
+   "stars": 39,
+   "gain7d": 0,
+   "description": "Publish approved content to BrewPage and update the exact published item. This Skillstore edition stores anonymous owner credentials in private application state. Supports HTML, Markdown, JSON, files and verified website archives.",
+   "categories": [
+    "frontend"
+   ],
+   "risk": "medium",
+   "flags": [
+    "scripts",
+    "secrets"
+   ]
+  },
+  {
+   "name": "bug-from-user",
+   "repo": "rockscy/solo-skills",
+   "path": "skills/bug-from-user",
+   "url": "https://github.com/rockscy/solo-skills/tree/main/skills/bug-from-user",
+   "stars": 11,
+   "gain7d": 0,
+   "description": "Convert a vague user complaint into a reproducible bug report a solo dev can act on. Use when the user pastes a confusing customer message, says \"user says it's broken but I can't repro\", \"this email makes no sense\", or wants to triage a bug report.",
+   "categories": [
+    "productivity"
+   ],
+   "risk": "low",
+   "flags": []
+  },
+  {
+   "name": "changelog-from-commits",
+   "repo": "rockscy/solo-skills",
+   "path": "skills/changelog-from-commits",
+   "url": "https://github.com/rockscy/solo-skills/tree/main/skills/changelog-from-commits",
+   "stars": 11,
+   "gain7d": 0,
+   "description": "Generate a user-facing CHANGELOG entry from raw git log output. Use when the user is preparing a release, says \"what changed since last version\", asks to write release notes, or wants to summarize a batch of commits for end users.",
+   "categories": [
+    "dev"
+   ],
+   "risk": "medium",
+   "flags": [
+    "network"
+   ]
+  },
+  {
+   "name": "email-customer",
+   "repo": "rockscy/solo-skills",
+   "path": "skills/email-customer",
+   "url": "https://github.com/rockscy/solo-skills/tree/main/skills/email-customer",
+   "stars": 11,
+   "gain7d": 0,
+   "description": "Draft a polite-but-firm reply to a tricky customer email — refund request, scope creep, complaint, billing dispute. Use when the user pastes a customer email and asks for a reply, mentions \"how do I respond\", \"user is asking for a refund\", \"they want a discount\", or any awkward customer-facing…",
+   "categories": [
+    "productivity"
+   ],
+   "risk": "low",
+   "flags": []
+  },
+  {
    "name": "data-manager-api-troubleshooting",
    "repo": "google/skills",
    "path": "skills/ads/data-manager-api-troubleshooting",
    "url": "https://github.com/google/skills/tree/main/skills/ads/data-manager-api-troubleshooting",
-   "stars": 24439,
-   "gain7d": 224,
+   "stars": 24469,
+   "gain7d": 221,
    "description": "Diagnoses and fixes errors, warnings, and missing data for Data Manager API event and audience ingestion requests. Use when an IngestEvents, IngestAudienceMembers, RemoveAudienceMembers, RemoveAllAudienceMembers, or RetrieveRequestStatus call fails (INVALID_ARGUMENT, REQUIRED_FIELD_MISSING…",
    "categories": [
     "other"
@@ -3070,8 +3369,8 @@
    "repo": "google/skills",
    "path": "skills/cloud/bigquery-migration-data-exporter",
    "url": "https://github.com/google/skills/tree/main/skills/cloud/bigquery-migration-data-exporter",
-   "stars": 24439,
-   "gain7d": 224,
+   "stars": 24469,
+   "gain7d": 221,
    "description": "Generates type-safe, schema-aligned database data export SQL files (.sql) for Snowflake, Databricks, Teradata, Oracle, and PostgreSQL directly from BigQuery Migration Service (BQMS) translation_output/metadata configs, exporting into target file formats (such as Parquet). Use when generating source…",
    "categories": [
     "data"
@@ -3082,28 +3381,12 @@
    ]
   },
   {
-   "name": "compute-resource-availability-troubleshooting",
-   "repo": "google/skills",
-   "path": "skills/cloud/compute-resource-availability-troubleshooting",
-   "url": "https://github.com/google/skills/tree/main/skills/cloud/compute-resource-availability-troubleshooting",
-   "stars": 24439,
-   "gain7d": 224,
-   "description": "Diagnoses, mitigates, and prevents Google Compute Engine resource availability and capacity stockout errors (ZONE_RESOURCE_POOL_EXHAUSTED, ZONE_RESOURCE_POOL_EXHAUSTED_WITH_DETAILS, and machine type or accelerator unavailable in zone). Use ONLY when VM creation, Managed Instance Group (MIG)…",
-   "categories": [
-    "business"
-   ],
-   "risk": "medium",
-   "flags": [
-    "secrets"
-   ]
-  },
-  {
    "name": "daily-dev-content-strategy",
    "repo": "dailydotdev/daily",
    "path": ".claude-plugin/plugins/daily-dev/skills/daily-dev-content-strategy",
    "url": "https://github.com/dailydotdev/daily/tree/master/.claude-plugin/plugins/daily-dev/skills/daily-dev-content-strategy",
-   "stars": 20154,
-   "gain7d": 28,
+   "stars": 20155,
+   "gain7d": 23,
    "description": "Build or update the content strategy for a daily.dev for Startups company page. Interviews the founder about their readers and what the team knows, reads the weekly intel, and saves a short strategy that the content ideas, content review and growth routine skills follow. Use when the user asks how…",
    "categories": [
     "marketing"
@@ -3116,8 +3399,8 @@
    "repo": "dailydotdev/daily",
    "path": "skills/daily-dev-company-page",
    "url": "https://github.com/dailydotdev/daily/tree/master/skills/daily-dev-company-page",
-   "stars": 20154,
-   "gain7d": 28,
+   "stars": 20155,
+   "gain7d": 23,
    "description": "Set up a free daily.dev company page for the user's product or company from the agent. Connects or creates their daily.dev account with one link, builds the page from their repo and website, polishes their profile, suggests a first post from what they already shipped, opens the composer so they can…",
    "categories": [
     "frontend"
@@ -3132,8 +3415,8 @@
    "repo": "ibelick/ui-skills",
    "path": "skills/device-frames",
    "url": "https://github.com/ibelick/ui-skills/tree/main/skills/device-frames",
-   "stars": 11210,
-   "gain7d": 257,
+   "stars": 11232,
+   "gain7d": 231,
    "description": "Create device-framed screenshots, product images, videos, or live UI mockups. Use when placing an image, recording, webpage, or component inside a phone, foldable, tablet, watch, laptop, monitor, or browser frame, including App Store-style visuals and launch videos.",
    "categories": [
     "media"
@@ -3142,60 +3425,12 @@
    "flags": []
   },
   {
-   "name": "bench-perf-oss",
-   "repo": "NVIDIA/skills",
-   "path": "skills/bioir-bench-perf-oss",
-   "url": "https://github.com/NVIDIA/skills/tree/main/skills/bioir-bench-perf-oss",
-   "stars": 4076,
-   "gain7d": 154,
-   "description": "Compare BioIR vs OSS folding performance: model.forward() latency, GPU use, lDDT and DockQ with matched inputs. Use for benchmark setup, execution or audits; excludes affinity heads and Ray throughput.",
-   "categories": [
-    "ai"
-   ],
-   "risk": "medium",
-   "flags": [
-    "scripts"
-   ]
-  },
-  {
-   "name": "make-data-pipeline",
-   "repo": "NVIDIA/skills",
-   "path": "skills/bioir-make-data-pipeline",
-   "url": "https://github.com/NVIDIA/skills/tree/main/skills/bioir-make-data-pipeline",
-   "stars": 4076,
-   "gain7d": 154,
-   "description": "Port an open-source bioinformatics data pipeline into the BioIR pipeline architecture. Use when the user asks to create, port, convert, or write a new data pipeline from OSS code, or add a new model's data processing to the BioIR system. Level 2 is one full build_processor run of the sample…",
-   "categories": [
-    "ai"
-   ],
-   "risk": "medium",
-   "flags": [
-    "scripts"
-   ]
-  },
-  {
-   "name": "model-onboard",
-   "repo": "NVIDIA/skills",
-   "path": "skills/bioir-model-onboard",
-   "url": "https://github.com/NVIDIA/skills/tree/main/skills/bioir-model-onboard",
-   "stars": 4076,
-   "gain7d": 154,
-   "description": "Implement an upstream pretrained model natively in BioIR using its optimized components, with checkpoint conversion and numerical validation. Use when adding a new model or architecture to BioIR; includes data pipeline integration when requested.",
-   "categories": [
-    "ai"
-   ],
-   "risk": "medium",
-   "flags": [
-    "scripts"
-   ]
-  },
-  {
    "name": "deja-vu",
    "repo": "vshulcz/deja-vu",
    "path": "",
    "url": "https://github.com/vshulcz/deja-vu",
-   "stars": 1624,
-   "gain7d": 133,
+   "stars": 1632,
+   "gain7d": 114,
    "description": "Search and recall past AI coding sessions across 49 coding agents (Claude Code, Codex, Cursor, OpenCode, Gemini CLI, Qwen Code, Cline, Zed, and more) on this machine via the deja MCP server or CLI. Use before your first edit, plan, review, or audit, before debugging an error, when concrete…",
    "categories": [
     "dev"
@@ -3210,8 +3445,8 @@
    "repo": "vshulcz/deja-vu",
    "path": "claude-plugin/skills/deja-handoff",
    "url": "https://github.com/vshulcz/deja-vu/tree/main/claude-plugin/skills/deja-handoff",
-   "stars": 1624,
-   "gain7d": 133,
+   "stars": 1632,
+   "gain7d": 114,
    "description": "deja-vu handoff — build a structured continuation brief from a past session on this machine so another AI coding agent or fresh session can pick up where it left off. Use when the user asks to continue, hand off, or pick up an earlier session across tools, or needs a brief with problem, tried…",
    "categories": [
     "dev"
@@ -3225,7 +3460,7 @@
    "path": "plugins/modern-web-guidance/skills/chrome-extensions",
    "url": "https://github.com/fcakyon/claude-codex-settings/tree/main/plugins/modern-web-guidance/skills/chrome-extensions",
    "stars": 1214,
-   "gain7d": 5,
+   "gain7d": 4,
    "description": "Build and publish Chrome Extensions using Manifest V3 best practices. Use this skill whenever the user asks to create, modify, debug, or understand Chrome browser extensions, add-ons, or anything involving the Chrome Extensions API. Trigger on mentions of: 'Chrome extension', 'browser extension'…",
    "categories": [
     "dev"
@@ -3241,7 +3476,7 @@
    "path": "plugins/modern-web-guidance/skills/modern-web-guidance",
    "url": "https://github.com/fcakyon/claude-codex-settings/tree/main/plugins/modern-web-guidance/skills/modern-web-guidance",
    "stars": 1214,
-   "gain7d": 5,
+   "gain7d": 4,
    "description": "This skill should be used when a browser API, HTML, CSS or accessibility behavior affects an implementation or verification decision, or when the user asks to \"check browser compatibility\" or \"scan legacy web patterns\".",
    "categories": [
     "frontend"
@@ -3254,8 +3489,8 @@
    "repo": "zapier/mcp",
    "path": ".claude/skills/sync-plugin-description",
    "url": "https://github.com/zapier/mcp/tree/main/.claude/skills/sync-plugin-description",
-   "stars": 460,
-   "gain7d": 0,
+   "stars": 463,
+   "gain7d": 11,
    "description": "Keep the Zapier MCP one-line description identical across every plugin manifest in this repo, using the official MCP registry entry as the source of truth. Use when the user changes, rewords, or asks about the plugin description, the app count (e.g. \"9,000+\" → \"10,000+\"), pastes MCP registry JSON…",
    "categories": [
     "ai"
@@ -3270,8 +3505,8 @@
    "repo": "zapier/mcp",
    "path": "plugins/zapier/skills/zapier-connect",
    "url": "https://github.com/zapier/mcp/tree/main/plugins/zapier/skills/zapier-connect",
-   "stars": 460,
-   "gain7d": 0,
+   "stars": 463,
+   "gain7d": 11,
    "description": "Connect or reconnect the Zapier MCP server when no Zapier tools are available or authentication has failed. Use when Zapier is not connected, there are no Zapier tools, the user asks to connect or reconnect Zapier, a Zapier call fails with an authentication or 401 error, or an action does not…",
    "categories": [
     "ai"
@@ -3286,8 +3521,8 @@
    "repo": "zapier/mcp",
    "path": "plugins/zapier/skills/zapier-detect-workflows",
    "url": "https://github.com/zapier/mcp/tree/main/plugins/zapier/skills/zapier-detect-workflows",
-   "stars": 460,
-   "gain7d": 0,
+   "stars": 463,
+   "gain7d": 11,
    "description": "Use when the user repeats a request (even a single read) or describes habits, schedules, reuse, or manual work. Users rarely say \"workflow.\" Suggests a Zap workflow once, with evidence, and routes the choice to build or save. Explicit build or save requests go straight to those skills; one-time…",
    "categories": [
     "ai"
@@ -3300,7 +3535,7 @@
    "repo": "coderabbitai/skills",
    "path": "skills/coderabbit-setup",
    "url": "https://github.com/coderabbitai/skills/tree/main/skills/coderabbit-setup",
-   "stars": 222,
+   "stars": 223,
    "gain7d": 9,
    "description": "Check CodeRabbit setup for local CLI reviews and, when configured, connect the host's CodeRabbit MCP tools. Use for onboarding, reconnection, or diagnosing separate MCP and CLI sign-ins.",
    "categories": [
@@ -3316,7 +3551,7 @@
    "repo": "thedesignproject/agent-skills",
    "path": "skills/setup-chromatic",
    "url": "https://github.com/thedesignproject/agent-skills/tree/main/skills/setup-chromatic",
-   "stars": 104,
+   "stars": 105,
    "gain7d": 7,
    "description": "Set up Chromatic visual testing for existing Storybook components, application screens, or both, including the agent's MCP connection, authenticated project setup, CI, and verification. Use when adding or completing a project's Chromatic integration, or resuming it after login/restart with requests…",
    "categories": [
@@ -3377,7 +3612,7 @@
    "path": "plugins/code-review/skills/code-review",
    "url": "https://github.com/fcakyon/claude-codex-settings/tree/main/plugins/code-review/skills/code-review",
    "stars": 1214,
-   "gain7d": 5,
+   "gain7d": 4,
    "description": "This skill should be used when the user asks to \"review this diff\", \"find bugs in my changes\", \"review this branch\", or invokes \"code-review\". Review local changes or a Git target at the requested effort, with optional fixes and PR or MR comments.",
    "categories": [
     "dev"
@@ -3390,8 +3625,8 @@
    "repo": "ChatCut-Inc/agent-plugin",
    "path": "codex/skills/digital-human",
    "url": "https://github.com/ChatCut-Inc/agent-plugin/tree/main/codex/skills/digital-human",
-   "stars": 1062,
-   "gain7d": 44,
+   "stars": 1069,
+   "gain7d": 46,
    "description": "Create script- or audio-driven talking-head videos with a user's saved character, portrait, or a representative still from video. Use for 数字人、角色口播、数字分身、 照片开口说话、人像口播, AI avatar, talking photo, AI presenter, or digital twin. Choose between direct-to-camera speech and short character performances by…",
    "categories": [
     "media",
@@ -3405,8 +3640,8 @@
    "repo": "NahumLitvin/prismantis",
    "path": "antigravity/skills/prismantis",
    "url": "https://github.com/NahumLitvin/prismantis/tree/main/antigravity/skills/prismantis",
-   "stars": 467,
-   "gain7d": 77,
+   "stars": 474,
+   "gain7d": 70,
    "description": "Show the prismantis demo. Use when the user runs /prismantis or asks what prismantis is or does.",
    "categories": [
     "docs"
@@ -3435,8 +3670,8 @@
    "repo": "orziz/odai",
    "path": "skills/odai-companion",
    "url": "https://github.com/orziz/odai/tree/main/skills/odai-companion",
-   "stars": 133,
-   "gain7d": 0,
+   "stars": 132,
+   "gain7d": -2,
    "description": "阿岱（Dai）与欧黛（Odai）可选协作陪伴风格。用户点名阿岱或欧黛、想在做事过程中获得沉稳行动搭档或轻快陪伴互动，或要求切换/了解这两种回应风格时使用。",
    "categories": [
     "ai"
@@ -3449,8 +3684,8 @@
    "repo": "affaan-m/ECC",
    "path": ".agents/skills/ecc-contribution-review",
    "url": "https://github.com/affaan-m/ECC/tree/main/.agents/skills/ecc-contribution-review",
-   "stars": 306913,
-   "gain7d": 6928,
+   "stars": 307502,
+   "gain7d": 6227,
    "description": "Prepare an ECC skill contribution for review by organizing repository, install-surface, cross-harness, validation, security, and commit observations into a local proposal. Use when preparing a skill contribution for review.",
    "categories": [
     "security"
@@ -3463,8 +3698,8 @@
    "repo": "affaan-m/ECC",
    "path": "docs/ja-JP/skills/devfleet",
    "url": "https://github.com/affaan-m/ECC/tree/main/docs/ja-JP/skills/devfleet",
-   "stars": 306913,
-   "gain7d": 6928,
+   "stars": 307502,
+   "gain7d": 6227,
    "description": "Claude DevFleet経由でマルチエージェントコーディングタスクをオーケストレーション — プロジェクトを計画し、分離された作業ツリー内で平行エージェントを派遣し、進捗を監視し、構造化レポートを読む。",
    "categories": [
     "ai"
@@ -3477,8 +3712,8 @@
    "repo": "dailydotdev/daily",
    "path": ".claude-plugin/plugins/daily-dev/skills/daily-dev-ask",
    "url": "https://github.com/dailydotdev/daily/tree/master/.claude-plugin/plugins/daily-dev/skills/daily-dev-ask",
-   "stars": 20154,
-   "gain7d": 28,
+   "stars": 20155,
+   "gain7d": 23,
    "description": "Your agent's WebSearch for development. Search community-vetted developer articles ranked by upvotes — like having a senior dev's reading list. Answers are grounded in real sources, never hallucinated.",
    "categories": [
     "marketing"
@@ -3491,8 +3726,8 @@
    "repo": "rampstackco/claude-skills",
    "path": "skills/release-management",
    "url": "https://github.com/rampstackco/claude-skills/tree/main/skills/release-management",
-   "stars": 1098,
-   "gain7d": 26,
+   "stars": 1103,
+   "gain7d": 28,
    "description": "Run the recurring release cycle that turns merged work into a shipped, communicated release: a stated release model, a version derived from the changes, a release candidate and freeze, a written go/no-go gate, staged rollout with an exercised rollback, a hotfix path, and the changelog and release…",
    "categories": [
     "productivity"
@@ -3505,7 +3740,7 @@
    "repo": "unbrowse-ai/unbrowse",
    "path": "skills/unbrowse-map",
    "url": "https://github.com/unbrowse-ai/unbrowse/tree/main/skills/unbrowse-map",
-   "stars": 935,
+   "stars": 937,
    "gain7d": 12,
    "description": "Learn a website's API route by browsing it, then replay it browserless. Use when the user asks to \"learn this site\", \"find the API behind this page\", \"turn this flow into an API call\", \"map while browsing\", or to test whether a site's flow can run without a browser. Works on anti-bot-protected…",
    "categories": [
@@ -3521,7 +3756,7 @@
    "repo": "unbrowse-ai/unbrowse",
    "path": "skills/unbrowse",
    "url": "https://github.com/unbrowse-ai/unbrowse/tree/main/skills/unbrowse",
-   "stars": 935,
+   "stars": 937,
    "gain7d": 12,
    "description": "Use websites through the Unbrowse node on this machine instead of a browser. Say what you want with unbrowse_do and the url of a page that does it - the node calls the route that does it, or its browser walks the page once, keeps the call that answers your goal and calls that - and get the site's…",
    "categories": [
@@ -3537,7 +3772,7 @@
    "repo": "unbrowse-ai/unbrowse",
    "path": "unbrowse-browser/skill-data/agentcore",
    "url": "https://github.com/unbrowse-ai/unbrowse/tree/main/unbrowse-browser/skill-data/agentcore",
-   "stars": 935,
+   "stars": 937,
    "gain7d": 12,
    "description": "Run agent-browser on AWS Bedrock AgentCore cloud browsers. Use when the user wants to use AgentCore, run browser automation on AWS, use a cloud browser with AWS credentials, or needs a managed browser session backed by AWS infrastructure. Triggers include \"use agentcore\", \"run on AWS\", \"cloud…",
    "categories": [
@@ -3554,251 +3789,13 @@
    "path": "plugins/claude-directory/skills/finalize",
    "url": "https://github.com/educlopez/ui-craft/tree/main/plugins/claude-directory/skills/finalize",
    "stars": 467,
-   "gain7d": 14,
+   "gain7d": 11,
    "description": "Pre-ship gate — performs a manual review, verifies brief and tokens, applies the 10-pass finish bar, ranks findings by feedback hierarchy. Use when the user wants to ship, merge, or finalize a surface and needs a verdict (READY / NOT READY / BLOCKED) before committing. Invoke when the user asks for…",
    "categories": [
     "frontend"
    ],
    "risk": "low",
    "flags": []
-  },
-  {
-   "name": "start",
-   "repo": "educlopez/ui-craft",
-   "path": "plugins/claude-directory/skills/start",
-   "url": "https://github.com/educlopez/ui-craft/tree/main/plugins/claude-directory/skills/start",
-   "stars": 467,
-   "gain7d": 14,
-   "description": "Orient the user in the UI Craft skills edition, inspect available project context, and recommend one focused next step without changing files.",
-   "categories": [
-    "frontend"
-   ],
-   "risk": "low",
-   "flags": []
-  },
-  {
-   "name": "agent-testing-checks-skill",
-   "repo": "LambdaTest/agent-skills",
-   "path": "agent-testing-checks-skill",
-   "url": "https://github.com/LambdaTest/agent-skills/tree/main/agent-testing-checks-skill",
-   "stars": 392,
-   "gain7d": 0,
-   "description": "Coverage checklist and review rules for testing an AI agent: a chatbot, support assistant, voice agent or tool-calling agent. Covers what to test (grounding, tool calls, side effects, multi-turn, prompt injection, data handling), how to assert on non-deterministic output, and how to read results…",
-   "categories": [
-    "ai",
-    "testing"
-   ],
-   "risk": "low",
-   "flags": []
-  },
-  {
-   "name": "flaky-test-fixes-skill",
-   "repo": "LambdaTest/agent-skills",
-   "path": "flaky-test-fixes-skill",
-   "url": "https://github.com/LambdaTest/agent-skills/tree/main/flaky-test-fixes-skill",
-   "stars": 392,
-   "gain7d": 0,
-   "description": "A diagnosis-first procedure for flaky tests in any UI or integration suite (Playwright, Selenium, Cypress, WebdriverIO, Jest, pytest): reproduce and measure, classify the cause, fix the cause, prove the fix. Use when a test fails intermittently, passes on retry, fails only in CI, only in parallel…",
-   "categories": [
-    "testing"
-   ],
-   "risk": "low",
-   "flags": []
-  },
-  {
-   "name": "playwright-patterns-skill",
-   "repo": "LambdaTest/agent-skills",
-   "path": "playwright-patterns-skill",
-   "url": "https://github.com/LambdaTest/agent-skills/tree/main/playwright-patterns-skill",
-   "stars": 392,
-   "gain7d": 0,
-   "description": "Review and hardening rules for Playwright tests: locator priority, web-first assertions, test isolation, network mocking, config and a pre-merge checklist. Use when reviewing, fixing or stabilising existing Playwright specs, page objects, fixtures or playwright.config, or when the user says \"review…",
-   "categories": [
-    "testing"
-   ],
-   "risk": "medium",
-   "flags": [
-    "secrets"
-   ]
-  },
-  {
-   "name": "bloom-tutor",
-   "repo": "Li-Evan/BloomTutor",
-   "path": "skills/bloom-tutor",
-   "url": "https://github.com/Li-Evan/BloomTutor/tree/main/skills/bloom-tutor",
-   "stars": 322,
-   "gain7d": 32,
-   "description": "Use when 用户想以一对一苏格拉底导师的方式系统学习一个课题——开一门新课、推进课题的下一篇、提交学习反馈或说「我读完了」、或整理/查看学习日志。基于 Bloom 2 Sigma 的交互式学习系统。触发词：开个文件夹学X、我想学X、帮我学X、继续、下一篇、我读完了、整理学习、查看学习日志、interactive Socratic tutoring、Bloom 2 sigma learning。",
-   "categories": [
-    "education"
-   ],
-   "risk": "low",
-   "flags": []
-  },
-  {
-   "name": "learn-crossover",
-   "repo": "Li-Evan/BloomTutor",
-   "path": "skills/learn-crossover",
-   "url": "https://github.com/Li-Evan/BloomTutor/tree/main/skills/learn-crossover",
-   "stars": 322,
-   "gain7d": 32,
-   "description": "当用户学习或接触一个新概念/新技术/新算法/新领域时使用（尤其感到陌生或有点难时）。用「跨界原则」拿用户已掌握的知识快速撬动新知识——指出他其实已经学过的同一个东西（换了名字）、结构同构的旧知识、能解释新知识的已有知识，并点出新概念体现的跨领域元知识模式。让「学新东西」变成「发现你已经会了一半」。触发场景：学 X、接触 X、这个好难、X 是什么、帮我理解 X。",
-   "categories": [
-    "education",
-    "ai"
-   ],
-   "risk": "low",
-   "flags": []
-  },
-  {
-   "name": "learn-deep",
-   "repo": "Li-Evan/BloomTutor",
-   "path": "skills/learn-deep",
-   "url": "https://github.com/Li-Evan/BloomTutor/tree/main/skills/learn-deep",
-   "stars": 322,
-   "gain7d": 32,
-   "description": "用户学任何新概念/新技术/新理论的默认深度入口——一次性用五个视角把概念讲透并帮他选深入方向：crossover 用已会的撬动、occam 框定该学多深、graph 建知识地图、prototype 最小原型迭代、feynman 拷问检验。触发场景：我想学 X、理解 X、X 是什么、讲讲 X、搞懂 X、学一下 X、深入 X、给我讲讲 X。除非用户明确只要某一个视角（那时改用对应的单个 learn-* skill）。",
-   "categories": [
-    "education",
-    "ai"
-   ],
-   "risk": "low",
-   "flags": []
-  },
-  {
-   "name": "atomicmail",
-   "repo": "Atomic-Mail/atomic-mail-agentic",
-   "path": "integrations/hermes-plugin/skills/atomicmail",
-   "url": "https://github.com/Atomic-Mail/atomic-mail-agentic/tree/main/integrations/hermes-plugin/skills/atomicmail",
-   "stars": 263,
-   "gain7d": 2,
-   "description": "Use the agent's own Atomic Mail inbox. Read, search, send and reply to email from the agent's @atomicmail.ai address, and schedule meetings with real calendar invitations. Use when the user asks for your email address, wants you to email someone, check your inbox, or set up, move or cancel a…",
-   "categories": [
-    "productivity"
-   ],
-   "risk": "low",
-   "flags": []
-  },
-  {
-   "name": "fulltext-acquisition",
-   "repo": "KalarisLabs/research-agent-skills",
-   "path": "skills/fulltext-acquisition",
-   "url": "https://github.com/KalarisLabs/research-agent-skills/tree/main/skills/fulltext-acquisition",
-   "stars": 165,
-   "gain7d": 42,
-   "description": "Get the full text of the papers you screened in and attach each file to the right record. Use after abstract screening or a PRISMA full-text stage, when a reading list has missing PDFs, when you need legal open-access copies, institutional link-resolver links or interlibrary-loan requests, when a…",
-   "categories": [
-    "research"
-   ],
-   "risk": "medium",
-   "flags": [
-    "scripts"
-   ]
-  },
-  {
-   "name": "paper-card",
-   "repo": "KalarisLabs/research-agent-skills",
-   "path": "skills/paper-card",
-   "url": "https://github.com/KalarisLabs/research-agent-skills/tree/main/skills/paper-card",
-   "stars": 165,
-   "gain7d": 42,
-   "description": "Write a structured, verified summary (card) of one research paper where every claim carries a page, a verbatim quote and the numbers it rests on, checked by script against the source text and then by a second independent reviewer. Use when summarizing a paper so its results can be cited, building…",
-   "categories": [
-    "research"
-   ],
-   "risk": "medium",
-   "flags": [
-    "scripts"
-   ]
-  },
-  {
-   "name": "foreign-academic-translator-lite",
-   "repo": "Koloyaaa/academic-translation-toolkit",
-   "path": "skills/lite/skills/foreign-academic-translator-lite",
-   "url": "https://github.com/Koloyaaa/academic-translation-toolkit/tree/main/skills/lite/skills/foreign-academic-translator-lite",
-   "stars": 121,
-   "gain7d": 25,
-   "description": "Translate short, manageable foreign-language academic handouts with the legacy workflow and a lightweight output readability check.",
-   "categories": [
-    "research"
-   ],
-   "risk": "high",
-   "flags": [
-    "scripts",
-    "binary"
-   ]
-  },
-  {
-   "name": "foreign-academic-docx-publisher",
-   "repo": "Koloyaaa/academic-translation-toolkit",
-   "path": "skills/max/skills/foreign-academic-docx-publisher",
-   "url": "https://github.com/Koloyaaa/academic-translation-toolkit/tree/main/skills/max/skills/foreign-academic-docx-publisher",
-   "stars": 121,
-   "gain7d": 25,
-   "description": "Build and inspect an editable DOCX from the suite's canonical translated Markdown; use only when DOCX is selected.",
-   "categories": [
-    "docs"
-   ],
-   "risk": "low",
-   "flags": []
-  },
-  {
-   "name": "foreign-academic-html-publisher",
-   "repo": "Koloyaaa/academic-translation-toolkit",
-   "path": "skills/max/skills/foreign-academic-html-publisher",
-   "url": "https://github.com/Koloyaaa/academic-translation-toolkit/tree/main/skills/max/skills/foreign-academic-html-publisher",
-   "stars": 121,
-   "gain7d": 25,
-   "description": "Build and inspect the HTML reader from the suite's canonical translated Markdown; use only when HTML is selected.",
-   "categories": [
-    "research"
-   ],
-   "risk": "low",
-   "flags": []
-  },
-  {
-   "name": "looks-good-to-ai",
-   "repo": "laulauraluo/looks-good-to-ai",
-   "path": "skills/looks-good-to-ai",
-   "url": "https://github.com/laulauraluo/looks-good-to-ai/tree/main/skills/looks-good-to-ai",
-   "stars": 94,
-   "gain7d": 4,
-   "description": "Code review skill for pull requests and diffs written by AI coding agents (Claude Code, Codex, Copilot, Cursor). Use it when reading every line no longer scales, or when the code looks clean but you don't trust it yet. Splits \"reading the code\" into three separate jobs (catch bugs, align context…",
-   "categories": [
-    "dev"
-   ],
-   "risk": "low",
-   "flags": []
-  },
-  {
-   "name": "forward-deployed-selling",
-   "repo": "vonarmen-wq/forward-deployed-selling",
-   "path": "skills/forward-deployed-selling",
-   "url": "https://github.com/vonarmen-wq/forward-deployed-selling/tree/main/skills/forward-deployed-selling",
-   "stars": 76,
-   "gain7d": 0,
-   "description": "Operating doctrine for AI-era enterprise sales. Use this skill whenever the work touches an account, prospect, deal, pipeline, outreach, stakeholder, sales coaching, or any decision that affects revenue — even if the user does not say \"sales\": account research, exec briefs, call prep, business…",
-   "categories": [
-    "marketing"
-   ],
-   "risk": "low",
-   "flags": []
-  },
-  {
-   "name": "test-audit",
-   "repo": "sneg55/agent-starter",
-   "path": "skills/test-audit",
-   "url": "https://github.com/sneg55/agent-starter/tree/main/skills/test-audit",
-   "stars": 75,
-   "gain7d": 0,
-   "description": "Use when auditing, pruning or sweeping a test suite, when deciding whether a new or changed test earns its place, when a test passes but would not catch the bug it is named for, or when production exports exist only so tests can reach them.",
-   "categories": [
-    "testing"
-   ],
-   "risk": "medium",
-   "flags": [
-    "scripts"
-   ]
   }
  ]
 }
