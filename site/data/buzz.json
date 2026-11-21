@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-20T12:00:48.600Z",
+  "generatedAt": "2026-11-21T11:32:36.687Z",
   "items": [
     {
       "title": "Socratic Tutor",
       "url": "https://github.com/janestreet/agent_skills/blob/master/socratic-tutor/SKILL.md",
       "discussion": "https://news.ycombinator.com/item?id=50438261",
-      "points": 722,
+      "points": 723,
       "comments": 172,
       "date": "2026-11-10",
       "source": "Hacker News"
@@ -17,15 +17,6 @@
       "points": 449,
       "comments": 146,
       "date": "2026-11-10",
-      "source": "Hacker News"
-    },
-    {
-      "title": "Show HN: Omnara – Open-source alternative to Claude Managed Agents",
-      "url": "https://github.com/omnara-ai/omnara",
-      "discussion": "https://news.ycombinator.com/item?id=50183892",
-      "points": 114,
-      "comments": 35,
-      "date": "2026-10-21",
       "source": "Hacker News"
     },
     {
@@ -53,15 +44,6 @@
       "points": 25,
       "comments": 8,
       "date": "2026-11-09",
-      "source": "Hacker News"
-    },
-    {
-      "title": "Open-source, cross-harness memory for AI agents",
-      "url": "https://news.ycombinator.com/item?id=50182883",
-      "discussion": "https://news.ycombinator.com/item?id=50182883",
-      "points": 18,
-      "comments": 14,
-      "date": "2026-10-21",
       "source": "Hacker News"
     },
     {
@@ -191,12 +173,30 @@
       "source": "Hacker News"
     },
     {
+      "title": "Show HN: Build Django Admin internal tools with your coding agent",
+      "url": "https://djangocontrolroom.com/build",
+      "discussion": "https://news.ycombinator.com/item?id=50484330",
+      "points": 5,
+      "comments": 0,
+      "date": "2026-11-13",
+      "source": "Hacker News"
+    },
+    {
       "title": "Show HN: Tool to measure log TCO savings without losing or migrating any data",
       "url": "https://news.ycombinator.com/item?id=50535716",
       "discussion": "https://news.ycombinator.com/item?id=50535716",
       "points": 4,
       "comments": 0,
       "date": "2026-11-17",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Show HN: ClawVet – Offline AST scanner and rug-pull diff for AI agent skills",
+      "url": "https://clawvet.vercel.app/",
+      "discussion": "https://news.ycombinator.com/item?id=50587571",
+      "points": 4,
+      "comments": 1,
+      "date": "2026-11-21",
       "source": "Hacker News"
     },
     {
@@ -218,12 +218,12 @@
       "source": "Hacker News"
     },
     {
-      "title": "Wiki-driven development: coding agents update a wiki for you, you set direction",
-      "url": "https://news.ycombinator.com/item?id=50180884",
-      "discussion": "https://news.ycombinator.com/item?id=50180884",
+      "title": "Show HN: profiler-md converts performance profiles to Markdown",
+      "url": "https://github.com/TomerAberbach/profiler-md",
+      "discussion": "https://news.ycombinator.com/item?id=50507976",
       "points": 4,
-      "comments": 1,
-      "date": "2026-10-21",
+      "comments": 0,
+      "date": "2026-11-15",
       "source": "Hacker News"
     },
     {
