@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T11:32:36.687Z",
+  "generatedAt": "2026-11-22T11:47:57.583Z",
   "items": [
     {
       "title": "Socratic Tutor",
@@ -41,7 +41,7 @@
       "title": "Ask HN: How do you evaluate the skills your AI agents use?",
       "url": "https://news.ycombinator.com/item?id=50426070",
       "discussion": "https://news.ycombinator.com/item?id=50426070",
-      "points": 25,
+      "points": 26,
       "comments": 8,
       "date": "2026-11-09",
       "source": "Hacker News"
@@ -83,6 +83,15 @@
       "source": "Hacker News"
     },
     {
+      "title": "Show HN: ClawVet – Offline AST scanner and rug-pull diff for AI agent skills",
+      "url": "https://clawvet.vercel.app/",
+      "discussion": "https://news.ycombinator.com/item?id=50587571",
+      "points": 8,
+      "comments": 1,
+      "date": "2026-11-21",
+      "source": "Hacker News"
+    },
+    {
       "title": "I Just Deleted All My Agent Skills",
       "url": "https://philippdubach.com/posts/i-just-deleted-all-my-agent-skills/",
       "discussion": "https://news.ycombinator.com/item?id=50413912",
@@ -119,15 +128,6 @@
       "source": "Hacker News"
     },
     {
-      "title": "Show HN: Skillstore – Expert skills your coding agent fetches as it works",
-      "url": "https://skillstore-jk.fly.dev/developers",
-      "discussion": "https://news.ycombinator.com/item?id=50195133",
-      "points": 6,
-      "comments": 0,
-      "date": "2026-10-22",
-      "source": "Hacker News"
-    },
-    {
       "title": "Show HN: Globalize.now – translations that land in your pull request",
       "url": "https://news.ycombinator.com/item?id=50350444",
       "discussion": "https://news.ycombinator.com/item?id=50350444",
@@ -155,21 +155,21 @@
       "source": "Hacker News"
     },
     {
+      "title": "Show HN: It's now easy to install Linux on an Android Phone – Android2linux",
+      "url": "https://github.com/android2linux/android2linux",
+      "discussion": "https://news.ycombinator.com/item?id=50593862",
+      "points": 5,
+      "comments": 2,
+      "date": "2026-11-21",
+      "source": "Hacker News"
+    },
+    {
       "title": "Show HN: Backplane – An AI Development Environment for Hardware",
       "url": "https://backplaneworks.com/",
       "discussion": "https://news.ycombinator.com/item?id=50528196",
       "points": 5,
       "comments": 1,
       "date": "2026-11-17",
-      "source": "Hacker News"
-    },
-    {
-      "title": "Donating Agent Skills to the Agentic AI Foundation",
-      "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
-      "discussion": "https://news.ycombinator.com/item?id=50198911",
-      "points": 5,
-      "comments": 0,
-      "date": "2026-10-22",
       "source": "Hacker News"
     },
     {
@@ -188,15 +188,6 @@
       "points": 4,
       "comments": 0,
       "date": "2026-11-17",
-      "source": "Hacker News"
-    },
-    {
-      "title": "Show HN: ClawVet – Offline AST scanner and rug-pull diff for AI agent skills",
-      "url": "https://clawvet.vercel.app/",
-      "discussion": "https://news.ycombinator.com/item?id=50587571",
-      "points": 4,
-      "comments": 1,
-      "date": "2026-11-21",
       "source": "Hacker News"
     },
     {
@@ -227,12 +218,12 @@
       "source": "Hacker News"
     },
     {
-      "title": "Show HN: App Factory – 42 Claude Code skills to ship apps to App Store and Play",
-      "url": "https://github.com/yybd/app-factory",
-      "discussion": "https://news.ycombinator.com/item?id=50194964",
-      "points": 3,
+      "title": "Show HN: Nodecode, open-source living agent in Lisp that rewrites itself for you",
+      "url": "https://github.com/nodecode-ai/nodecode",
+      "discussion": "https://news.ycombinator.com/item?id=50238751",
+      "points": 4,
       "comments": 0,
-      "date": "2026-10-22",
+      "date": "2026-10-26",
       "source": "Hacker News"
     },
     {
