@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T11:47:57.583Z",
+  "generatedAt": "2026-11-23T13:22:13.879Z",
   "items": [
     {
       "title": "Socratic Tutor",
@@ -50,7 +50,7 @@
       "title": "Show HN: KradleBench – Multi-agent AI evals in Minecraft",
       "url": "https://www.kradle.ai?1",
       "discussion": "https://news.ycombinator.com/item?id=50550700",
-      "points": 9,
+      "points": 10,
       "comments": 7,
       "date": "2026-11-18",
       "source": "Hacker News"
@@ -128,6 +128,15 @@
       "source": "Hacker News"
     },
     {
+      "title": "Show HN: It's now easy to install Linux on an Android Phone – Android2linux",
+      "url": "https://github.com/android2linux/android2linux",
+      "discussion": "https://news.ycombinator.com/item?id=50593862",
+      "points": 6,
+      "comments": 2,
+      "date": "2026-11-21",
+      "source": "Hacker News"
+    },
+    {
       "title": "Show HN: Globalize.now – translations that land in your pull request",
       "url": "https://news.ycombinator.com/item?id=50350444",
       "discussion": "https://news.ycombinator.com/item?id=50350444",
@@ -152,15 +161,6 @@
       "points": 6,
       "comments": 2,
       "date": "2026-11-04",
-      "source": "Hacker News"
-    },
-    {
-      "title": "Show HN: It's now easy to install Linux on an Android Phone – Android2linux",
-      "url": "https://github.com/android2linux/android2linux",
-      "discussion": "https://news.ycombinator.com/item?id=50593862",
-      "points": 5,
-      "comments": 2,
-      "date": "2026-11-21",
       "source": "Hacker News"
     },
     {
@@ -191,21 +191,21 @@
       "source": "Hacker News"
     },
     {
+      "title": "Show HN: Socratui – A Socratic Tutor for the Terminal",
+      "url": "https://github.com/nodo-labs-uk/socratui",
+      "discussion": "https://news.ycombinator.com/item?id=50473650",
+      "points": 4,
+      "comments": 0,
+      "date": "2026-11-12",
+      "source": "Hacker News"
+    },
+    {
       "title": "Agent Skills from Jane Street",
       "url": "https://github.com/janestreet/agent_skills",
       "discussion": "https://news.ycombinator.com/item?id=50429183",
       "points": 4,
       "comments": 0,
       "date": "2026-11-09",
-      "source": "Hacker News"
-    },
-    {
-      "title": "Popular AI Agent Skills Every Developer Should Know",
-      "url": "https://jsdev.space/30-agent-skills/",
-      "discussion": "https://news.ycombinator.com/item?id=50209346",
-      "points": 4,
-      "comments": 0,
-      "date": "2026-10-23",
       "source": "Hacker News"
     },
     {
@@ -236,15 +236,6 @@
       "source": "Hacker News"
     },
     {
-      "title": "Show HN: Dánwò – Open-source E2E testing with emulators and fault injection",
-      "url": "https://github.com/carbonmeai/danwo",
-      "discussion": "https://news.ycombinator.com/item?id=50214578",
-      "points": 3,
-      "comments": 0,
-      "date": "2026-10-23",
-      "source": "Hacker News"
-    },
-    {
       "title": "MuscleMemory: Skills learned by Codex, reused by Claude Code",
       "url": "https://github.com/TheWariend/MuscleMemory",
       "discussion": "https://news.ycombinator.com/item?id=50243968",
@@ -272,30 +263,21 @@
       "source": "Hacker News"
     },
     {
+      "title": "Show HN: Crosshead - Working memory and persistent identity for agents",
+      "url": "https://crosshead.sh/",
+      "discussion": "https://news.ycombinator.com/item?id=50533967",
+      "points": 3,
+      "comments": 0,
+      "date": "2026-11-17",
+      "source": "Hacker News"
+    },
+    {
       "title": "Show HN: Hosts Tray – hosts file switcher with built-in HTTPS proxy",
       "url": "https://github.com/maxmart/hoststray",
       "discussion": "https://news.ycombinator.com/item?id=50517001",
       "points": 3,
       "comments": 0,
       "date": "2026-11-16",
-      "source": "Hacker News"
-    },
-    {
-      "title": "Show HN: Socratui – A Socratic Tutor for the Terminal",
-      "url": "https://github.com/nodo-labs-uk/socratui",
-      "discussion": "https://news.ycombinator.com/item?id=50473650",
-      "points": 3,
-      "comments": 0,
-      "date": "2026-11-12",
-      "source": "Hacker News"
-    },
-    {
-      "title": "Show HN: Apple-design-hig agent skill, DocC updater CLI, and MCP server",
-      "url": "https://github.com/mr8lu/apple-design-hig",
-      "discussion": "https://news.ycombinator.com/item?id=50214427",
-      "points": 3,
-      "comments": 1,
-      "date": "2026-10-23",
       "source": "Hacker News"
     },
     {
@@ -350,15 +332,6 @@
       "points": 3,
       "comments": 0,
       "date": "2026-10-30",
-      "source": "Hacker News"
-    },
-    {
-      "title": "Narrative Deck – AI Agent skill for creating interactive web stories",
-      "url": "https://aakatheeri.github.io/narrative-deck/",
-      "discussion": "https://news.ycombinator.com/item?id=50216138",
-      "points": 3,
-      "comments": 0,
-      "date": "2026-10-23",
       "source": "Hacker News"
     },
     {
