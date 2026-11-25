@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-24T14:08:25.834Z",
+  "generatedAt": "2026-11-25T13:18:01.594Z",
   "items": [
     {
       "title": "Socratic Tutor",
       "url": "https://github.com/janestreet/agent_skills/blob/master/socratic-tutor/SKILL.md",
       "discussion": "https://news.ycombinator.com/item?id=50438261",
-      "points": 726,
+      "points": 727,
       "comments": 172,
       "date": "2026-11-10",
       "source": "Hacker News"
@@ -47,11 +47,20 @@
       "source": "Hacker News"
     },
     {
+      "title": "Show HN: KradleBench – Multi-agent AI evals in Minecraft",
+      "url": "https://www.kradle.ai?1",
+      "discussion": "https://news.ycombinator.com/item?id=50608604",
+      "points": 16,
+      "comments": 6,
+      "date": "2026-11-23",
+      "source": "Hacker News"
+    },
+    {
       "title": "Show HN: Genesis Map – Visualize your agent's changes. See where they can break",
       "url": "https://github.com/GenesisAgentInfra/genesis",
       "discussion": "https://news.ycombinator.com/item?id=50623965",
-      "points": 12,
-      "comments": 0,
+      "points": 14,
+      "comments": 1,
       "date": "2026-11-24",
       "source": "Hacker News"
     },
@@ -62,6 +71,24 @@
       "points": 10,
       "comments": 7,
       "date": "2026-11-18",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Toolfence-scan – static checks for Cursor/Claude/Copilot skills",
+      "url": "https://github.com/StockGorilla/skill-scan",
+      "discussion": "https://news.ycombinator.com/item?id=50622631",
+      "points": 9,
+      "comments": 0,
+      "date": "2026-11-24",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Claude Code Mode Internals",
+      "url": "https://muthuishere.medium.com/code-mode-internals-and-adapting-them-for-your-clis-and-agent-skills-3a9ae4c9782f",
+      "discussion": "https://news.ycombinator.com/item?id=50610977",
+      "points": 9,
+      "comments": 1,
+      "date": "2026-11-23",
       "source": "Hacker News"
     },
     {
@@ -89,15 +116,6 @@
       "points": 9,
       "comments": 6,
       "date": "2026-11-04",
-      "source": "Hacker News"
-    },
-    {
-      "title": "Toolfence-scan – static checks for Cursor/Claude/Copilot skills",
-      "url": "https://github.com/StockGorilla/skill-scan",
-      "discussion": "https://news.ycombinator.com/item?id=50622631",
-      "points": 8,
-      "comments": 0,
-      "date": "2026-11-24",
       "source": "Hacker News"
     },
     {
@@ -182,6 +200,15 @@
       "source": "Hacker News"
     },
     {
+      "title": "MCP servers can now ship skills, run tasks, and more with Claude",
+      "url": "https://claude.com/resources/articles/skills-over-mcp-tasks-and-more",
+      "discussion": "https://news.ycombinator.com/item?id=50632503",
+      "points": 5,
+      "comments": 0,
+      "date": "2026-11-24",
+      "source": "Hacker News"
+    },
+    {
       "title": "Show HN: Backplane – An AI Development Environment for Hardware",
       "url": "https://backplaneworks.com/",
       "discussion": "https://news.ycombinator.com/item?id=50528196",
@@ -236,12 +263,21 @@
       "source": "Hacker News"
     },
     {
-      "title": "Show HN: Nodecode, open-source living agent in Lisp that rewrites itself for you",
-      "url": "https://github.com/nodecode-ai/nodecode",
-      "discussion": "https://news.ycombinator.com/item?id=50238751",
+      "title": "Show HN: Wakeshift – Open-Source MCP Events for Claude Code, Codex and More",
+      "url": "https://github.com/wakeshift/server",
+      "discussion": "https://news.ycombinator.com/item?id=50634239",
       "points": 4,
-      "comments": 0,
-      "date": "2026-10-26",
+      "comments": 1,
+      "date": "2026-11-24",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Show HN: Althar – an open-source IDE where agents review each other's work",
+      "url": "https://github.com/AltharIDE/althar",
+      "discussion": "https://news.ycombinator.com/item?id=50507285",
+      "points": 4,
+      "comments": 1,
+      "date": "2026-11-15",
       "source": "Hacker News"
     },
     {
@@ -254,18 +290,18 @@
       "source": "Hacker News"
     },
     {
-      "title": "MuscleMemory: Skills learned by Codex, reused by Claude Code",
-      "url": "https://github.com/TheWariend/MuscleMemory",
-      "discussion": "https://news.ycombinator.com/item?id=50243968",
+      "title": "My coding agent kept saying \"done\" on images it never looked at",
+      "url": "https://github.com/abdiraimov-otabek/claude-code-og-image-skill",
+      "discussion": "https://news.ycombinator.com/item?id=50640365",
       "points": 3,
       "comments": 0,
-      "date": "2026-10-26",
+      "date": "2026-11-25",
       "source": "Hacker News"
     },
     {
-      "title": "Show HN: Skill-spotter, auto detect agent prompts and commands to create skills",
-      "url": "https://github.com/ykisana/skill-spotter",
-      "discussion": "https://news.ycombinator.com/item?id=50239988",
+      "title": "MuscleMemory: Skills learned by Codex, reused by Claude Code",
+      "url": "https://github.com/TheWariend/MuscleMemory",
+      "discussion": "https://news.ycombinator.com/item?id=50243968",
       "points": 3,
       "comments": 0,
       "date": "2026-10-26",
@@ -305,6 +341,15 @@
       "points": 3,
       "comments": 2,
       "date": "2026-11-23",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Show HN: Competitive Intel analysis from 20-skill agent pipeline",
+      "url": "https://www.vybe.build/competitor-analysis",
+      "discussion": "https://news.ycombinator.com/item?id=50632891",
+      "points": 3,
+      "comments": 0,
+      "date": "2026-11-24",
       "source": "Hacker News"
     },
     {
@@ -359,24 +404,6 @@
       "points": 3,
       "comments": 0,
       "date": "2026-10-30",
-      "source": "Hacker News"
-    },
-    {
-      "title": "Show HN: Althar – an open-source IDE where agents review each other's work",
-      "url": "https://github.com/AltharIDE/althar",
-      "discussion": "https://news.ycombinator.com/item?id=50507285",
-      "points": 3,
-      "comments": 1,
-      "date": "2026-11-15",
-      "source": "Hacker News"
-    },
-    {
-      "title": "Show HN: Radian, an agent puts development workflow on autopilot",
-      "url": "https://getrad.dev",
-      "discussion": "https://news.ycombinator.com/item?id=50233447",
-      "points": 3,
-      "comments": 0,
-      "date": "2026-10-25",
       "source": "Hacker News"
     }
   ]
