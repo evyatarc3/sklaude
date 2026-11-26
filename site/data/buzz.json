@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-25T13:18:01.594Z",
+  "generatedAt": "2026-11-26T12:59:06.457Z",
   "items": [
     {
       "title": "Socratic Tutor",
       "url": "https://github.com/janestreet/agent_skills/blob/master/socratic-tutor/SKILL.md",
       "discussion": "https://news.ycombinator.com/item?id=50438261",
-      "points": 727,
+      "points": 728,
       "comments": 172,
       "date": "2026-11-10",
       "source": "Hacker News"
@@ -17,6 +17,15 @@
       "points": 449,
       "comments": 146,
       "date": "2026-11-10",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Show HN: An agent skill that optimizes code with falsifiable hypotheses",
+      "url": "https://chszlab.github.io/AgenticAlgorithmEngineering/",
+      "discussion": "https://news.ycombinator.com/item?id=50611593",
+      "points": 119,
+      "comments": 10,
+      "date": "2026-11-23",
       "source": "Hacker News"
     },
     {
@@ -44,6 +53,15 @@
       "points": 26,
       "comments": 8,
       "date": "2026-11-09",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Show HN: Keeping faces and features consistent across 24 AI-driven comic pages",
+      "url": "https://joonoo.art/create-comic",
+      "discussion": "https://news.ycombinator.com/item?id=50631791",
+      "points": 21,
+      "comments": 23,
+      "date": "2026-11-24",
       "source": "Hacker News"
     },
     {
@@ -227,6 +245,15 @@
       "source": "Hacker News"
     },
     {
+      "title": "My coding agent kept saying \"done\" on images it never looked at",
+      "url": "https://github.com/abdiraimov-otabek/claude-code-og-image-skill",
+      "discussion": "https://news.ycombinator.com/item?id=50640365",
+      "points": 4,
+      "comments": 0,
+      "date": "2026-11-25",
+      "source": "Hacker News"
+    },
+    {
       "title": "Show HN: Tool to measure log TCO savings without losing or migrating any data",
       "url": "https://news.ycombinator.com/item?id=50535716",
       "discussion": "https://news.ycombinator.com/item?id=50535716",
@@ -290,21 +317,12 @@
       "source": "Hacker News"
     },
     {
-      "title": "My coding agent kept saying \"done\" on images it never looked at",
-      "url": "https://github.com/abdiraimov-otabek/claude-code-og-image-skill",
-      "discussion": "https://news.ycombinator.com/item?id=50640365",
+      "title": "Show HN: Claudia – focused manager for Claude CLI settings.json",
+      "url": "https://github.com/claude-settings-xyz/claudia",
+      "discussion": "https://news.ycombinator.com/item?id=50619598",
       "points": 3,
       "comments": 0,
-      "date": "2026-11-25",
-      "source": "Hacker News"
-    },
-    {
-      "title": "MuscleMemory: Skills learned by Codex, reused by Claude Code",
-      "url": "https://github.com/TheWariend/MuscleMemory",
-      "discussion": "https://news.ycombinator.com/item?id=50243968",
-      "points": 3,
-      "comments": 0,
-      "date": "2026-10-26",
+      "date": "2026-11-23",
       "source": "Hacker News"
     },
     {
@@ -332,15 +350,6 @@
       "points": 3,
       "comments": 0,
       "date": "2026-11-16",
-      "source": "Hacker News"
-    },
-    {
-      "title": "Show HN: An agent skill that optimizes code with falsifiable hypotheses",
-      "url": "https://chszlab.github.io/AgenticAlgorithmEngineering/",
-      "discussion": "https://news.ycombinator.com/item?id=50611593",
-      "points": 3,
-      "comments": 2,
-      "date": "2026-11-23",
       "source": "Hacker News"
     },
     {
