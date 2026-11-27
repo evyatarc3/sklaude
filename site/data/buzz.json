@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T12:59:06.457Z",
+  "generatedAt": "2026-11-27T12:52:55.886Z",
   "items": [
     {
       "title": "Socratic Tutor",
@@ -23,8 +23,8 @@
       "title": "Show HN: An agent skill that optimizes code with falsifiable hypotheses",
       "url": "https://chszlab.github.io/AgenticAlgorithmEngineering/",
       "discussion": "https://news.ycombinator.com/item?id=50611593",
-      "points": 119,
-      "comments": 10,
+      "points": 132,
+      "comments": 13,
       "date": "2026-11-23",
       "source": "Hacker News"
     },
@@ -60,7 +60,7 @@
       "url": "https://joonoo.art/create-comic",
       "discussion": "https://news.ycombinator.com/item?id=50631791",
       "points": 21,
-      "comments": 23,
+      "comments": 25,
       "date": "2026-11-24",
       "source": "Hacker News"
     },
@@ -215,6 +215,15 @@
       "points": 6,
       "comments": 2,
       "date": "2026-11-04",
+      "source": "Hacker News"
+    },
+    {
+      "title": "MCP servers can now ship skills, run tasks, and more with Claude",
+      "url": "https://claude.com/resources/articles/skills-over-mcp-tasks-and-more",
+      "discussion": "https://news.ycombinator.com/item?id=50656110",
+      "points": 5,
+      "comments": 0,
+      "date": "2026-11-26",
       "source": "Hacker News"
     },
     {
