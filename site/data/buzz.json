@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T12:52:55.886Z",
+  "generatedAt": "2026-11-28T12:09:56.005Z",
   "items": [
     {
       "title": "Socratic Tutor",
@@ -23,8 +23,8 @@
       "title": "Show HN: An agent skill that optimizes code with falsifiable hypotheses",
       "url": "https://chszlab.github.io/AgenticAlgorithmEngineering/",
       "discussion": "https://news.ycombinator.com/item?id=50611593",
-      "points": 132,
-      "comments": 13,
+      "points": 136,
+      "comments": 14,
       "date": "2026-11-23",
       "source": "Hacker News"
     },
@@ -60,7 +60,7 @@
       "url": "https://joonoo.art/create-comic",
       "discussion": "https://news.ycombinator.com/item?id=50631791",
       "points": 21,
-      "comments": 25,
+      "comments": 29,
       "date": "2026-11-24",
       "source": "Hacker News"
     },
@@ -80,6 +80,15 @@
       "points": 14,
       "comments": 1,
       "date": "2026-11-24",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Claude Code Skills Now Sharable Across Teams",
+      "url": "https://emergent.sh/news/claude-code-skills-now-sharable-across-teams",
+      "discussion": "https://news.ycombinator.com/item?id=50670184",
+      "points": 11,
+      "comments": 3,
+      "date": "2026-11-27",
       "source": "Hacker News"
     },
     {
@@ -155,6 +164,15 @@
       "source": "Hacker News"
     },
     {
+      "title": "Show HN: Fleetlayer – Framework for running many AI agents on multiple machines",
+      "url": "https://fleetlayer.ai/",
+      "discussion": "https://news.ycombinator.com/item?id=50675831",
+      "points": 8,
+      "comments": 4,
+      "date": "2026-11-28",
+      "source": "Hacker News"
+    },
+    {
       "title": "Show HN: Ramasite, a Self-Contained Laravel/Filament/SQLite CMS",
       "url": "https://github.com/DaleFranks/ramasite",
       "discussion": "https://news.ycombinator.com/item?id=50462469",
@@ -179,15 +197,6 @@
       "points": 7,
       "comments": 2,
       "date": "2026-11-21",
-      "source": "Hacker News"
-    },
-    {
-      "title": "Show HN: Interview your analysts instead of auto-generating a semantic layer",
-      "url": "https://github.com/nodal-data/nodal-context",
-      "discussion": "https://news.ycombinator.com/item?id=50274358",
-      "points": 6,
-      "comments": 4,
-      "date": "2026-10-28",
       "source": "Hacker News"
     },
     {
@@ -254,6 +263,15 @@
       "source": "Hacker News"
     },
     {
+      "title": "Show HN: Wakeshift – Open-Source MCP Events for Claude Code, Codex and More",
+      "url": "https://github.com/wakeshift/server",
+      "discussion": "https://news.ycombinator.com/item?id=50634239",
+      "points": 5,
+      "comments": 1,
+      "date": "2026-11-24",
+      "source": "Hacker News"
+    },
+    {
       "title": "My coding agent kept saying \"done\" on images it never looked at",
       "url": "https://github.com/abdiraimov-otabek/claude-code-og-image-skill",
       "discussion": "https://news.ycombinator.com/item?id=50640365",
@@ -296,15 +314,6 @@
       "points": 4,
       "comments": 0,
       "date": "2026-11-15",
-      "source": "Hacker News"
-    },
-    {
-      "title": "Show HN: Wakeshift – Open-Source MCP Events for Claude Code, Codex and More",
-      "url": "https://github.com/wakeshift/server",
-      "discussion": "https://news.ycombinator.com/item?id=50634239",
-      "points": 4,
-      "comments": 1,
-      "date": "2026-11-24",
       "source": "Hacker News"
     },
     {
